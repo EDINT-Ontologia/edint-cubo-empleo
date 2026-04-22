@@ -1,0 +1,18 @@
+# EMP06: ¿Cuál es el número de contratos registrados en una región administrativa y periodo concretos?
+
+PREFIX edintemp: <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#>
+PREFIX edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#>
+
+SELECT ?obs ?value
+WHERE {
+  ?obs a qb:Observation ;
+       qb:dataSet edinttemp: ;
+       edintdimension:refAdminRegion ?region ;
+       edintdimension:refPeriod ?period ;
+       edintmeasure:registeredContractsCount ?value .
+
+  FILTER(?region = <URI_REGION>)
+  FILTER(?period = <URI_PERIODO>)
+}

@@ -1,0 +1,17 @@
+Identifier,Responsible partner,Version,"Competency Question /
+ Natural language sentence (fact)",Answer (For Competency Questions),"Status (Proposed, Accepted, Rejected, Deprecated)",Comments (optional),Extracted from (provenance),"Priority 
+(High, Medium, Low) (optional)",Relation with other requirements (optional),Associated ontology elements,Relation to ontology elements in other domains
+EMP01,UPM,v0.1.0,¿Cuál es el número de activos en una región administrativa y periodo concretos?,,Proposed,,,,,,
+EMP02,UPM,v0.1.0,¿Cuál es el número de ocupados en una región administrativa y periodo concretos?,,Proposed,,,,,,
+EMP03,UPM,v0.1.0,¿Cuál es el número de parados en una región administrativa y periodo concretos?,,Proposed,,,,,,
+EMP04,UPM,v0.1.0,¿Cuál es el número de paro registrado en una región administrativa y periodo concretos?,,Proposed,,,,,,
+EMP05,UPM,v0.1.0,¿Cuál es el número de demandantes de empleo en una región administrativa y periodo concretos?,,Proposed,,,,,,
+EMP06,UPM,v0.1.0,¿Cuál es el número de contratos registrados en una región administrativa y periodo concretos?,,Proposed,,,,,,
+EMP07,UPM,v0.1.0,¿Cuál es el número de afiliados a la Seguridad Social en una región administrativa y periodo concretos?,,Proposed,,,,,,
+EMP08,UPM,v0.1.0,¿Cuál es el número de afiliados a la Seguridad Social para cada actividad económica en un municipio y periodo concretos?,,Proposed,,,,,,
+EMP09,UPM,v0.1.0,¿Cuál es el número de parados por grupo de edad en una región administrativa y periodo concretos?,,Proposed,,,,,,
+EMP10,UPM,v0.1.0,¿Cuál es el número de contratos registrados por tipo de contrato en una región administrativa y periodo concretos?,,Proposed,,,,,,
+EMP11,UPM,v0.1.0,¿Cuál es el número de ocupados por actividad económica en una región administrativa y periodo concretos?,,Proposed,,,,,,
+EMP12,UPM,v0.1.0,¿Cuál es el número de parados por actividad económica en una región administrativa y periodo concretos?,,Proposed,,,,,,
+EMP13,UPM,v0.1.0,¿Cuál es la evolución temporal del número de ocupados en una región administrativa concreta?,,Proposed,,,,,,
+EMP14,UPM,v0.1.0,¿Cuál es el número de contratos registrados por sexo y tipo de contrato en una región administrativa y periodo concretos?,,Proposed,,,,,,

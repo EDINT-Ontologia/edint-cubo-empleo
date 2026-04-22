@@ -1,0 +1,24 @@
+# EMP09: ¿Cuál es el número de parados por grupo de edad en una región administrativa y periodo concretos?
+
+PREFIX edintemp: <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#>
+PREFIX edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?age ?ageLabel (SUM(?value) AS ?unemployedPopulation)
+WHERE {
+  ?obs a qb:Observation ;
+       qb:dataSet edinttemp: ;
+       edintdimension:refAdminRegion ?region ;
+       edintdimension:refPeriod ?period ;
+       edintdimension:age ?age ;
+       edintmeasure:unemployedPopulationCount ?value .
+
+  FILTER(?region = <URI_REGION>)
+  FILTER(?period = <URI_PERIODO>)
+
+  OPTIONAL { ?age rdfs:label ?ageLabel . FILTER(LANG(?ageLabel) = "es") }
+}
+GROUP BY ?age ?ageLabel
+ORDER BY DESC(?unemployedPopulation)

@@ -1,0 +1,27 @@
+# EMP14: ¿Cuál es el número de contratos registrados por sexo y tipo de contrato en una región administrativa y periodo concretos?
+
+PREFIX edintemp: <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#>
+PREFIX edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?sex ?sexLabel ?contractType ?contractTypeLabel (SUM(?value) AS ?registeredContracts)
+WHERE {
+  ?obs a qb:Observation ;
+       qb:dataSet edinttemp: ;
+       edintdimension:refAdminRegion ?region ;
+       edintdimension:refPeriod ?period ;
+       edintdimension:sex ?sex ;
+       edintdimension:contractType ?contractType ;
+       edintmeasure:registeredContractsCount ?value .
+
+  FILTER(?region = <URI_REGION>)
+  FILTER(?period = <URI_PERIODO>)
+
+  OPTIONAL { ?sex rdfs:label ?sexLabel . FILTER(LANG(?sexLabel) = "es") }
+  OPTIONAL { ?contractType skos:prefLabel ?contractTypeLabel . FILTER(LANG(?contractTypeLabel) = "es") }
+}
+GROUP BY ?sex ?sexLabel ?contractType ?contractTypeLabel
+ORDER BY DESC(?registeredContracts)

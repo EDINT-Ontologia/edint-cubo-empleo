@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
+@prefix edintcontracttype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/ContractType/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+edintkos:ContractType a skos:ConceptScheme ; 
+    dct:issued "2026-04-13"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the ontologies from the EDINT data space."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por las ontologías del espacio de datos EDINT."@es ;
+    rdfs:label "Contract type"@en ;
+    rdfs:label "Tipo de contrato"@es ;
+    dct:title "Concept scheme grouping contract types used in employment observations."@en ;
+    dct:title "Esquema de conceptos que agrupa tipos de contrato utilizados en observaciones de empleo."@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+edintcontracttype:permanent a skos:Concept ;
+    skos:inScheme edintkos:ContractType ;
+    skos:prefLabel "Permanent"@en ;
+    skos:prefLabel "Indefinido"@es .
+
+edintcontracttype:temporary a skos:Concept ;
+    skos:inScheme edintkos:ContractType ;
+    skos:prefLabel "Temporary"@en ;
+    skos:prefLabel "Temporal"@es .
+
+edintcontracttype:other a skos:Concept ;
+    skos:inScheme edintkos:ContractType ;
+    skos:prefLabel "Other"@en ;
+    skos:prefLabel "Otro"@es .
+
+edintcontracttype:alternatingTraining a skos:Concept ;
+    skos:inScheme edintkos:ContractType ;
+    skos:prefLabel "Training contract for alternating work-based learning"@en ;
+    skos:prefLabel "Contrato Formativo para la Formación en Alternancia"@es .
+
+edintcontracttype:professionalPractice a skos:Concept ;
+    skos:inScheme edintkos:ContractType ;
+    skos:prefLabel "Training contract for acquiring professional practice"@en ;
+    skos:prefLabel "Contrato Formativo para la Obtención de la Práctica Profesional"@es .
