@@ -1,0 +1,231 @@
+@prefix brick: <https://brickschema.org/schema/Brick#>.
+@prefix csvw: <http://www.w3.org/ns/csvw#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcam: <http://purl.org/dc/dcam/>.
+@prefix doap: <http://usefulinc.com/ns/doap#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix prof: <http://www.w3.org/ns/dx/prof/>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix qb: <http://purl.org/linked-data/cube#>.
+@prefix schema: <https://schema.org/>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/>.
+@prefix ssn: <http://www.w3.org/ns/ssn/>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix inelod: <http://lod.ine.es/recurso/cubes/>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>.
+@prefix edintgast: <http://vocab.linkeddata.es/datosabiertos/def/comercio/cubo-gasto-comercial/>.
+@prefix edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#>.
+@prefix edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#>.
+@prefix edinttemp: <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#>.
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#>.
+@prefix schema: <http://schema.org/>.
+@prefix formats: <http://www.w3.org/ns/formats/>.
+@prefix comp: <http://semweb.mmlab.be/ns/rml-compression#>.
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#>.
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#>.
+@base <http://example.com/ns#>.
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix map:    <https://w3id.org/edint/cubo-empleo/mapping/> .
+
+map:person_000 rdf:type foaf:Person ;
+    rdfs:label "Diego Conde Herreros" .
+
+map:rules_000 schema:contributor map:person_000 ;
+    rdf:type schema:Dataset ;
+    schema:title "Cubo de datos EDINT de Indicadores de Empleo (EDINT Employment Indicators Data Cube)" ;
+    schema:dateCreated "23-04-2026" ;
+    schema:description "Este mapping RML transforma datos tabulares de indicadores de empleo a RDF siguiendo el modelo EDINT Employment Indicators Data Cube. El mapping genera observaciones RDF Data Cube con dimensiones como área administrativa, periodo, sector, actividad económica, sexo, edad y tipo de contrato, vinculadas a un conjunto de datos común. Además, incorpora medidas como población activa, población empleada, población desempleada, contratos registrados, demandantes de empleo, paro registrado y afiliación a la Seguridad Social." .
+
+<mappings_tm_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "../pathtodata.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo/o{Indice}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant qb:Observation;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant edintdimension:refAdminRegion;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Area";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant edintdimension:sector;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Sector";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant edintdimension:economicActivity;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Actividad Economica";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant edintdimension:refPeriod;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Periodo";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant edintdimension:sex;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Sexo";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant edintdimension:age;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Edad";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant edintdimension:contractType;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Tipo de Contrato";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant qb:dataSet;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant edinttemp:SampleDataSet;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant edintmeasure:activePopulationCount;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Total de población Activa";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant edintmeasure:employedPopulationCount;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Total de población Empleada";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant edintmeasure:unemployedPopulationCount;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Total de población Desempleada";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant edintmeasure:registeredContractsCount;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Total de Contratos Registrados";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant edintmeasure:jobSeekersCount;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Total de buscadores de empleo";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant edintmeasure:registeredUnemploymentCount;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Total de desempleados registrados";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant edintmeasure:socialSecurityAffiliatesCount;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Total de afiliados a la seguridad social";
+		];
+	].
+
+
