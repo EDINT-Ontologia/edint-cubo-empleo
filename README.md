@@ -48,7 +48,6 @@ El repositorio contiene las siguientes carpetas
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **diagrams/**           | Contiene diagramas y otros recursos que representan el modelo conceptual del cubo de datos (por ejemplo, las dimensiones y las medidas).           |
 | **documentation/**      | Contiene la documentación del cubo de datos y artefactos relacionados en formato HTML o dirigida a usuarios.                                       |
-| **tests/**              | Contiene las pruebas para la evaluación del cubo de datos.                                                                                         |
 | **kos/**                | Contiene la implementación de vocabularios controlados o KOS, generalmente implementaciones SKOS en RDF.                                           |
 | **data-cube-ontology/** | Contiene los archivos de implementación del cubo de datos en formatos como .owl .                                                                  |
 | **requirements/**       | Contiene todos los documentos utilizados para definir los requisitos del cubo de datos: preguntas de competencia y sus respectivas SPARQL queries. |

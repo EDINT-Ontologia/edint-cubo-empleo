@@ -1,4 +1,4 @@
-@prefix edinttemp: <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> .
+@prefix edintemp: <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> .
 @prefix edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#> .
 @prefix edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#> .
 @prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
@@ -18,20 +18,20 @@
 
 # -- Data Set --------------------------------------------
 
-edinttemp: a qb:DataSet, owl:Ontology ; 
-    owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/comercio/cubo-gasto-comercial/1.0.0> ;
+edintemp: a qb:DataSet, owl:Ontology ; 
+    owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo/1.0.0> ;
     owl:imports <http://purl.org/linked-data/cube> ;
     dcterms:creator "Daniel Doña", "Edna Ruckhaus", "Lucía Sánchez", "Oscar Corcho", "Socorro Bernardos", "Diego Conde" ;
     dcterms:title "Vocabulario para la representación del cubo de indicadores de empleo dentro del proyecto EDINT"@es ,
                   "Vocabulary for the representation of the employment indicators data cube within the EDINT project"@en ;
     dcterms:issued "2026-04-20"^^xsd:date ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    vann:preferredNamespaceUri <http://vocab.linkeddata.es/datosabiertos/def/comercio/cubo-gasto-comercial#> ;
-    vann:preferredNamespacePrefix "edinttemp" ;
+    vann:preferredNamespaceUri <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> ;
+    vann:preferredNamespacePrefix "edintemp" ;
     owl:versionInfo "0.1.0" ;
-    qb:structure edinttemp:dsd .
+    qb:structure edintemp:dsd .
 
-edinttemp:dsd a qb:DataStructureDefinition ;
+edintemp:dsd a qb:DataStructureDefinition ;
     qb:component
         [ qb:dimension edintdimension:refAdminRegion ; qb:order 1 ] ,
         [ qb:dimension edintdimension:sector ; qb:order 2 ] ,
@@ -48,8 +48,7 @@ edinttemp:dsd a qb:DataStructureDefinition ;
         [ qb:measure edintmeasure:registeredUnemploymentCount ; qb:order 13 ] , 
         [ qb:measure edintmeasure:socialSecurityAffiliatesCount ; qb:order 14 ] .
 
-edintdimension:refAdminRegion
-    a qb:DimensionProperty ;
+edintdimension:refAdminRegion a qb:DimensionProperty , rdf:Property ;
     rdfs:label "Reference Administrative Region"@en, "Región Administrativa de Referencia"@es ;
     rdfs:comment "Administrative region associated."@en, "Región administrativa asociada."@es ;
     rdfs:subPropertyOf sdmx-dimension:refArea ;
@@ -58,92 +57,90 @@ edintdimension:refAdminRegion
         owl:unionOf ( esadm:Municipio esadm:Barrio esadm:Distrito )
     ] .
 
-edintdimension:refPeriod a qb:DimensionProperty ;
+edintdimension:refPeriod a qb:DimensionProperty , rdf:Property ;
     rdfs:label "Reference Period"@en, "Periodo de Referencia"@es ;
     rdfs:comment "Period of time or point in time to which the measured observation is intended to refer."@en, "Período de tiempo o punto en el tiempo al que se destina la observación medida."@es ;
     rdfs:subPropertyOf sdmx-dimension:refPeriod ;
     rdfs:range time:Interval .
 
-edintdimension:sector
-    rdf:type qb:DimensionProperty , qb:CodedProperty ;
+edintdimension:sector a rdf:Property , qb:DimensionProperty , qb:CodedProperty ;
     rdfs:label "Sector"@es , "Sector"@en ;
     rdfs:comment "Sector temático asociado a la observación de empleo."@es ,
                  "Thematic sector associated with the employment observation."@en ;
     rdfs:range skos:Concept ;
     qb:codeList <http://datos.gob.es/kos/sector-publico/sector> .
 
-edintdimension:economicActivity
-    rdf:type qb:DimensionProperty , qb:CodedProperty ;
+edintdimension:economicActivity a rdf:Property , qb:DimensionProperty , qb:CodedProperty ;
     rdfs:label "Actividad económica"@es , "Economic activity"@en ;
     rdfs:comment "Actividad económica asociada a la observación de empleo, representada mediante una clasificación controlada como la CNAE."@es ,
                  "Economic activity associated with the employment observation, represented using a controlled classification such as CNAE."@en ;
     rdfs:range skos:Concept ;
     qb:codeList <http://lod.ine.es/kos/cnae/CNAE-2025> .
 
-edintdimension:sex a qb:DimensionProperty ;
+edintdimension:sex a qb:DimensionProperty , rdf:Property ;
     rdfs:range rdfs:Resource ;
     rdfs:label "Sexo"@es, "Sex"@en ; 
     rdfs:comment "Característica de una persona que permite clasificarla dentro de una categoría sexual utilizada en un determinado contexto estadístico, administrativo o de registro."@es ,
                  "Attribute used to represent the sex category associated with an individual in a given data collection context."@en ;
     rdfs:subPropertyOf sdmx-dimension:sex .
 
-edintdimension:age a qb:DimensionProperty ;
+edintdimension:age a qb:DimensionProperty , rdf:Property ;
     rdfs:range rdfs:Resource ;
     rdfs:label "Edad"@es, "Age"@en ; 
     rdfs:comment "Característica de una persona que indica cuántos años tiene en un momento determinado, ya sea mediante un valor concreto o mediante un grupo de edad."@es ,
                  "Attribute that indicates the age of an individual, usually expressed in years or grouped into age ranges for classification purposes."@en ;
     rdfs:subPropertyOf sdmx-dimension:age .
 
-edintdimension:contractType rdf:type qb:DimensionProperty, qb:CodedProperty  ;  
+edintdimension:contractType rdf:type qb:DimensionProperty, qb:CodedProperty , rdf:Property ;  
     rdfs:range skos:Concept ;
     rdfs:label "Tipo de contrato"@es, "Contract Type"@en ; 
     rdfs:comment "Tipo de contrato laboral asociado a la observación de empleo, cuando aplique."@es ,
                  "Type of employment contract associated with the employment observation, when applicable."@en ; 
     qb:codeList edintkos:contractType . 
 
-edintmeasure:activePopulationCount a qb:MeasureProperty ;
+edintmeasure:activePopulationCount a qb:MeasureProperty , rdf:Property ;
     rdfs:subPropertyOf sdmx-measure:obsValue ;
     rdfs:label "Número de activos"@es , "Active population count"@en ;
     rdfs:comment "Número de personas activas en el periodo de referencia y la división administrativa correspondiente."@es ,
                  "Number of active persons in the reference period and administrative division."@en ;
     rdfs:range xsd:nonNegativeInteger .
 
-edintmeasure:employedPopulationCount a qb:MeasureProperty ;
+edintmeasure:employedPopulationCount a qb:MeasureProperty , rdf:Property ;
     rdfs:subPropertyOf sdmx-measure:obsValue ;
     rdfs:label "Número de ocupados"@es , "Employed population count"@en ;
     rdfs:comment "Número de personas ocupadas en el periodo de referencia y la división administrativa correspondiente."@es ,
                  "Number of employed persons in the reference period and administrative division."@en ;
     rdfs:range xsd:nonNegativeInteger .
 
-edintmeasure:unemployedPopulationCount a qb:MeasureProperty ;
+edintmeasure:unemployedPopulationCount a qb:MeasureProperty , rdf:Property ;
     rdfs:subPropertyOf sdmx-measure:obsValue ;
     rdfs:label "Número de parados"@es , "Unemployed population count"@en ;
     rdfs:comment "Número de personas desempleadas en el periodo de referencia y la división administrativa correspondiente."@es ,
                  "Number of unemployed persons in the reference period and administrative division."@en ;
     rdfs:range xsd:nonNegativeInteger .
 
-edintmeasure:registeredContractsCount a qb:MeasureProperty ;
+edintmeasure:registeredContractsCount a qb:MeasureProperty , rdf:Property ;
     rdfs:subPropertyOf sdmx-measure:obsValue ;
     rdfs:label "Número de contratos registrados"@es , "Registered contracts count"@en ;
     rdfs:comment "Número de contratos de trabajo registrados en el periodo de referencia y la división administrativa correspondiente."@es ,
                  "Number of employment contracts registered in the reference period and administrative division."@en ;
     rdfs:range xsd:nonNegativeInteger .
 
-edintmeasure:jobSeekersCount a qb:MeasureProperty ;
+edintmeasure:jobSeekersCount a qb:MeasureProperty , rdf:Property ;
     rdfs:subPropertyOf sdmx-measure:obsValue ;
     rdfs:label "Número de demandantes de empleo"@es , "Job seekers count"@en ;
     rdfs:comment "Número de demandantes de empleo registrados en el periodo de referencia y la división administrativa correspondiente."@es ,
                  "Number of registered job seekers in the reference period and administrative division."@en ;
     rdfs:range xsd:nonNegativeInteger .
 
-edintmeasure:registeredUnemploymentCount a qb:MeasureProperty ;
+edintmeasure:registeredUnemploymentCount a qb:MeasureProperty , rdf:Property ;
     rdfs:subPropertyOf sdmx-measure:obsValue ;
     rdfs:label "Número de paro registrado"@es , "Registered unemployment count"@en ;
     rdfs:comment "Número de personas en situación de paro registrado según los registros administrativos del SEPE, en el periodo de referencia y la división administrativa correspondiente."@es ,
                  "Number of persons in registered unemployment according to SEPE administrative records, for the reference period and administrative division."@en ;
     rdfs:range xsd:nonNegativeInteger .
 
-edintmeasure:socialSecurityAffiliatesCount a qb:MeasureProperty ;
+edintmeasure:socialSecurityAffiliatesCount a qb:MeasureProperty , rdf:Property ;
     rdfs:subPropertyOf sdmx-measure:obsValue ;
     rdfs:label "Número de personas afiliadas a la Seguridad Social"@es , "Social Security affiliates count"@en ;
     rdfs:comment "Número de personas afiliadas al sistema de Seguridad Social en el periodo de referencia y la división administrativa correspondiente."@es ,

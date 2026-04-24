@@ -1,0 +1,1978 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio", "http://vocab.linkeddata.es/datosabiertos/def/dimension", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://purl.org/linked-data/cube", "http://purl.org/NET/scovo", "http://vocab.linkeddata.es/datosabiertos/def/measure", "http://www.w3.org/2006/time", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "en" : "Vocabulary for the representation of the employment indicators data cube within the EDINT project",
+      "es" : "Vocabulario para la representación del cubo de indicadores de empleo dentro del proyecto EDINT"
+    },
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#",
+    "version" : "0.1.0",
+    "author" : [ "Diego Conde", "Oscar Corcho", "Lucía Sánchez", "Daniel Doña", "Edna Ruckhaus", "Socorro Bernardos" ],
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Daniel Doña",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Edna Ruckhaus",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Lucía Sánchez",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Diego Conde",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Oscar Corcho",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Socorro Bernardos",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "edinttemp",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "hhttp://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "es",
+        "value" : "Vocabulario para la representación del cubo de indicadores de empleo dentro del proyecto EDINT",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Vocabulary for the representation of the employment indicators data cube within the EDINT project",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2026-04-20",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "28",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "33",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "36",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "41",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "42",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "43",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "13",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "44",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "45",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/linked-data/cube#Observation",
+    "equivalent" : [ "2" ],
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Observation",
+      "en" : "Observation"
+    },
+    "comment" : {
+      "en" : "A single observation in the cube, may have one or more associated measured values"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2006/time#Interval",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interval"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#MeasureProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasureProperty",
+      "en" : "Measure property"
+    },
+    "individuals" : [ {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/measure",
+      "comment" : {
+        "en" : "Number of persons affiliated with the Social Security system in the reference period and administrative division.",
+        "es" : "Número de personas afiliadas al sistema de Seguridad Social en el periodo de referencia y la división administrativa correspondiente."
+      },
+      "labels" : {
+        "IRI-based" : "socialSecurityAffiliatesCount",
+        "en" : "Social Security affiliates count",
+        "es" : "Número de personas afiliadas a la Seguridad Social"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/measure",
+      "comment" : {
+        "en" : "Number of active persons in the reference period and administrative division.",
+        "es" : "Número de personas activas en el periodo de referencia y la división administrativa correspondiente."
+      },
+      "labels" : {
+        "IRI-based" : "activePopulationCount",
+        "en" : "Active population count",
+        "es" : "Número de activos"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/measure",
+      "comment" : {
+        "en" : "Number of registered job seekers in the reference period and administrative division.",
+        "es" : "Número de demandantes de empleo registrados en el periodo de referencia y la división administrativa correspondiente."
+      },
+      "labels" : {
+        "IRI-based" : "jobSeekersCount",
+        "en" : "Job seekers count",
+        "es" : "Número de demandantes de empleo"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/measure",
+      "comment" : {
+        "en" : "Number of unemployed persons in the reference period and administrative division.",
+        "es" : "Número de personas desempleadas en el periodo de referencia y la división administrativa correspondiente."
+      },
+      "labels" : {
+        "IRI-based" : "unemployedPopulationCount",
+        "en" : "Unemployed population count",
+        "es" : "Número de parados"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/measure",
+      "comment" : {
+        "en" : "Number of employed persons in the reference period and administrative division.",
+        "es" : "Número de personas ocupadas en el periodo de referencia y la división administrativa correspondiente."
+      },
+      "labels" : {
+        "IRI-based" : "employedPopulationCount",
+        "en" : "Employed population count",
+        "es" : "Número de ocupados"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/measure",
+      "comment" : {
+        "en" : "Number of employment contracts registered in the reference period and administrative division.",
+        "es" : "Número de contratos de trabajo registrados en el periodo de referencia y la división administrativa correspondiente."
+      },
+      "labels" : {
+        "IRI-based" : "registeredContractsCount",
+        "en" : "Registered contracts count",
+        "es" : "Número de contratos registrados"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/measure",
+      "comment" : {
+        "en" : "Number of persons in registered unemployment according to SEPE administrative records, for the reference period and administrative division.",
+        "es" : "Número de personas en situación de paro registrado según los registros administrativos del SEPE, en el periodo de referencia y la división administrativa correspondiente."
+      },
+      "labels" : {
+        "IRI-based" : "registeredUnemploymentCount",
+        "en" : "Registered unemployment count",
+        "es" : "Número de paro registrado"
+      }
+    } ],
+    "comment" : {
+      "en" : "The class of components which represent the measured value of the phenomenon being observed"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#HierarchicalCodeList",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HierarchicalCodeList",
+      "en" : "Hierarchical Code List"
+    },
+    "comment" : {
+      "en" : "Represents a generalized hierarchy of concepts which can be used for coding. The hierarchy is defined by one or more roots together with a property which relates concepts in the hierarchy to thier child concept .  The same concepts may be members of multiple hierarchies provided that different qb:parentChildProperty values are used for each hierarchy."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "27",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "28",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "33",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#ComponentSet",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ComponentSet",
+      "en" : "Component set"
+    },
+    "subClasses" : [ "30", "8", "9" ],
+    "comment" : {
+      "en" : "Abstract class of things which reference one or more ComponentProperties"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://purl.org/NET/scovo#Dataset",
+    "equivalent" : [ "32" ],
+    "baseIri" : "http://purl.org/NET/scovo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "36",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "41",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "42",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "43",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "13",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "44",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "45",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#DimensionProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DimensionProperty",
+      "en" : "Dimension property"
+    },
+    "individuals" : [ {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+      "comment" : {
+        "en" : "Type of employment contract associated with the employment observation, when applicable.",
+        "es" : "Tipo de contrato laboral asociado a la observación de empleo, cuando aplique."
+      },
+      "labels" : {
+        "IRI-based" : "contractType",
+        "en" : "Contract Type",
+        "es" : "Tipo de contrato"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+      "comment" : {
+        "en" : "Economic activity associated with the employment observation, represented using a controlled classification such as CNAE.",
+        "es" : "Actividad económica asociada a la observación de empleo, representada mediante una clasificación controlada como la CNAE."
+      },
+      "labels" : {
+        "IRI-based" : "economicActivity",
+        "en" : "Economic activity",
+        "es" : "Actividad económica"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#age",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+      "comment" : {
+        "en" : "Attribute that indicates the age of an individual, usually expressed in years or grouped into age ranges for classification purposes.",
+        "es" : "Característica de una persona que indica cuántos años tiene en un momento determinado, ya sea mediante un valor concreto o mediante un grupo de edad."
+      },
+      "labels" : {
+        "IRI-based" : "age",
+        "en" : "Age",
+        "es" : "Edad"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#sector",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+      "comment" : {
+        "en" : "Thematic sector associated with the employment observation.",
+        "es" : "Sector temático asociado a la observación de empleo."
+      },
+      "labels" : {
+        "IRI-based" : "sector",
+        "en" : "Sector",
+        "es" : "Sector"
+      }
+    }, {
+      "iri" : "http://purl.org/linked-data/cube#measureType",
+      "baseIri" : "http://purl.org/linked-data/cube",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://purl.org/linked-data/cube",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Generic measure dimension, the value of this dimension indicates which measure (from the set of measures in the DSD) is being given by the obsValue (or other primary measure)"
+      },
+      "labels" : {
+        "IRI-based" : "measureType",
+        "en" : "measure type"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+      "comment" : {
+        "en" : "Period of time or point in time to which the measured observation is intended to refer.",
+        "es" : "Período de tiempo o punto en el tiempo al que se destina la observación medida."
+      },
+      "labels" : {
+        "IRI-based" : "refPeriod",
+        "en" : "Reference Period",
+        "es" : "Periodo de Referencia"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+      "comment" : {
+        "en" : "Administrative region associated.",
+        "es" : "Región administrativa asociada."
+      },
+      "labels" : {
+        "IRI-based" : "refAdminRegion",
+        "en" : "Reference Administrative Region",
+        "es" : "Región Administrativa de Referencia"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#sex",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+      "comment" : {
+        "en" : "Attribute used to represent the sex category associated with an individual in a given data collection context.",
+        "es" : "Característica de una persona que permite clasificarla dentro de una categoría sexual utilizada en un determinado contexto estadístico, administrativo o de registro."
+      },
+      "labels" : {
+        "IRI-based" : "sex",
+        "en" : "Sex",
+        "es" : "Sexo"
+      }
+    } ],
+    "comment" : {
+      "en" : "The class of components which represent the dimensions of the cube"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "23", "5" ]
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Barrio"
+    },
+    "attributes" : [ "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#Attachable",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Attachable",
+      "en" : "Attachable (abstract)"
+    },
+    "subClasses" : [ "0", "32", "25" ],
+    "comment" : {
+      "en" : "Abstract superclass for everything that can have attributes and dimensions"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Collection",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Collection"
+    },
+    "attributes" : [ "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#DataStructureDefinition",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataStructureDefinition",
+      "en" : "Data structure definition"
+    },
+    "individuals" : [ {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo",
+      "labels" : {
+        "IRI-based" : "dsd"
+      }
+    } ],
+    "comment" : {
+      "en" : "Defines the structure of a DataSet or slice"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#CodedProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CodedProperty",
+      "en" : "Coded property"
+    },
+    "individuals" : [ {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+      "comment" : {
+        "en" : "Type of employment contract associated with the employment observation, when applicable.",
+        "es" : "Tipo de contrato laboral asociado a la observación de empleo, cuando aplique."
+      },
+      "labels" : {
+        "IRI-based" : "contractType",
+        "en" : "Contract Type",
+        "es" : "Tipo de contrato"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+      "comment" : {
+        "en" : "Economic activity associated with the employment observation, represented using a controlled classification such as CNAE.",
+        "es" : "Actividad económica asociada a la observación de empleo, representada mediante una clasificación controlada como la CNAE."
+      },
+      "labels" : {
+        "IRI-based" : "economicActivity",
+        "en" : "Economic activity",
+        "es" : "Actividad económica"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#sector",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+      "comment" : {
+        "en" : "Thematic sector associated with the employment observation.",
+        "es" : "Sector temático asociado a la observación de empleo."
+      },
+      "labels" : {
+        "IRI-based" : "sector",
+        "en" : "Sector",
+        "es" : "Sector"
+      }
+    } ],
+    "subClasses" : [ "17" ],
+    "comment" : {
+      "en" : "Superclass of all coded ComponentProperties"
+    },
+    "attributes" : [ "external" ],
+    "id" : "23",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#ComponentSpecification",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ComponentSpecification",
+      "en" : "Component specification"
+    },
+    "comment" : {
+      "en" : "Used to define properties of a component (attribute, dimension etc) which are specific to its usage in a DSD."
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#AttributeProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AttributeProperty",
+      "en" : "Attribute property"
+    },
+    "comment" : {
+      "en" : "The class of components which represent attributes of observations in the cube, e.g. unit of measurement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "attributes" : [ "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#Slice",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Slice",
+      "en" : "Slice"
+    },
+    "comment" : {
+      "en" : "Denotes a subset of a DataSet defined by fixing a subset of the dimensional values, component properties on the Slice"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "1", "26" ]
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Municipio"
+    },
+    "attributes" : [ "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#ObservationGroup",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ObservationGroup",
+      "en" : "Observation Group"
+    },
+    "subClasses" : [ "25" ],
+    "comment" : {
+      "en" : "A, possibly arbitrary, group of observations."
+    },
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "instances" : 0,
+    "union" : [ "15", "79", "60" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#ComponentProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ComponentProperty",
+      "en" : "Component property (abstract)"
+    },
+    "subClasses" : [ "23", "11", "17", "4" ],
+    "comment" : {
+      "en" : "Abstract super-property of all properties representing dimensions, attributes or measures"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "51" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "56", "84", "81" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://purl.org/NET/scovo#Item",
+    "equivalent" : [ "0" ],
+    "baseIri" : "http://purl.org/NET/scovo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Item"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Class",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Class"
+    },
+    "attributes" : [ "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#DataSet",
+    "equivalent" : [ "34" ],
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataSet",
+      "en" : "Data set"
+    },
+    "individuals" : [ {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo",
+      "labels" : { }
+    } ],
+    "comment" : {
+      "en" : "Represents a collection of observations, possibly organized into various slices, conforming to some common dimensional structure."
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "32",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Distrito"
+    },
+    "attributes" : [ "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#SliceKey",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SliceKey",
+      "en" : "Slice key"
+    },
+    "comment" : {
+      "en" : "Denotes a subset of the component properties of a DataSet which are fixed in the corresponding slices"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "20" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#sliceKey",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sliceKey",
+      "en" : "slice key"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "indicates a slice key which is used for slices in this dataset"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/measure",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "registeredContractsCount",
+      "en" : "Registered contracts count",
+      "es" : "Número de contratos registrados"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Number of employment contracts registered in the reference period and administrative division.",
+      "es" : "Número de contratos de trabajo registrados en el periodo de referencia y la división administrativa correspondiente."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "12"
+  }, {
+    "range" : "5",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "5",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "20",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "range" : "20",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "range" : "5",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "26",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "20",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#dataSet",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dataSet",
+      "en" : "data set"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "indicates the data set of which this observation is a part"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#measure",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measure",
+      "en" : "measure"
+    },
+    "superproperty" : [ "37" ],
+    "domain" : "36",
+    "comment" : {
+      "en" : "An alternative to qb:componentProperty which makes explicit that the component is a measure"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#hierarchyRoot",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "27",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hierarchyRoot"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Specifies a root of the hierarchy. A hierarchy may have multiple roots but must have at least one."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#age",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "age",
+      "en" : "Age",
+      "es" : "Edad"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "Attribute that indicates the age of an individual, usually expressed in years or grouped into age ranges for classification purposes.",
+      "es" : "Característica de una persona que indica cuántos años tiene en un momento determinado, ya sea mediante un valor concreto o mediante un grupo de edad."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "refPeriod",
+      "en" : "Reference Period",
+      "es" : "Periodo de Referencia"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Period of time or point in time to which the measured observation is intended to refer.",
+      "es" : "Período de tiempo o punto en el tiempo al que se destina la observación medida."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#parentChildProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "51",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "parentChildProperty",
+      "en" : "parent-child property"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Specifies a property which relates a parent concept in the hierarchy to a child concept."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "economicActivity",
+      "en" : "Economic activity",
+      "es" : "Actividad económica"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Economic activity associated with the employment observation, represented using a controlled classification such as CNAE.",
+      "es" : "Actividad económica asociada a la observación de empleo, representada mediante una clasificación controlada como la CNAE."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#slice",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "25",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "slice",
+      "en" : "slice"
+    },
+    "superproperty" : [ "54" ],
+    "domain" : "32",
+    "comment" : {
+      "en" : "Indicates a subset of a DataSet defined by fixing a subset of the dimensional values"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#dimension",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dimension",
+      "en" : "dimension"
+    },
+    "superproperty" : [ "37" ],
+    "domain" : "44",
+    "comment" : {
+      "en" : "An alternative to qb:componentProperty which makes explicit that the component is a dimension"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/measure",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "jobSeekersCount",
+      "en" : "Job seekers count",
+      "es" : "Número de demandantes de empleo"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Number of registered job seekers in the reference period and administrative division.",
+      "es" : "Número de demandantes de empleo registrados en el periodo de referencia y la división administrativa correspondiente."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#concept",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "concept",
+      "en" : "concept"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "gives the concept which is being measured or indicated by a ComponentProperty"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/measure",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "unemployedPopulationCount",
+      "en" : "Unemployed population count",
+      "es" : "Número de parados"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Number of unemployed persons in the reference period and administrative division.",
+      "es" : "Número de personas desempleadas en el periodo de referencia y la división administrativa correspondiente."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#componentProperty",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "componentProperty",
+      "en" : "component"
+    },
+    "domain" : "20",
+    "subproperty" : [ "55", "62", "63", "35" ],
+    "comment" : {
+      "en" : "indicates a ComponentProperty (i.e. attribute/dimension) expected on a DataSet, or a dimension fixed in a SliceKey"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/measure",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "employedPopulationCount",
+      "en" : "Employed population count",
+      "es" : "Número de ocupados"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Number of employed persons in the reference period and administrative division.",
+      "es" : "Número de personas ocupadas en el periodo de referencia y la división administrativa correspondiente."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "64"
+  }, {
+    "range" : "51",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "1",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "23",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "1",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#componentAttachment",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "72",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "componentAttachment",
+      "en" : "component attachment"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Indicates the level at which the component property should be attached, this might an qb:DataSet, qb:Slice or qb:Observation, or a qb:MeasureProperty."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#structure",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "structure",
+      "en" : "structure"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "indicates the structure to which this data set conforms"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#attribute",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "attribute",
+      "en" : "attribute"
+    },
+    "superproperty" : [ "37" ],
+    "domain" : "43",
+    "comment" : {
+      "en" : "An alternative to qb:componentProperty which makes explicit that the component is a attribute"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#measureDimension",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measureDimension",
+      "en" : "measure dimension"
+    },
+    "superproperty" : [ "37" ],
+    "domain" : "44",
+    "comment" : {
+      "en" : "An alternative to qb:componentProperty which makes explicit that the component is a measure dimension"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#observationGroup",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "26",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "observationGroup",
+      "en" : "observation group"
+    },
+    "domain" : "41",
+    "subproperty" : [ "53" ],
+    "comment" : {
+      "en" : "Indicates a group of observations. The domain of this property is left open so that a group may be attached to different resources and need not be restricted to a single DataSet"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#measureType",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measureType",
+      "en" : "measure type"
+    },
+    "domain" : "36",
+    "comment" : {
+      "en" : "Generic measure dimension, the value of this dimension indicates which measure (from the set of measures in the DSD) is being given by the obsValue (or other primary measure)"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#sector",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "sector",
+      "en" : "Sector",
+      "es" : "Sector"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Thematic sector associated with the employment observation.",
+      "es" : "Sector temático asociado a la observación de empleo."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "refAdminRegion",
+      "en" : "Reference Administrative Region",
+      "es" : "Región Administrativa de Referencia"
+    },
+    "domain" : "42",
+    "comment" : {
+      "en" : "Administrative region associated.",
+      "es" : "Región administrativa asociada."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#sex",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "sex",
+      "en" : "Sex",
+      "es" : "Sexo"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "Attribute used to represent the sex category associated with an individual in a given data collection context.",
+      "es" : "Característica de una persona que permite clasificarla dentro de una categoría sexual utilizada en un determinado contexto estadístico, administrativo o de registro."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#sliceStructure",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sliceStructure",
+      "en" : "slice structure"
+    },
+    "domain" : "25",
+    "comment" : {
+      "en" : "indicates the sub-key corresponding to this slice"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/measure",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "socialSecurityAffiliatesCount",
+      "en" : "Social Security affiliates count",
+      "es" : "Número de personas afiliadas a la Seguridad Social"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Number of persons affiliated with the Social Security system in the reference period and administrative division.",
+      "es" : "Número de personas afiliadas al sistema de Seguridad Social en el periodo de referencia y la división administrativa correspondiente."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/measure",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "activePopulationCount",
+      "en" : "Active population count",
+      "es" : "Número de activos"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Number of active persons in the reference period and administrative division.",
+      "es" : "Número de personas activas en el periodo de referencia y la división administrativa correspondiente."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "88"
+  }, {
+    "range" : "11",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "11",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#order",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "86",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "order",
+      "en" : "order"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "indicates a priority order for the components of sets with this structure, used to guide presentations - lower order numbers come before higher numbers, un-numbered components come last"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#codeList",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "83",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "codeList",
+      "en" : "code list"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "gives the code list associated with a CodedProperty"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#component",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "30",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "component",
+      "en" : "component specification"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "indicates a component specification which is included in the structure of the dataset"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/dimension",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "contractType",
+      "en" : "Contract Type",
+      "es" : "Tipo de contrato"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Type of employment contract associated with the employment observation, when applicable.",
+      "es" : "Tipo de contrato laboral asociado a la observación de empleo, cuando aplique."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#observation",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "0",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "observation",
+      "en" : "observation"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "indicates a observation contained within this slice of the data set"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#componentRequired",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "range" : "85",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/linked-data/cube",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "componentRequired",
+      "en" : "component required"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Indicates whether a component property is required (true) or optional (false) in the context of a DSD. Only applicable\n    to components correspond to an attribute. Defaults to false (optional)."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/measure",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "registeredUnemploymentCount",
+      "en" : "Registered unemployment count",
+      "es" : "Número de paro registrado"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Number of persons in registered unemployment according to SEPE administrative records, for the reference period and administrative division.",
+      "es" : "Número de personas en situación de paro registrado según los registros administrativos del SEPE, en el periodo de referencia y la división administrativa correspondiente."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "97"
+  } ]
+}

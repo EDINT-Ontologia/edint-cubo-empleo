@@ -1,0 +1,16 @@
+<h2 id="desc" class="list">Vocabulary for the representation of the employment indicators data cube: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">For the generation of the employment data cube, the [W3C Data Cube Vocabulary](https://www.w3.org/TR/vocab-data-cube/) is reused. This W3C recommendation supports the publication of multidimensional statistical data on the Web. It enables the structured description of statistical observations and facilitates their interoperability, reuse, and linking with other related data and concepts. In addition, this vocabulary is compatible with the [SDMX standard](https://sdmx.org/) (Statistical Data and Metadata eXchange), which is widely used for sharing and exchanging statistical data and metadata across organizations.
+
+The representation model is organized around the concept of [qb:Dataset](https://www.w3.org/TR/vocab-data-cube/#reference-datasets), understood as a collection of data that follows a common structure defined through an instance of [qb:DataStructureDefinition](https://www.w3.org/TR/vocab-data-cube/#dsd). This structure specifies the components that describe each observation in the cube, namely the dimensions and measures required to represent the statistical information. Each concrete value in the cube is represented through an instance of [qb:Observation](https://www.w3.org/TR/vocab-data-cube/#reference-datasets), corresponding to a specific combination of dimension values and one or more measured values.
+
+In the case of the employment cube, observations are used to represent different indicators related to the labor market for a given territory and reference period, as well as their possible breakdowns. To this end, dimensions such as **reference administrative region, reference period, sex, age group, and economic activity** are defined, depending on the level of detail of each observation. As for the measures, the cube includes numerical values associated with employment indicators, such as the **number of employed persons, unemployed persons, active population, or Social Security affiliates**.
+
+To define these dimensions, the vocabulary reuses well-established vocabularies and code lists. In particular, properties from the SDMX ecosystem are reused to represent common statistical dimensions, especially territory and time. In addition, to describe specific breakdowns such as sex, age, or economic activity, code lists published as SKOS schemes are used, which helps normalize values, improve interoperability, and facilitate integration with other statistical resources.
+
+</span>
+
+<div style="text-align: center; margin: 1em 0;">
+  <img src="../diagrams/diagram.png" alt="Main conceptual model of the data cube" style="max-width: 100%; height: auto;">
+  <p><em>Figure 1. Main conceptual model of the data cube</em></p>
+</div>

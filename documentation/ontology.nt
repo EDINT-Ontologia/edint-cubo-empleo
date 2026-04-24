@@ -1,0 +1,416 @@
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo/1.0.0> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/linked-data/cube> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://purl.org/dc/terms/creator> "Daniel Doña" .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://purl.org/dc/terms/creator> "Diego Conde" .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://purl.org/dc/terms/creator> "Edna Ruckhaus" .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://purl.org/dc/terms/creator> "Lucía Sánchez" .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://purl.org/dc/terms/creator> "Oscar Corcho" .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://purl.org/dc/terms/creator> "Socorro Bernardos" .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://purl.org/dc/terms/issued> "2026-04-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://purl.org/dc/terms/title> "Vocabulario para la representación del cubo de indicadores de empleo dentro del proyecto EDINT"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://purl.org/dc/terms/title> "Vocabulary for the representation of the employment indicators data cube within the EDINT project"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edinttemp" .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://purl.org/vocab/vann/preferredNamespaceUri> <hhttp://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/linked-data/sdmx/2009/dimension#age
+<http://purl.org/linked-data/sdmx/2009/dimension#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/linked-data/sdmx/2009/dimension#refArea
+<http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/linked-data/sdmx/2009/dimension#refPeriod
+<http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/linked-data/sdmx/2009/dimension#sex
+<http://purl.org/linked-data/sdmx/2009/dimension#sex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/linked-data/sdmx/2009/measure#obsValue
+<http://purl.org/linked-data/sdmx/2009/measure#obsValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#age
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#age> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/linked-data/sdmx/2009/dimension#age> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/linked-data/sdmx/2009/dimension#refArea> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#sex
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/linked-data/sdmx/2009/dimension#sex> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#age
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#age> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Interval> .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#sector
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#sex
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
+# 
+# http://www.w3.org/2000/01/rdf-schema#Resource
+# 
+# http://www.w3.org/2006/time#Interval
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://datos.gob.es/kos/sector-publico/sector
+<http://datos.gob.es/kos/sector-publico/sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://lod.ine.es/kos/cnae/CNAE-2025
+<http://lod.ine.es/kos/cnae/CNAE-2025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataSet> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> <http://purl.org/linked-data/cube#structure> <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://purl.org/linked-data/cube#component> _:genid5 .
+_:genid5 <http://purl.org/linked-data/cube#order> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid5 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://purl.org/linked-data/cube#component> _:genid6 .
+_:genid6 <http://purl.org/linked-data/cube#order> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid6 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://purl.org/linked-data/cube#component> _:genid7 .
+_:genid7 <http://purl.org/linked-data/cube#order> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://purl.org/linked-data/cube#component> _:genid8 .
+_:genid8 <http://purl.org/linked-data/cube#order> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid8 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://purl.org/linked-data/cube#component> _:genid9 .
+_:genid9 <http://purl.org/linked-data/cube#order> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid9 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://purl.org/linked-data/cube#component> _:genid10 .
+_:genid10 <http://purl.org/linked-data/cube#order> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid10 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#age> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://purl.org/linked-data/cube#component> _:genid11 .
+_:genid11 <http://purl.org/linked-data/cube#order> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid11 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://purl.org/linked-data/cube#component> _:genid12 .
+_:genid12 <http://purl.org/linked-data/cube#order> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid12 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://purl.org/linked-data/cube#component> _:genid13 .
+_:genid13 <http://purl.org/linked-data/cube#order> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid13 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://purl.org/linked-data/cube#component> _:genid14 .
+_:genid14 <http://purl.org/linked-data/cube#order> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid14 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://purl.org/linked-data/cube#component> _:genid15 .
+_:genid15 <http://purl.org/linked-data/cube#order> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid15 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://purl.org/linked-data/cube#component> _:genid16 .
+_:genid16 <http://purl.org/linked-data/cube#order> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid16 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://purl.org/linked-data/cube#component> _:genid17 .
+_:genid17 <http://purl.org/linked-data/cube#order> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid17 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd> <http://purl.org/linked-data/cube#component> _:genid18 .
+_:genid18 <http://purl.org/linked-data/cube#order> "14"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid18 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#age
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> <http://purl.org/linked-data/cube#codeList> <http://vocab.linkeddata.es/datosabiertos/kos/edint/contractType> .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/contractType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> <http://purl.org/linked-data/cube#codeList> <http://lod.ine.es/kos/cnae/CNAE-2025> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#sector
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#CodedProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> <http://purl.org/linked-data/cube#codeList> <http://datos.gob.es/kos/sector-publico/sector> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/dimension#sex
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount
+<http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/edint/contractType
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#age> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute that indicates the age of an individual, usually expressed in years or grouped into age ranges for classification purposes."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#age> <http://www.w3.org/2000/01/rdf-schema#comment> "Característica de una persona que indica cuántos años tiene en un momento determinado, ya sea mediante un valor concreto o mediante un grupo de edad."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#age> <http://www.w3.org/2000/01/rdf-schema#label> "Age"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#age> <http://www.w3.org/2000/01/rdf-schema#label> "Edad"@es .
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de contrato laboral asociado a la observación de empleo, cuando aplique."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of employment contract associated with the employment observation, when applicable."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> <http://www.w3.org/2000/01/rdf-schema#label> "Contract Type"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de contrato"@es .
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad económica asociada a la observación de empleo, representada mediante una clasificación controlada como la CNAE."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Economic activity associated with the employment observation, represented using a controlled classification such as CNAE."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Actividad económica"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Economic activity"@en .
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Administrative region associated."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Región administrativa asociada."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Reference Administrative Region"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Región Administrativa de Referencia"@es .
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "Period of time or point in time to which the measured observation is intended to refer."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "Período de tiempo o punto en el tiempo al que se destina la observación medida."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "Periodo de Referencia"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "Reference Period"@en .
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> <http://www.w3.org/2000/01/rdf-schema#comment> "Sector temático asociado a la observación de empleo."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> <http://www.w3.org/2000/01/rdf-schema#comment> "Thematic sector associated with the employment observation."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> <http://www.w3.org/2000/01/rdf-schema#label> "Sector"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> <http://www.w3.org/2000/01/rdf-schema#label> "Sector"@es .
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute used to represent the sex category associated with an individual in a given data collection context."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> <http://www.w3.org/2000/01/rdf-schema#comment> "Característica de una persona que permite clasificarla dentro de una categoría sexual utilizada en un determinado contexto estadístico, administrativo o de registro."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> <http://www.w3.org/2000/01/rdf-schema#label> "Sex"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> <http://www.w3.org/2000/01/rdf-schema#label> "Sexo"@es .
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of active persons in the reference period and administrative division."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de personas activas en el periodo de referencia y la división administrativa correspondiente."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> <http://www.w3.org/2000/01/rdf-schema#label> "Active population count"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> <http://www.w3.org/2000/01/rdf-schema#label> "Número de activos"@es .
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of employed persons in the reference period and administrative division."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de personas ocupadas en el periodo de referencia y la división administrativa correspondiente."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> <http://www.w3.org/2000/01/rdf-schema#label> "Employed population count"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> <http://www.w3.org/2000/01/rdf-schema#label> "Número de ocupados"@es .
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of registered job seekers in the reference period and administrative division."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de demandantes de empleo registrados en el periodo de referencia y la división administrativa correspondiente."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> <http://www.w3.org/2000/01/rdf-schema#label> "Job seekers count"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> <http://www.w3.org/2000/01/rdf-schema#label> "Número de demandantes de empleo"@es .
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of employment contracts registered in the reference period and administrative division."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de contratos de trabajo registrados en el periodo de referencia y la división administrativa correspondiente."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> <http://www.w3.org/2000/01/rdf-schema#label> "Número de contratos registrados"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> <http://www.w3.org/2000/01/rdf-schema#label> "Registered contracts count"@en .
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of persons in registered unemployment according to SEPE administrative records, for the reference period and administrative division."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de personas en situación de paro registrado según los registros administrativos del SEPE, en el periodo de referencia y la división administrativa correspondiente."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> <http://www.w3.org/2000/01/rdf-schema#label> "Número de paro registrado"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> <http://www.w3.org/2000/01/rdf-schema#label> "Registered unemployment count"@en .
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of persons affiliated with the Social Security system in the reference period and administrative division."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de personas afiliadas al sistema de Seguridad Social en el periodo de referencia y la división administrativa correspondiente."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> <http://www.w3.org/2000/01/rdf-schema#label> "Número de personas afiliadas a la Seguridad Social"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> <http://www.w3.org/2000/01/rdf-schema#label> "Social Security affiliates count"@en .
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of unemployed persons in the reference period and administrative division."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de personas desempleadas en el periodo de referencia y la división administrativa correspondiente."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> <http://www.w3.org/2000/01/rdf-schema#label> "Número de parados"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> <http://www.w3.org/2000/01/rdf-schema#label> "Unemployed population count"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

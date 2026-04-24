@@ -1,0 +1,592 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio"
+    }, {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+    }, {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#age"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "6"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "7"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "8"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "9"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "11"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "12"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "13"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "14"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#sector"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#sex"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "http://datos.gob.es/kos/sector-publico/sector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://lod.ine.es/kos/cnae/CNAE-2025",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#sex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DataSet" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Daniel Doña"
+  }, {
+    "@value" : "Diego Conde"
+  }, {
+    "@value" : "Edna Ruckhaus"
+  }, {
+    "@value" : "Lucía Sánchez"
+  }, {
+    "@value" : "Oscar Corcho"
+  }, {
+    "@value" : "Socorro Bernardos"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-04-20"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "es",
+    "@value" : "Vocabulario para la representación del cubo de indicadores de empleo dentro del proyecto EDINT"
+  }, {
+    "@language" : "en",
+    "@value" : "Vocabulary for the representation of the employment indicators data cube within the EDINT project"
+  } ],
+  "http://purl.org/linked-data/cube#structure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "edinttemp"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "hhttp://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.org/linked-data/cube"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1.0"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DataStructureDefinition" ],
+  "http://purl.org/linked-data/cube#component" : [ {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DimensionProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Attribute that indicates the age of an individual, usually expressed in years or grouped into age ranges for classification purposes."
+  }, {
+    "@language" : "es",
+    "@value" : "Característica de una persona que indica cuántos años tiene en un momento determinado, ya sea mediante un valor concreto o mediante un grupo de edad."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Age"
+  }, {
+    "@language" : "es",
+    "@value" : "Edad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#age"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#CodedProperty", "http://purl.org/linked-data/cube#DimensionProperty" ],
+  "http://purl.org/linked-data/cube#codeList" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/contractType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tipo de contrato laboral asociado a la observación de empleo, cuando aplique."
+  }, {
+    "@language" : "en",
+    "@value" : "Type of employment contract associated with the employment observation, when applicable."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contract Type"
+  }, {
+    "@language" : "es",
+    "@value" : "Tipo de contrato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#CodedProperty", "http://purl.org/linked-data/cube#DimensionProperty" ],
+  "http://purl.org/linked-data/cube#codeList" : [ {
+    "@id" : "http://lod.ine.es/kos/cnae/CNAE-2025"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Actividad económica asociada a la observación de empleo, representada mediante una clasificación controlada como la CNAE."
+  }, {
+    "@language" : "en",
+    "@value" : "Economic activity associated with the employment observation, represented using a controlled classification such as CNAE."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Actividad económica"
+  }, {
+    "@language" : "en",
+    "@value" : "Economic activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DimensionProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Administrative region associated."
+  }, {
+    "@language" : "es",
+    "@value" : "Región administrativa asociada."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reference Administrative Region"
+  }, {
+    "@language" : "es",
+    "@value" : "Región Administrativa de Referencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DimensionProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Period of time or point in time to which the measured observation is intended to refer."
+  }, {
+    "@language" : "es",
+    "@value" : "Período de tiempo o punto en el tiempo al que se destina la observación medida."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Periodo de Referencia"
+  }, {
+    "@language" : "en",
+    "@value" : "Reference Period"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#sector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#CodedProperty", "http://purl.org/linked-data/cube#DimensionProperty" ],
+  "http://purl.org/linked-data/cube#codeList" : [ {
+    "@id" : "http://datos.gob.es/kos/sector-publico/sector"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Sector temático asociado a la observación de empleo."
+  }, {
+    "@language" : "en",
+    "@value" : "Thematic sector associated with the employment observation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sector"
+  }, {
+    "@language" : "es",
+    "@value" : "Sector"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#sex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DimensionProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Attribute used to represent the sex category associated with an individual in a given data collection context."
+  }, {
+    "@language" : "es",
+    "@value" : "Característica de una persona que permite clasificarla dentro de una categoría sexual utilizada en un determinado contexto estadístico, administrativo o de registro."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sex"
+  }, {
+    "@language" : "es",
+    "@value" : "Sexo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#sex"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Number of active persons in the reference period and administrative division."
+  }, {
+    "@language" : "es",
+    "@value" : "Número de personas activas en el periodo de referencia y la división administrativa correspondiente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Active population count"
+  }, {
+    "@language" : "es",
+    "@value" : "Número de activos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Number of employed persons in the reference period and administrative division."
+  }, {
+    "@language" : "es",
+    "@value" : "Número de personas ocupadas en el periodo de referencia y la división administrativa correspondiente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Employed population count"
+  }, {
+    "@language" : "es",
+    "@value" : "Número de ocupados"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Number of registered job seekers in the reference period and administrative division."
+  }, {
+    "@language" : "es",
+    "@value" : "Número de demandantes de empleo registrados en el periodo de referencia y la división administrativa correspondiente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Job seekers count"
+  }, {
+    "@language" : "es",
+    "@value" : "Número de demandantes de empleo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Number of employment contracts registered in the reference period and administrative division."
+  }, {
+    "@language" : "es",
+    "@value" : "Número de contratos de trabajo registrados en el periodo de referencia y la división administrativa correspondiente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Número de contratos registrados"
+  }, {
+    "@language" : "en",
+    "@value" : "Registered contracts count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Number of persons in registered unemployment according to SEPE administrative records, for the reference period and administrative division."
+  }, {
+    "@language" : "es",
+    "@value" : "Número de personas en situación de paro registrado según los registros administrativos del SEPE, en el periodo de referencia y la división administrativa correspondiente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Número de paro registrado"
+  }, {
+    "@language" : "en",
+    "@value" : "Registered unemployment count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Number of persons affiliated with the Social Security system in the reference period and administrative division."
+  }, {
+    "@language" : "es",
+    "@value" : "Número de personas afiliadas al sistema de Seguridad Social en el periodo de referencia y la división administrativa correspondiente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Número de personas afiliadas a la Seguridad Social"
+  }, {
+    "@language" : "en",
+    "@value" : "Social Security affiliates count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Number of unemployed persons in the reference period and administrative division."
+  }, {
+    "@language" : "es",
+    "@value" : "Número de personas desempleadas en el periodo de referencia y la división administrativa correspondiente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Número de parados"
+  }, {
+    "@language" : "en",
+    "@value" : "Unemployed population count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/contractType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#Interval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]
