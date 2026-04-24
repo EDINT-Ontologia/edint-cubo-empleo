@@ -1,0 +1,53 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix inelod: <http://lod.ine.es/recurso/cubes/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix edintgast: <http://vocab.linkeddata.es/datosabiertos/def/comercio/cubo-gasto-comercial/> .
+@prefix edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#> .
+@prefix edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#> .
+@prefix edinttemp: <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> .
+
+
+edinttemp:mappings_tm rdf:type rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "../pathtodata.csv" ] ;
+    rr:predicateObjectMap [ rr:objectMap [ rml:reference "Área" ] ;
+            rr:predicate edintdimension:refAdminRegion ],
+        [ rr:objectMap [ rml:reference "Sector" ] ;
+            rr:predicate edintdimension:sector ],
+        [ rr:objectMap [ rml:reference "Actividad Económica" ] ;
+            rr:predicate edintdimension:economicActivity  ],
+        [ rr:objectMap [ rml:reference "Periodo" ] ;
+            rr:predicate edintdimension:refPeriod ],
+        [ rr:objectMap [ rml:reference "Sexo" ] ;
+            rr:predicate edintdimension:sex  ],     
+        [ rr:objectMap [ rml:reference "Edad" ] ;
+            rr:predicate edintdimension:age  ], 
+        [ rr:objectMap [ rml:reference "Tipo de Contrato" ] ;
+            rr:predicate edintdimension:contractType  ],                                                          
+        [ rr:object edinttemp:SampleDataSet ;
+            rr:predicate qb:dataSet ],
+
+        [ rr:objectMap [ rml:reference "Total de población Activa" ] ;
+            rr:predicate edintmeasure:activePopulationCount ] ,
+        [ rr:objectMap [ rml:reference "Total de población Empleada" ] ;            
+            rr:predicate edintmeasure:employedPopulationCount ] ,  
+        [ rr:objectMap [ rml:reference "Total de población Desempleada" ] ;            
+            rr:predicate edintmeasure:unemployedPopulationCount ] ,    
+        [ rr:objectMap [ rml:reference "Total de Contratos Registrados" ] ;            
+            rr:predicate edintmeasure:registeredContractsCount ] ,      
+        [ rr:objectMap [ rml:reference "Total de buscadores de empleo" ] ;            
+            rr:predicate edintmeasure:jobSeekersCount ] ,            
+        [ rr:objectMap [ rml:reference "Total de desempleados registrados" ] ;            
+            rr:predicate edintmeasure:registeredUnemploymentCount ] ,                      
+        [ rr:objectMap [ rml:reference "Total de afiliados a la seguridad social" ] ;            
+            rr:predicate edintmeasure:socialSecurityAffiliatesCount ] ;                                                                                  
+    rr:subjectMap [ rr:class qb:Observation ;
+            rr:template "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo/o{Índice}" ] .
