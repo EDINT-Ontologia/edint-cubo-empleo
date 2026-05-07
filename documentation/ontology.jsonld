@@ -92,7 +92,61 @@
     "@value" : "14"
   } ]
 }, {
+  "@id" : "_:genid19",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://lod.ine.es/def/vocabulary/unemploymentRate"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "15"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://lod.ine.es/def/vocabulary/employmentRate"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "16"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://lod.ine.es/def/vocabulary/jobs"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "17"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#jobProfiles"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "18"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "https://lod.ine.es/def/vocabulary/numberOfPeople"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "19"
+  } ]
+}, {
   "@id" : "_:genid5",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid6",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#sector"
   } ],
@@ -101,7 +155,7 @@
     "@value" : "2"
   } ]
 }, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid7",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity"
   } ],
@@ -110,22 +164,13 @@
     "@value" : "3"
   } ]
 }, {
-  "@id" : "_:genid7",
+  "@id" : "_:genid8",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "4"
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid9",
@@ -170,8 +215,8 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DataSet" ],
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Daniel Doña"
   }, {
@@ -199,23 +244,33 @@
     "@language" : "en",
     "@value" : "Vocabulary for the representation of the employment indicators data cube within the EDINT project"
   } ],
-  "http://purl.org/linked-data/cube#structure" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd"
-  } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@value" : "edinttemp"
+    "@value" : "edintemp"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "hhttp://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://purl.org/linked-data/cube"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo/1.0.0"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo/0.1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.1.0"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DataSet" ],
+  "http://purl.org/linked-data/cube#structure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Cubo de indicadores de empleo"
+  }, {
+    "@language" : "en",
+    "@value" : "Employment indicators data cube"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd",
@@ -248,6 +303,16 @@
     "@id" : "_:genid17"
   }, {
     "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
+  }, {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid22"
+  }, {
+    "@id" : "_:genid23"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#age",
@@ -457,6 +522,32 @@
     "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
   } ]
 }, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#jobProfiles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Job profiles generated in specific economic sectors, according to the NACE classification."
+  }, {
+    "@language" : "es",
+    "@value" : "Perfiles de empleo generados en sectores económicos específicos, según la clasificación CNAE."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/linked-data/cube#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Job profiles"
+  }, {
+    "@language" : "es",
+    "@value" : "Perfiles de empleo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+  } ]
+}, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -589,4 +680,105 @@
 }, {
   "@id" : "http://www.w3.org/2006/time#Interval",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://lod.ine.es/def/vocabulary/employmentRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La tasa representa la proporción entre las personas empleadas y la población en edad de trabajar, ajustada tanto por calendario como estacionalmente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/linked-data/cube#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Employment rate"
+  }, {
+    "@language" : "es",
+    "@value" : "Tasa de empleo de la población"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "https://lod.ine.es/def/vocabulary/inMeasureSet" : [ {
+    "@id" : "https://lod.ine.es/def/vocabulary/rate"
+  } ]
+}, {
+  "@id" : "https://lod.ine.es/def/vocabulary/inMeasureSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://lod.ine.es/def/vocabulary/jobs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Jobs generated in specific economic sectors, according to the NACE classification."
+  }, {
+    "@language" : "es",
+    "@value" : "Puestos de trabajo generados en sectores económicos específicos, según la clasificación CNAE."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/linked-data/cube#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jobs"
+  }, {
+    "@language" : "es",
+    "@value" : "Puestos de trabajo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/measure#obsValue"
+  } ]
+}, {
+  "@id" : "https://lod.ine.es/def/vocabulary/numberOfIndividuals",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://lod.ine.es/def/vocabulary/numberOfPeople",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Cada uno de los elementos que forman parte de la población de personas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/linked-data/cube#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Number of people"
+  }, {
+    "@language" : "es",
+    "@value" : "Población"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://lod.ine.es/def/vocabulary/numberOfIndividuals"
+  } ]
+}, {
+  "@id" : "https://lod.ine.es/def/vocabulary/unemploymentRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#MeasureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La tasa de desempleo es la proporción de la población activa que no tiene trabajo. Las personas desempleadas son aquellas en edad de trabajar que no tienen empleo, están disponibles para trabajar y, en las últimas cuatro semanas, han realizado acciones específicas para encontrar trabajo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/linked-data/cube#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Tasa de paro"
+  }, {
+    "@language" : "en",
+    "@value" : "Unemployment rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "https://lod.ine.es/def/vocabulary/inMeasureSet" : [ {
+    "@id" : "https://lod.ine.es/def/vocabulary/rate"
+  } ]
 } ]

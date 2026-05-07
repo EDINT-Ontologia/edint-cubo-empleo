@@ -15,11 +15,12 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
 @prefix time: <http://www.w3.org/2006/time#> .
+@prefix ine: <https://lod.ine.es/def/vocabulary/> .
 
-# -- Data Set --------------------------------------------
+# -- Ontology metadata --------------------------------------------
 
-edintemp: a qb:DataSet, owl:Ontology ; 
-    owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo/1.0.0> ;
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo> a owl:Ontology ;
+    owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo/0.1.0> ;
     owl:imports <http://purl.org/linked-data/cube> ;
     dcterms:creator "Daniel Doña", "Edna Ruckhaus", "Lucía Sánchez", "Oscar Corcho", "Socorro Bernardos", "Diego Conde" ;
     dcterms:title "Vocabulario para la representación del cubo de indicadores de empleo dentro del proyecto EDINT"@es ,
@@ -28,7 +29,13 @@ edintemp: a qb:DataSet, owl:Ontology ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     vann:preferredNamespaceUri <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> ;
     vann:preferredNamespacePrefix "edintemp" ;
-    owl:versionInfo "0.1.0" ;
+    owl:versionInfo "0.1.0" .
+
+# -- Data Set --------------------------------------------
+
+edintemp:dataset a qb:DataSet ;
+    rdfs:label "Cubo de indicadores de empleo"@es ,
+               "Employment indicators data cube"@en ;
     qb:structure edintemp:dsd .
 
 edintemp:dsd a qb:DataStructureDefinition ;
@@ -45,8 +52,13 @@ edintemp:dsd a qb:DataStructureDefinition ;
         [ qb:measure edintmeasure:unemployedPopulationCount ; qb:order 10 ] ,
         [ qb:measure edintmeasure:registeredContractsCount ; qb:order 11 ] ,
         [ qb:measure edintmeasure:jobSeekersCount ; qb:order 12 ] ,
-        [ qb:measure edintmeasure:registeredUnemploymentCount ; qb:order 13 ] , 
-        [ qb:measure edintmeasure:socialSecurityAffiliatesCount ; qb:order 14 ] .
+        [ qb:measure edintmeasure:registeredUnemploymentCount ; qb:order 13 ] ,
+        [ qb:measure edintmeasure:socialSecurityAffiliatesCount ; qb:order 14 ] ,
+        [ qb:measure ine:unemploymentRate ; qb:order 15 ] ,
+        [ qb:measure ine:employmentRate ; qb:order 16 ] ,
+        [ qb:measure ine:jobs ; qb:order 17 ] ,
+        [ qb:measure edintmeasure:jobProfiles ; qb:order 18 ] ,
+        [ qb:measure ine:numberOfPeople ; qb:order 19 ] .
 
 edintdimension:refAdminRegion a qb:DimensionProperty , rdf:Property ;
     rdfs:label "Reference Administrative Region"@en, "Región Administrativa de Referencia"@es ;
@@ -79,24 +91,24 @@ edintdimension:economicActivity a rdf:Property , qb:DimensionProperty , qb:Coded
 
 edintdimension:sex a qb:DimensionProperty , rdf:Property ;
     rdfs:range rdfs:Resource ;
-    rdfs:label "Sexo"@es, "Sex"@en ; 
+    rdfs:label "Sexo"@es, "Sex"@en ;
     rdfs:comment "Característica de una persona que permite clasificarla dentro de una categoría sexual utilizada en un determinado contexto estadístico, administrativo o de registro."@es ,
                  "Attribute used to represent the sex category associated with an individual in a given data collection context."@en ;
     rdfs:subPropertyOf sdmx-dimension:sex .
 
 edintdimension:age a qb:DimensionProperty , rdf:Property ;
     rdfs:range rdfs:Resource ;
-    rdfs:label "Edad"@es, "Age"@en ; 
+    rdfs:label "Edad"@es, "Age"@en ;
     rdfs:comment "Característica de una persona que indica cuántos años tiene en un momento determinado, ya sea mediante un valor concreto o mediante un grupo de edad."@es ,
                  "Attribute that indicates the age of an individual, usually expressed in years or grouped into age ranges for classification purposes."@en ;
     rdfs:subPropertyOf sdmx-dimension:age .
 
-edintdimension:contractType rdf:type qb:DimensionProperty, qb:CodedProperty , rdf:Property ;  
+edintdimension:contractType a qb:DimensionProperty , qb:CodedProperty , rdf:Property ;
     rdfs:range skos:Concept ;
-    rdfs:label "Tipo de contrato"@es, "Contract Type"@en ; 
+    rdfs:label "Tipo de contrato"@es, "Contract Type"@en ;
     rdfs:comment "Tipo de contrato laboral asociado a la observación de empleo, cuando aplique."@es ,
-                 "Type of employment contract associated with the employment observation, when applicable."@en ; 
-    qb:codeList edintkos:contractType . 
+                 "Type of employment contract associated with the employment observation, when applicable."@en ;
+    qb:codeList edintkos:contractType .
 
 edintmeasure:activePopulationCount a qb:MeasureProperty , rdf:Property ;
     rdfs:subPropertyOf sdmx-measure:obsValue ;
@@ -146,3 +158,42 @@ edintmeasure:socialSecurityAffiliatesCount a qb:MeasureProperty , rdf:Property ;
     rdfs:comment "Número de personas afiliadas al sistema de Seguridad Social en el periodo de referencia y la división administrativa correspondiente."@es ,
                  "Number of persons affiliated with the Social Security system in the reference period and administrative division."@en ;
     rdfs:range xsd:nonNegativeInteger .
+
+# -- Extensión post primera entrega --------------------------------------------
+
+ine:unemploymentRate a rdf:Property , qb:MeasureProperty ;
+    rdfs:label "Tasa de paro"@es , "Unemployment rate"@en ;
+    rdfs:comment "La tasa de desempleo es la proporción de la población activa que no tiene trabajo. Las personas desempleadas son aquellas en edad de trabajar que no tienen empleo, están disponibles para trabajar y, en las últimas cuatro semanas, han realizado acciones específicas para encontrar trabajo."@es ;
+    ine:inMeasureSet ine:rate ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:float .
+
+ine:employmentRate a rdf:Property , qb:MeasureProperty ;
+    rdfs:label "Tasa de empleo de la población"@es , "Employment rate"@en ;
+    rdfs:comment "La tasa representa la proporción entre las personas empleadas y la población en edad de trabajar, ajustada tanto por calendario como estacionalmente."@es ;
+    ine:inMeasureSet ine:rate ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:float .
+
+ine:jobs a rdf:Property , qb:MeasureProperty ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Resource ;
+    rdfs:comment "Puestos de trabajo generados en sectores económicos específicos, según la clasificación CNAE."@es ,
+                 "Jobs generated in specific economic sectors, according to the NACE classification."@en ;
+    rdfs:label "Puestos de trabajo"@es , "Jobs"@en .
+
+edintmeasure:jobProfiles a rdf:Property , qb:MeasureProperty ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Perfiles de empleo generados en sectores económicos específicos, según la clasificación CNAE."@es ,
+                 "Job profiles generated in specific economic sectors, according to the NACE classification."@en ;
+    rdfs:label "Perfiles de empleo"@es , "Job profiles"@en .
+
+ine:numberOfPeople a rdf:Property , qb:MeasureProperty ;
+    rdfs:label "Población"@es , "Number of people"@en ;
+    rdfs:comment "Cada uno de los elementos que forman parte de la población de personas."@es ;
+    rdfs:subPropertyOf ine:numberOfIndividuals ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer .

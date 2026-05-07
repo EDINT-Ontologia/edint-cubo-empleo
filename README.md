@@ -27,6 +27,11 @@ Las medidas principales incluidas en el cubo son:
 * **número de demandantes de empleo:** personas registradas como demandantes de empleo.
 * **número de paro registrado:** personas inscritas en situación de paro registrado según los registros administrativos del SEPE.
 * **número de personas afiliadas a la Seguridad Social:** personas afiliadas al sistema de Seguridad Social.
+* **tasa de desempleo:** cociente entre el número de parados y el de activos.
+* **tasa de empleo:** cociente entre el número de ocupados y el de activos.
+* **puestos de trabajo generados:** puestos de trabajo generados en sectores económicos específico.
+* **perfiles de empleo generados:** perfiles de empleo generados en sectores económicos específicos.
+* **población:** Cada uno de los elementos que forman parte de la población de personas.
 
 # Prefijo y espacio de nombres (Prefix and namespace)
 

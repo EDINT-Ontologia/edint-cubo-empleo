@@ -1,7 +1,7 @@
-<h2 id="desc" class="list">Vocabulario para la representación del cubo de indicadores de empleo: Descripción <span class="backlink"> volver a <a href="#toc">índice</a></span></h2>
+<h2 id="desc" class="list">Vocabulario para la representación del cubo de indicadores de empleo: Descripción <span class="backlink"> volver al <a href="#toc">índice</a></span></h2>
 
 <span class="markdown">
-Para la generación del cubo de datos de empleo se reutiliza el vocabulario <a href="https://www.w3.org/TR/vocab-data-cube">W3C Data Cube</a>. Este vocabulario es una recomendación del W3C para la publicación de datos multidimensionales en la Web, lo que facilita su representación estructurada, su interoperabilidad y su reutilización. Asimismo, este vocabulario es compatible con el estándar SDMX (<i>Statistical Data and Metadata eXchange</i>), ampliamente utilizado para el intercambio de datos y metadatos estadísticos entre organizaciones.
+Para la generación del cubo de datos de empleo, se reutiliza el vocabulario <a href="https://www.w3.org/TR/vocab-data-cube">W3C Data Cube</a>. Este vocabulario es una recomendación del W3C para la publicación de datos multidimensionales en la Web, facilitando su representación estructurada, interoperabilidad y reutilización. Además, este vocabulario es compatible con el estándar SDMX (<i>Statistical Data and Metadata eXchange</i>), ampliamente utilizado para el intercambio de datos y metadatos estadísticos entre organizaciones.
 </span>
 
 <center>
@@ -10,25 +10,25 @@ Para la generación del cubo de datos de empleo se reutiliza el vocabulario <a h
 </center>
 
 <span class="markdown">
-Como se puede observar en la Figura 1, W3C Data Cube contiene varios conceptos y propiedades que permiten describir datos estadísticos con diferentes niveles de agregación. En este vocabulario, el modelo se organiza alrededor del concepto de <a href="https://www.w3.org/TR/vocab-data-cube/#reference-datasets">qb:DataSet</a>, que representa un conjunto de datos que sigue una estructura definida mediante una <a href="https://www.w3.org/TR/vocab-data-cube/#dsd">qb:DataStructureDefinition</a> y que se materializa a través de un conjunto de observaciones representadas por <a href="https://www.w3.org/TR/vocab-data-cube/#reference-datasets">qb:Observation</a>.
+Como se muestra en la Figura 1, W3C Data Cube contiene varios conceptos y propiedades que permiten describir datos estadísticos en distintos niveles de agregación. En este vocabulario, el modelo se organiza en torno al concepto <a href="https://www.w3.org/TR/vocab-data-cube/#reference-datasets">qb:DataSet</a>, que representa un conjunto de datos definido de acuerdo con una estructura especificada mediante una <a href="https://www.w3.org/TR/vocab-data-cube/#dsd">qb:DataStructureDefinition</a> y materializado a través de un conjunto de observaciones representadas con <a href="https://www.w3.org/TR/vocab-data-cube/#reference-datasets">qb:Observation</a>.
 
-Concretamente, este vocabulario define un único conjunto de datos, representado por la instancia <code>edintemp:</code>, y una única estructura de datos, representada por la instancia <code>edintemp:dsd</code>. Esta estructura recoge todas las dimensiones y medidas necesarias para representar distintos indicadores del mercado laboral.
+En concreto, este vocabulario define un único dataset del cubo de datos, representado mediante la instancia <code>edintemp:dataset</code>, y una única estructura de datos, representada mediante la instancia <code>edintemp:dsd</code>. La ontología se identifica de forma separada del dataset, utilizando la IRI de ontología <code>http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo</code>. Esta separación permite que los metadatos describan la ontología, mientras que <code>edintemp:dataset</code> representa el dataset del cubo al que se vinculan las observaciones.
 </span>
 
 <ul>
-  <li><a href="https://www.w3.org/TR/vocab-data-cube/#dsd-dimensions">qb:DimensionProperty</a>: componente que identifica las dimensiones de las observaciones, como por ejemplo la región administrativa de referencia, el periodo de referencia, el sexo, la edad, la actividad económica o el tipo de contrato. Las dimensiones suelen tomar sus valores de listas de códigos o clasificaciones, normalmente representadas mediante SKOS.</li>
-  <li><a href="https://www.w3.org/TR/vocab-data-cube/#dsd-dimensions">qb:MeasureProperty</a>: componente que representa el valor medido de los datos observados. En este cubo, las medidas corresponden a indicadores de empleo como el número de personas activas, ocupadas, desempleadas, demandantes de empleo, contratos registrados, paro registrado o afiliaciones a la Seguridad Social.</li>
+  <li><a href="https://www.w3.org/TR/vocab-data-cube/#dsd-dimensions">qb:DimensionProperty</a>: componente que identifica las dimensiones de las observaciones, como la región administrativa de referencia, el periodo de referencia, el sexo, la edad, la actividad económica, el sector o el tipo de contrato. Las dimensiones suelen tomar sus valores de listas de códigos o clasificaciones, normalmente representadas mediante SKOS.</li>
+  <li><a href="https://www.w3.org/TR/vocab-data-cube/#dsd-dimensions">qb:MeasureProperty</a>: componente que representa el valor medido de los datos observados. En este cubo, las medidas corresponden a indicadores de empleo, como el número de personas activas, personas ocupadas, personas desempleadas, demandantes de empleo, contratos registrados, paro registrado, afiliaciones a la Seguridad Social, tasa de paro, tasa de empleo, puestos de trabajo, perfiles de empleo y número de personas.</li>
 </ul>
 
 <span class="markdown">
-Para la definición de estas dimensiones y medidas se reutilizan varios vocabularios de referencia:
+Para definir estas dimensiones y medidas se reutilizan varios vocabularios de referencia:
 </span>
 
 <ol>
-  <li>Vocabularios de SDMX (<i>Statistical Data and Metadata eXchange</i>):</li>
+  <li>Vocabularios SDMX (<i>Statistical Data and Metadata eXchange</i>):</li>
   <ul>
-    <li><a href="http://purl.org/linked-data/sdmx/2009/dimension">sdmx-dimension</a>: se reutiliza como base para dimensiones estadísticas generales, especialmente a través de relaciones de especialización como <a href="#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#refPeriod">edintdimension:refPeriod</a>, <a href="#sex">edintdimension:sex</a> y <a href="#age">edintdimension:age</a>.</li>
-    <li><a href="http://purl.org/linked-data/sdmx/2009/measure">sdmx-measure</a>: se reutiliza como base para las medidas del cubo, todas ellas definidas como subpropiedades de <code>sdmx-measure:obsValue</code>.</li>
+    <li><a href="http://purl.org/linked-data/sdmx/2009/dimension">sdmx-dimension</a>: se reutiliza como base para dimensiones estadísticas generales, especialmente mediante relaciones de especialización como <a href="#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#refPeriod">edintdimension:refPeriod</a>, <a href="#sex">edintdimension:sex</a> y <a href="#age">edintdimension:age</a>.</li>
+    <li><a href="http://purl.org/linked-data/sdmx/2009/measure">sdmx-measure</a>: se reutiliza como base para varias medidas del cubo, definidas como subpropiedades de <code>sdmx-measure:obsValue</code>.</li>
   </ul>
   <li>Vocabularios territoriales y temporales:</li>
   <ul>
@@ -37,26 +37,36 @@ Para la definición de estas dimensiones y medidas se reutilizan varios vocabula
   </ul>
   <li>Listas de códigos SKOS:</li>
   <ul>
-    <li>La dimensión <a href="#sector">edintdimension:sector</a> reutiliza como lista de códigos el esquema de sectores del sector público publicado en <a href="https://datos.gob.es/kos/sector-publico/sector">datos.gob.es</a>.</li>
-    <li>La dimensión <a href="#economicActivity">edintdimension:economicActivity</a> reutiliza una clasificación controlada de actividad económica, como la <a href="http://lod.ine.es/kos/cnae/CNAE-2025">CNAE 2025</a>.</li>
+    <li>La dimensión <a href="#sector">edintdimension:sector</a> reutiliza como lista de códigos el esquema del sector público publicado en <a href="https://datos.gob.es/kos/sector-publico/sector">datos.gob.es</a>.</li>
+    <li>La dimensión <a href="#economicActivity">edintdimension:economicActivity</a> reutiliza una clasificación controlada de actividad económica, como <a href="http://lod.ine.es/kos/cnae/CNAE-2025">CNAE 2025</a>.</li>
     <li>La dimensión <a href="#contractType">edintdimension:contractType</a> utiliza una lista de códigos propia definida en <code>edintkos:contractType</code>.</li>
+  </ul>
+  <li>Vocabulario del INE:</li>
+  <ul>
+    <li>El vocabulario también reutiliza varias propiedades del vocabulario del INE, como <code>ine:unemploymentRate</code>, <code>ine:employmentRate</code>, <code>ine:jobs</code> e <code>ine:numberOfPeople</code>, con el objetivo de extender el cubo con indicadores adicionales relacionados con el empleo.</li>
   </ul>
 </ol>
 
 <span class="markdown">
-El modelo del cubo de empleo se representa en la Figura 2, donde se muestran las dimensiones y medidas que lo componen.
+El modelo del cubo de empleo se muestra en la Figura 2, donde se presentan las dimensiones y medidas que lo componen.
 </span>
+
 <center>
   <img src="../diagrams/diagram.png">
   <figcaption>Figura 2.- Diagrama conceptual del cubo de datos de empleo.</figcaption>
 </center>
 
 <span class="markdown">
-La estructura del cubo de empleo se define mediante la instancia <a href="#edintemp:dsd">edintemp:dsd</a>, que agrupa todas las dimensiones y medidas del modelo. En este caso, se han definido como dimensiones la región administrativa de referencia, el sector, la actividad económica, el periodo de referencia, el sexo, la edad y el tipo de contrato. Como medidas, se incluyen distintos recuentos asociados al empleo, tales como el número de personas activas, ocupadas, desempleadas, contratos registrados, demandantes de empleo, paro registrado y afiliaciones a la Seguridad Social.
+La estructura del cubo de empleo se define mediante la instancia <a href="#edintemp:dsd">edintemp:dsd</a>, que agrupa todas las dimensiones y medidas del modelo. En este caso, se han definido como dimensiones la región administrativa de referencia, el sector, la actividad económica, el periodo de referencia, el sexo, la edad y el tipo de contrato. Como medidas, el modelo incluye distintos recuentos e indicadores asociados al empleo, como el número de personas activas, ocupadas y desempleadas, contratos registrados, demandantes de empleo, paro registrado, afiliaciones a la Seguridad Social, tasa de paro, tasa de empleo, puestos de trabajo, perfiles de empleo y número de personas.
 </span>
 
 <pre>
-<a href="#ontology">edintemp:</a> a <a href="http://purl.org/linked-data/cube#DataSet">qb:DataSet</a> ; 
+&lt;http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo&gt;
+    a <a href="http://www.w3.org/2002/07/owl#Ontology">owl:Ontology</a> ;
+    <a href="http://www.w3.org/2002/07/owl#imports">owl:imports</a> &lt;http://purl.org/linked-data/cube&gt; ;
+    <a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a> "0.1.0" .
+
+<a href="#dataset">edintemp:dataset</a> a <a href="http://purl.org/linked-data/cube#DataSet">qb:DataSet</a> ; 
     <a href="http://purl.org/linked-data/cube#structure">qb:structure</a> <a href="#edintemp:dsd">edintemp:dsd</a> .
 
 <a href="#edintemp:dsd">edintemp:dsd</a> a <a href="http://purl.org/linked-data/cube#DataStructureDefinition">qb:DataStructureDefinition</a> ;
@@ -74,39 +84,43 @@ La estructura del cubo de empleo se define mediante la instancia <a href="#edint
         [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#registeredContractsCount">edintmeasure:registeredContractsCount</a> ; qb:order 11 ] ,
         [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#jobSeekersCount">edintmeasure:jobSeekersCount</a> ; qb:order 12 ] ,
         [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#registeredUnemploymentCount">edintmeasure:registeredUnemploymentCount</a> ; qb:order 13 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#socialSecurityAffiliatesCount">edintmeasure:socialSecurityAffiliatesCount</a> ; qb:order 14 ] .
+        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#socialSecurityAffiliatesCount">edintmeasure:socialSecurityAffiliatesCount</a> ; qb:order 14 ] ,
+        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:unemploymentRate ; qb:order 15 ] ,
+        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:employmentRate ; qb:order 16 ] ,
+        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:jobs ; qb:order 17 ] ,
+        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#jobProfiles">edintmeasure:jobProfiles</a> ; qb:order 18 ] ,
+        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:numberOfPeople ; qb:order 19 ] .
 </pre>
 
-
 <div id="cuboempleoejemplo">
-  <h3 id="qb1" class="list">Ejemplo 1: Número de ocupados según área, periodo, sexo y grupo de edad<span class="backlink"> volver a <a href="#toc">índice</a></span></h3>
+  <h3 id="qb1" class="list">Ejemplo 1: Número de personas ocupadas por área, periodo, sexo y grupo de edad<span class="backlink"> volver al <a href="#toc">índice</a></span></h3>
 
   <span class="markdown">
-  En este ejemplo se representan los datos del <b>número de personas ocupadas</b> en una determinada región administrativa, para un periodo de referencia concreto, desagregados por <b>sexo</b> y <b>grupo de edad</b>. Dado que en este vocabulario ya están definidos el conjunto de datos <code>edintemp:</code> y la estructura de datos <code>edintemp:dsd</code>, no es necesario generar nuevas instancias de dataset o de estructura, sino reutilizar las existentes.
+  Este ejemplo representa el dato correspondiente al <b>número de personas ocupadas</b> en una región administrativa determinada, para un periodo de referencia específico, desglosado por <b>sexo</b> y <b>grupo de edad</b>. Dado que este vocabulario ya define el dataset <code>edintemp:dataset</code> y la estructura de datos <code>edintemp:dsd</code>, no es necesario generar nuevas instancias de dataset o de estructura; se pueden reutilizar las ya existentes.
   </span>
 
   <center>
     <img src="../diagrams/diagram-example.png">
-    <figcaption>Figura 3.- Ejemplo de observación del cubo de empleo para el número de ocupados según área, periodo, sexo y grupo de edad.</figcaption>
+    <figcaption>Figura 3.- Ejemplo de una observación en el cubo de empleo para el número de personas ocupadas por área, periodo, sexo y grupo de edad.</figcaption>
   </center>
 
   <span class="markdown">
-  A continuación se describen los pasos necesarios para representar una observación concreta.
+  A continuación, se describen los pasos necesarios para representar una observación concreta.
   </span>
 
   <span class="markdown">
-  <b>**1) Reutilización del conjunto de datos y de la estructura de datos:**</b> En este vocabulario existe un único dataset, representado por <code>edintemp:</code>, que se enlaza con la estructura <code>edintemp:dsd</code> mediante la propiedad <a href="http://purl.org/linked-data/cube#structure">qb:structure</a>.
+  <b>1) Reutilización del dataset y de la estructura de datos:</b> Este vocabulario contiene un único dataset, representado por <code>edintemp:dataset</code>, que se vincula con la estructura <code>edintemp:dsd</code> mediante la propiedad <a href="http://purl.org/linked-data/cube#structure">qb:structure</a>.
   </span>
 
   <pre>
-<a href="#ontology">edintemp:</a> a <a href="http://purl.org/linked-data/cube#DataSet">qb:DataSet</a> ; 
+<a href="#dataset">edintemp:dataset</a> a <a href="http://purl.org/linked-data/cube#DataSet">qb:DataSet</a> ; 
     <a href="http://purl.org/linked-data/cube#structure">qb:structure</a> <a href="#edintemp:dsd">edintemp:dsd</a> .
   </pre>
 
   <span class="markdown">
-  <b>**2) Identificación de las dimensiones y medidas relevantes:**</b> Aunque la estructura <code>edintemp:dsd</code> contiene todas las dimensiones y medidas del cubo de empleo, en este ejemplo solo se utilizan las dimensiones <a href="#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#refPeriod">edintdimension:refPeriod</a>, <a href="#sex">edintdimension:sex</a> y <a href="#age">edintdimension:age</a>, junto con la medida <a href="#employedPopulationCount">edintmeasure:employedPopulationCount</a>.
+  <b>2) Identificación de las dimensiones y medidas relevantes:</b> Aunque la estructura <code>edintemp:dsd</code> contiene todas las dimensiones y medidas del cubo de empleo, este ejemplo solo utiliza las dimensiones <a href="#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#refPeriod">edintdimension:refPeriod</a>, <a href="#sex">edintdimension:sex</a> y <a href="#age">edintdimension:age</a>, junto con la medida <a href="#employedPopulationCount">edintmeasure:employedPopulationCount</a>.
 
-  Es importante destacar que la dimensión <a href="#refPeriod">edintdimension:refPeriod</a> tiene como rango <code>time:Interval</code>, por lo que el periodo de referencia debe representarse mediante una instancia explícita de intervalo temporal.
+  Es importante señalar que la dimensión <a href="#refPeriod">edintdimension:refPeriod</a> tiene como rango <code>time:Interval</code>, por lo que el periodo de referencia debe representarse mediante una instancia explícita de intervalo temporal.
   </span>
 
   <pre>
@@ -117,13 +131,13 @@ La estructura del cubo de empleo se define mediante la instancia <a href="#edint
   </pre>
 
   <span class="markdown">
-  <b>**3) Definición de una observación del dataset:**</b> El paso final consiste en crear una instancia de <a href="http://purl.org/linked-data/cube#Observation">qb:Observation</a> y enlazarla con el conjunto de datos mediante la propiedad <a href="http://purl.org/linked-data/cube#dataSet">qb:dataSet</a>. A continuación, se asignan los valores correspondientes a las dimensiones y a la medida seleccionadas.
+  <b>3) Definición de una observación del dataset:</b> El último paso consiste en crear una instancia de <a href="http://purl.org/linked-data/cube#Observation">qb:Observation</a> y vincularla al dataset mediante la propiedad <a href="http://purl.org/linked-data/cube#dataSet">qb:dataSet</a>. A continuación, se asignan los valores correspondientes para las dimensiones y la medida seleccionadas.
   </span>
 
   <pre>
 &lt;http://vocab.linkeddata.es/datosabiertos/recurso/actividad-economica/cubo-empleo/observation/obs001&gt;
     a <a href="http://purl.org/linked-data/cube#Observation">qb:Observation</a> ;
-    <a href="http://purl.org/linked-data/cube#dataSet">qb:dataSet</a> <a href="#ontology">edintemp:</a> ;
+    <a href="http://purl.org/linked-data/cube#dataSet">qb:dataSet</a> <a href="#dataset">edintemp:dataset</a> ;
     <a href="#refAdminRegion">edintdimension:refAdminRegion</a> &lt;http://vocab.linkeddata.es/datosabiertos/recurso/territorio/municipio/zaragoza&gt; ;
     <a href="#refPeriod">edintdimension:refPeriod</a> &lt;http://vocab.linkeddata.es/datosabiertos/recurso/actividad-economica/cubo-empleo/interval/2025&gt; ;
     <a href="#sex">edintdimension:sex</a> &lt;http://purl.org/linked-data/sdmx/2009/code#sex-F&gt; ;
@@ -132,8 +146,8 @@ La estructura del cubo de empleo se define mediante la instancia <a href="#edint
   </pre>
 
   <span class="markdown">
-  En esta observación se indica que, en el municipio de Zaragoza, durante el intervalo temporal correspondiente al año 2025, el número de <b>mujeres ocupadas</b> del grupo de edad de <b>25 a 29 años</b> es de <b>12.543</b>.
+  Esta observación indica que, en el municipio de Zaragoza, durante el intervalo temporal correspondiente al año 2025, el número de <b>mujeres ocupadas</b> en el grupo de edad de <b>25 a 29 años</b> es de <b>12.543</b>.
 
-  Este ejemplo muestra cómo una única observación del cubo combina varios valores de dimensión con una medida concreta para representar un indicador de empleo. Del mismo modo, la misma estructura puede reutilizarse para representar otras medidas del cubo, como el número de personas activas, desempleadas, contratos registrados, demandantes de empleo, paro registrado o afiliadas a la Seguridad Social.
+  Este ejemplo muestra cómo una única observación del cubo combina varios valores de dimensiones con una medida concreta para representar un indicador de empleo. De la misma manera, la misma estructura puede reutilizarse para representar otras medidas del cubo, como el número de personas activas, desempleadas, contratos registrados, demandantes de empleo, paro registrado, afiliaciones a la Seguridad Social, tasa de paro, tasa de empleo, puestos de trabajo, perfiles de empleo o número de personas.
   </span>
 </div>
