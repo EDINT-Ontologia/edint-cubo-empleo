@@ -1,4 +1,4 @@
-<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo>
+<https://edint.es/def/cubo-empleo>
     a owl:Ontology ;
     owl:imports <http://purl.org/linked-data/cube> ;
     owl:versionInfo "0.1.0" .

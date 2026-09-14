@@ -1,6 +1,6 @@
 # EMP12: ¿Cuál es el número de parados por actividad económica en una región administrativa y periodo concretos?
 
-PPREFIX edintemp: <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#>
+PPREFIX edintemp: <https://edint.es/def/cubo-empleo#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
 PREFIX edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#>
 PREFIX edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#>
@@ -9,7 +9,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 SELECT ?activity ?activityLabel (SUM(?value) AS ?unemployedPopulation)
 WHERE {
   ?obs a qb:Observation ;
-       qb:dataSet edinttemp: ;
+       qb:dataSet edintemp: ;
        edintdimension:refAdminRegion ?region ;
        edintdimension:refPeriod ?period ;
        edintdimension:economicActivity ?activity ;
