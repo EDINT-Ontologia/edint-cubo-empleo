@@ -1,4 +1,4 @@
-@prefix edintemp: <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> .
+@prefix edintemp: <https://edint.es/def/cubo-empleo#> .
 @prefix edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#> .
 @prefix edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#> .
 @prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
@@ -19,15 +19,15 @@
 
 # -- Ontology metadata --------------------------------------------
 
-<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo> a owl:Ontology ;
-    owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo/0.1.0> ;
+<https://edint.es/def/cubo-empleo> a owl:Ontology ;
+    owl:versionIRI <https://edint.es/def/cubo-empleo/0.1.0> ;
     owl:imports <http://purl.org/linked-data/cube> ;
     dcterms:creator "Daniel Doña", "Edna Ruckhaus", "Lucía Sánchez", "Oscar Corcho", "Socorro Bernardos", "Diego Conde" ;
     dcterms:title "Vocabulario para la representación del cubo de indicadores de empleo dentro del proyecto EDINT"@es ,
                   "Vocabulary for the representation of the employment indicators data cube within the EDINT project"@en ;
     dcterms:issued "2026-04-20"^^xsd:date ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    vann:preferredNamespaceUri <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> ;
+    vann:preferredNamespaceUri <https://edint.es/def/cubo-empleo#> ;
     vann:preferredNamespacePrefix "edintemp" ;
     owl:versionInfo "0.1.0" .
 
