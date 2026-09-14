@@ -1,0 +1,29 @@
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo>
+    a owl:Ontology ;
+    owl:imports <http://purl.org/linked-data/cube> ;
+    owl:versionInfo "0.1.0" .
+
+edintemp:dataset a qb:DataSet ;
+    qb:structure edintemp:dsd .
+
+edintemp:dsd a qb:DataStructureDefinition ;
+    qb:component
+        [ qb:dimension edintdimension:refAdminRegion ; qb:order 1 ] ,
+        [ qb:dimension edintdimension:sector ; qb:order 2 ] ,
+        [ qb:dimension edintdimension:economicActivity ; qb:order 3 ] ,
+        [ qb:dimension edintdimension:refPeriod ; qb:order 4 ] ,
+        [ qb:dimension edintdimension:sex ; qb:order 5 ] ,
+        [ qb:dimension edintdimension:age ; qb:order 6 ] ,
+        [ qb:dimension edintdimension:contractType ; qb:order 7 ] ,
+        [ qb:measure edintmeasure:activePopulationCount ; qb:order 8 ] ,
+        [ qb:measure edintmeasure:employedPopulationCount ; qb:order 9 ] ,
+        [ qb:measure edintmeasure:unemployedPopulationCount ; qb:order 10 ] ,
+        [ qb:measure edintmeasure:registeredContractsCount ; qb:order 11 ] ,
+        [ qb:measure edintmeasure:jobSeekersCount ; qb:order 12 ] ,
+        [ qb:measure edintmeasure:registeredUnemploymentCount ; qb:order 13 ] ,
+        [ qb:measure edintmeasure:socialSecurityAffiliatesCount ; qb:order 14 ] ,
+        [ qb:measure ine:unemploymentRate ; qb:order 15 ] ,
+        [ qb:measure ine:employmentRate ; qb:order 16 ] ,
+        [ qb:measure ine:jobs ; qb:order 17 ] ,
+        [ qb:measure edintmeasure:jobProfiles ; qb:order 18 ] ,
+        [ qb:measure ine:numberOfPeople ; qb:order 19 ] .
