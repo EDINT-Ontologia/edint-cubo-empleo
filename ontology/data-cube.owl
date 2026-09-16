@@ -17,6 +17,7 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix ine: <https://lod.ine.es/def/vocabulary/> .
 @prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 
 # -- Ontology metadata --------------------------------------------
@@ -24,7 +25,11 @@
 <https://edint.es/def/cubo-empleo> a owl:Ontology ;
     owl:versionIRI <https://edint.es/def/cubo-empleo/0.1.0> ;
     owl:imports <http://purl.org/linked-data/cube> ;
-    dcterms:creator "Daniel Doña", "Edna Ruckhaus", "Lucía Sánchez", "Oscar Corcho", "Socorro Bernardos", "Diego Conde" ;
+    dcterms:creator                   [ foaf:name "Daniel Doña" ; schema:affiliation <https://oeg.fi.upm.es/> ],
+                  [ foaf:name "Edna Ruckhaus" ; schema:affiliation <https://oeg.fi.upm.es/> ],
+                  [ foaf:name "Lucía Sánchez" ; schema:affiliation <https://oeg.fi.upm.es/> ],
+                  [ foaf:name "Maria del Socorro Bernardos" ; schema:affiliation <https://oeg.fi.upm.es/> ],
+                  [ foaf:name "Oscar Corcho" ; schema:affiliation <https://oeg.fi.upm.es/> ] ;
     dcterms:title "Cubo de Datos EDINT de Indicadores de Empleo"@es  ;
     dcterms:title "EDINT Employment Indicators Data Cube"@en ;
     dcterms:issued "2026-04-20"^^xsd:date ;
@@ -210,3 +215,5 @@ ine:numberOfPeople a rdf:Property , qb:MeasureProperty ;
     rdfs:subPropertyOf ine:numberOfIndividuals ;
     rdfs:domain qb:Observation ;
     rdfs:range xsd:integer .
+
+<https://oeg.fi.upm.es/> a foaf:Organization ; foaf:name "Ontology Engineering Group, UPM" .
