@@ -38,7 +38,7 @@
     vann:preferredNamespacePrefix "edintemp" ;
     owl:versionInfo "0.2.1"  ;
     owl:priorVersion <https://github.com/EDINT-Ontologia/edint-cubo-empleo/releases/tag/v0.2.0> ;
-    dcterms:publisher <https://www.femp.es/> ;
+    dcterms:publisher [ foaf:name "FEMP" ; foaf:homepage <https://www.femp.es/> ; schema:affiliation "Federación Española de Municipios y Provincias" ] ;
     dcterms:bibliographicCitation """Cubo de Datos EDINT de Indicadores de Empleo. EDINT. Revision: v0.2.1."""@es ;
     schema:creativeWorkStatus "Ontology Specification"@en ;
     dcterms:abstract
