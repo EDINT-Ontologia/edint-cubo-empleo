@@ -5,8 +5,8 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
-@prefix edintcontracttype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/ContractType/> .
+@prefix edintkos: <https://edint.es/kos/> .
+@prefix edintcontracttype: <https://edint.es/kos/EmploymentContractType/> .
 
 #################################################################
 #
@@ -14,7 +14,7 @@
 #
 #################################################################
 
-edintkos:ContractType a skos:ConceptScheme ; 
+edintkos:EmploymentContractType a skos:ConceptScheme ; 
     dct:issued "2026-04-13"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the ontologies from the EDINT data space."@en ;
@@ -31,26 +31,26 @@ edintkos:ContractType a skos:ConceptScheme ;
 #################################################################
 
 edintcontracttype:permanent a skos:Concept ;
-    skos:inScheme edintkos:ContractType ;
+    skos:inScheme edintkos:EmploymentContractType ;
     skos:prefLabel "Permanent"@en ;
     skos:prefLabel "Indefinido"@es .
 
 edintcontracttype:temporary a skos:Concept ;
-    skos:inScheme edintkos:ContractType ;
+    skos:inScheme edintkos:EmploymentContractType ;
     skos:prefLabel "Temporary"@en ;
     skos:prefLabel "Temporal"@es .
 
 edintcontracttype:other a skos:Concept ;
-    skos:inScheme edintkos:ContractType ;
+    skos:inScheme edintkos:EmploymentContractType ;
     skos:prefLabel "Other"@en ;
     skos:prefLabel "Otro"@es .
 
 edintcontracttype:alternatingTraining a skos:Concept ;
-    skos:inScheme edintkos:ContractType ;
+    skos:inScheme edintkos:EmploymentContractType ;
     skos:prefLabel "Training contract for alternating work-based learning"@en ;
     skos:prefLabel "Contrato Formativo para la Formación en Alternancia"@es .
 
 edintcontracttype:professionalPractice a skos:Concept ;
-    skos:inScheme edintkos:ContractType ;
+    skos:inScheme edintkos:EmploymentContractType ;
     skos:prefLabel "Training contract for acquiring professional practice"@en ;
     skos:prefLabel "Contrato Formativo para la Obtención de la Práctica Profesional"@es .
