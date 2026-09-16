@@ -1,6 +1,6 @@
 # EMP10: ¿Cuál es el número de contratos registrados por tipo de contrato en una región administrativa y periodo concretos?
 
-PREFIX edintemp: <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#>
+PREFIX edintemp: <https://edint.es/def/cubo-empleo#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
 PREFIX edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#>
 PREFIX edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#>
@@ -9,7 +9,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 SELECT ?contractType ?contractTypeLabel (SUM(?value) AS ?registeredContracts)
 WHERE {
   ?obs a qb:Observation ;
-       qb:dataSet edinttemp: ;
+       qb:dataSet edintemp: ;
        edintdimension:refAdminRegion ?region ;
        edintdimension:refPeriod ?period ;
        edintdimension:contractType ?contractType ;

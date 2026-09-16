@@ -9,13 +9,13 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix edintgast: <http://vocab.linkeddata.es/datosabiertos/def/comercio/cubo-gasto-comercial/> .
+@prefix edintgast: <https://edint.es/def/cubo-gasto-comercial/> .
 @prefix edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#> .
 @prefix edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#> .
-@prefix edinttemp: <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#> .
+@prefix edintemp: <https://edint.es/def/cubo-empleo#> .
 
 
-edinttemp:mappings_tm rdf:type rr:TriplesMap ;
+edintemp:mappings_tm rdf:type rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../pathtodata.csv" ] ;
     rr:predicateObjectMap [ rr:objectMap [ rml:reference "Área" ] ;
@@ -32,7 +32,7 @@ edinttemp:mappings_tm rdf:type rr:TriplesMap ;
             rr:predicate edintdimension:age  ], 
         [ rr:objectMap [ rml:reference "Tipo de Contrato" ] ;
             rr:predicate edintdimension:contractType  ],                                                          
-        [ rr:object edinttemp:SampleDataSet ;
+        [ rr:object edintemp:SampleDataSet ;
             rr:predicate qb:dataSet ],
 
         [ rr:objectMap [ rml:reference "Total de población Activa" ] ;
@@ -50,4 +50,4 @@ edinttemp:mappings_tm rdf:type rr:TriplesMap ;
         [ rr:objectMap [ rml:reference "Total de afiliados a la seguridad social" ] ;            
             rr:predicate edintmeasure:socialSecurityAffiliatesCount ] ;                                                                                  
     rr:subjectMap [ rr:class qb:Observation ;
-            rr:template "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo/o{Índice}" ] .
+            rr:template "https://edint.es/def/cubo-empleo/o{Índice}" ] .

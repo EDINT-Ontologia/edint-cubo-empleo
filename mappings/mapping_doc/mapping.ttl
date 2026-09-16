@@ -32,10 +32,10 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
 @prefix rr: <http://www.w3.org/ns/r2rml#>.
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>.
-@prefix edintgast: <http://vocab.linkeddata.es/datosabiertos/def/comercio/cubo-gasto-comercial/>.
+@prefix edintgast: <https://edint.es/def/cubo-gasto-comercial/>.
 @prefix edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#>.
 @prefix edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#>.
-@prefix edinttemp: <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#>.
+@prefix edintemp: <https://edint.es/def/cubo-empleo#>.
 @prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#>.
 @prefix schema: <http://schema.org/>.
 @prefix formats: <http://www.w3.org/ns/formats/>.
@@ -65,7 +65,7 @@ map:rules_000 schema:contributor map:person_000 ;
 	];
 	rr:subjectMap [
 		a rr:SubjectMap;
-		rr:template "http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo/o{Indice}";
+		rr:template "https://edint.es/def/cubo-empleo/o{Indice}";
 	];
 	rr:predicateObjectMap [
 		rr:predicateMap [
@@ -154,7 +154,7 @@ map:rules_000 schema:contributor map:person_000 ;
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:constant edinttemp:SampleDataSet;
+			rr:constant edintemp:SampleDataSet;
 		];
 	];
 	rr:predicateObjectMap [

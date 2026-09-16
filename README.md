@@ -35,7 +35,7 @@ Las medidas principales incluidas en el cubo son:
 
 # Prefijo y espacio de nombres (Prefix and namespace)
 
-El prefijo del cubo de datos es **edintemp** y se encuentra publicada en el espacio de nombres: **[http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#](http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#)**
+El prefijo del cubo de datos es **edintemp** y se encuentra publicada en el espacio de nombres: **[https://edint.es/def/cubo-empleo#](https://edint.es/def/cubo-empleo#)**
 
 Las dimensiones se representan con el prefijo **edintdimension** y se encuentra en el espacio de nombres: **[http://vocab.linkeddata.es/datosabiertos/def/dimension#](http://vocab.linkeddata.es/datosabiertos/def/dimension#)**
 

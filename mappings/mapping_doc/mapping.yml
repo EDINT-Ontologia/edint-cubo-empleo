@@ -33,15 +33,15 @@ prefixes:
   rml: http://semweb.mmlab.be/ns/rml#
   rr: http://www.w3.org/ns/r2rml#
   sdmx-dimension: http://purl.org/linked-data/sdmx/2009/dimension#
-  edintgast: http://vocab.linkeddata.es/datosabiertos/def/comercio/cubo-gasto-comercial/
+  edintgast: https://edint.es/def/cubo-gasto-comercial/
   edintdimension: http://vocab.linkeddata.es/datosabiertos/def/dimension#
   edintmeasure: http://vocab.linkeddata.es/datosabiertos/def/measure#
-  edinttemp: http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#
+  edintemp: https://edint.es/def/cubo-empleo#
 mappings:
   mappings_tm:
     sources:
     - [../pathtodata.csv~csv]
-    s: http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo/o$(Indice)
+    s: https://edint.es/def/cubo-empleo/o$(Indice)
     po:
     - [rdf:type, qb:Observation]
     - [edintdimension:refAdminRegion, $(Area)]
@@ -51,7 +51,7 @@ mappings:
     - [edintdimension:sex, $(Sexo)]
     - [edintdimension:age, $(Edad)]
     - [edintdimension:contractType, $(Tipo de Contrato)]
-    - [qb:dataSet, edinttemp:SampleDataSet]
+    - [qb:dataSet, edintemp:SampleDataSet]
     - [edintmeasure:activePopulationCount, $(Total de población Activa)]
     - [edintmeasure:employedPopulationCount, $(Total de población Empleada)]
     - [edintmeasure:unemployedPopulationCount, $(Total de población Desempleada)]
