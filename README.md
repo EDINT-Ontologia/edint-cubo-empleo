@@ -1,4 +1,4 @@
-# Cubo de datos EDINT de Indicadores de Empleo (EDINT Employment  Indicators Data Cube)
+# Cubo de Datos EDINT de Indicadores de Empleo
 
 Este recurso define un **cubo de datos RDF** para representar indicadores agregados relacionados con el **empleo** en función de distintas dimensiones, como la región administrativa, el periodo temporal, el sector, la actividad económica, el sexo, la edad y el tipo de contrato. El modelo se ha desarrollado siguiendo el vocabulario **RDF Data Cube**, lo que permite estructurar la información de forma interoperable, reutilizable y preparada para su consulta mediante SPARQL.
 
