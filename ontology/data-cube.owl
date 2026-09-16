@@ -23,7 +23,7 @@
 # -- Ontology metadata --------------------------------------------
 
 <https://edint.es/def/cubo-empleo> a owl:Ontology ;
-    owl:versionIRI <https://edint.es/def/cubo-empleo/0.1.0> ;
+    owl:versionIRI <https://edint.es/def/cubo-empleo/0.2.1> ;
     owl:imports <http://purl.org/linked-data/cube> ;
     dcterms:creator                   [ foaf:name "Daniel Doña" ; schema:affiliation <https://oeg.fi.upm.es/> ],
                   [ foaf:name "Edna Ruckhaus" ; schema:affiliation <https://oeg.fi.upm.es/> ],
@@ -36,7 +36,7 @@
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     vann:preferredNamespaceUri <https://edint.es/def/cubo-empleo#> ;
     vann:preferredNamespacePrefix "edintemp" ;
-    owl:versionInfo "0.1.0"  ;
+    owl:versionInfo "0.2.1"  ;
     owl:priorVersion <https://github.com/EDINT-Ontologia/edint-cubo-empleo/releases/tag/v0.2.0> ;
     dcterms:publisher <https://www.femp.es/> ;
     dcterms:bibliographicCitation """Cubo de Datos EDINT de Indicadores de Empleo. EDINT. Revision: v0.2.1."""@es ;
