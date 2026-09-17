@@ -226,3 +226,22 @@ ine:numberOfPeople a rdf:Property , qb:MeasureProperty ;
     widoco:turtleSerialization "ontology.ttl" ;
     widoco:ntSerialization "ontology.nt" ;
     widoco:jsonldSerialization "ontology.jsonld" .
+# -- Etiquetas de vocabularios (vocabulario Widoco) --
+<https://edint.es/def/cubo-empleo> widoco:vocabularyLabel [
+    widoco:vocabularyIRI <http://purl.org/linked-data/cube> ;
+    rdfs:label "W3C Data Cube"@es , "W3C Data Cube"@en ] .
+<https://edint.es/def/cubo-empleo> widoco:vocabularyLabel [
+    widoco:vocabularyIRI <http://vocab.linkeddata.es/datosabiertos/def/dimension> ;
+    rdfs:label "Dimensiones EDINT"@es , "EDINT Dimensions"@en ] .
+<https://edint.es/def/cubo-empleo> widoco:vocabularyLabel [
+    widoco:vocabularyIRI <http://vocab.linkeddata.es/datosabiertos/def/measure> ;
+    rdfs:label "Medidas EDINT"@es , "EDINT Measures"@en ] .
+<https://edint.es/def/cubo-empleo> widoco:vocabularyLabel [
+    widoco:vocabularyIRI <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    rdfs:label "Territorio (esadm)"@es , "Territory (esadm)"@en ] .
+<https://edint.es/def/cubo-empleo> widoco:vocabularyLabel [
+    widoco:vocabularyIRI <http://www.w3.org/2006/time> ;
+    rdfs:label "OWL-Time"@es , "OWL-Time"@en ] .
+<https://edint.es/def/cubo-empleo> widoco:vocabularyLabel [
+    widoco:vocabularyIRI <https://lod.ine.es/def/vocabulary> ;
+    rdfs:label "Vocabulario INE"@es , "INE Vocabulary"@en ] .
