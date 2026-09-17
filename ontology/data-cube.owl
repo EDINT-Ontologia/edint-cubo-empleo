@@ -219,3 +219,10 @@ ine:numberOfPeople a rdf:Property , qb:MeasureProperty ;
     rdfs:range xsd:integer .
 
 <https://oeg.fi.upm.es/> a foaf:Organization ; foaf:name "Ontology Engineering Group, UPM" .
+@prefix widoco: <https://w3id.org/widoco/vocab#> .
+
+# -- Nombres de fichero de las serializaciones (vocabulario Widoco) --
+<https://edint.es/def/cubo-empleo> widoco:rdfxmlSerialization "ontology.rdf" ;
+    widoco:turtleSerialization "ontology.ttl" ;
+    widoco:ntSerialization "ontology.nt" ;
+    widoco:jsonldSerialization "ontology.jsonld" .
