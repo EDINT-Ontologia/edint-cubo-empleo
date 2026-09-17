@@ -1,5 +1,6 @@
 # Cubo de datos EDINT de Indicadores de Empleo (EDINT Employment  Indicators Data Cube)
 
+[![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/cubo-empleo)
 ![Prefijo](https://img.shields.io/badge/prefijo-edintemp-informational)
 [![Licencia](https://img.shields.io/badge/licencia-CC%20BY--SA%204.0-lightgrey)](LICENSE)
 
