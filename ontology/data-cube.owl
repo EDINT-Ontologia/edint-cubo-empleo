@@ -40,6 +40,7 @@
     dcterms:issued  "2026-09-17"^^xsd:date ;
     dcterms:modified "2026-09-17"^^xsd:date ;
     owl:priorVersion <https://github.com/EDINT-Ontologia/edint-cubo-empleo/releases/tag/v0.2.0> ;
+    schema:codeRepository <https://github.com/EDINT-Ontologia/edint-cubo-empleo> ;
     dcterms:publisher [ foaf:name "FEMP" ; foaf:homepage <https://www.femp.es/> ; schema:affiliation "Federación Española de Municipios y Provincias" ] ;
     dcterms:bibliographicCitation """Cubo de Datos EDINT de Indicadores de Empleo. EDINT. Revision: v0.2.1."""@es ;
     schema:creativeWorkStatus "Ontology Specification"@en ;
