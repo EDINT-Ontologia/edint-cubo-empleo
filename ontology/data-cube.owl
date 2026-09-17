@@ -32,11 +32,13 @@
                   [ foaf:name "Oscar Corcho" ; schema:affiliation <https://oeg.fi.upm.es/> ] ;
     dcterms:title "Cubo de Datos EDINT de Indicadores de Empleo"@es  ;
     dcterms:title "EDINT Employment Indicators Data Cube"@en ;
-    dcterms:issued "2026-04-20"^^xsd:date ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     vann:preferredNamespaceUri <https://edint.es/def/cubo-empleo#> ;
     vann:preferredNamespacePrefix "edintemp" ;
     owl:versionInfo "0.2.1"  ;
+    dcterms:created "2026-04-20"^^xsd:date ;
+    dcterms:issued  "2026-09-17"^^xsd:date ;
+    dcterms:modified "2026-09-17"^^xsd:date ;
     owl:priorVersion <https://github.com/EDINT-Ontologia/edint-cubo-empleo/releases/tag/v0.2.0> ;
     dcterms:publisher [ foaf:name "FEMP" ; foaf:homepage <https://www.femp.es/> ; schema:affiliation "Federación Española de Municipios y Provincias" ] ;
     dcterms:bibliographicCitation """Cubo de Datos EDINT de Indicadores de Empleo. EDINT. Revision: v0.2.1."""@es ;
