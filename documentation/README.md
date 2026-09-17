@@ -10,10 +10,9 @@ El objetivo de esta carpeta es almacenar **documentación de la ontología orien
 Esta documentación facilita la **reutilización y el mantenimiento** de la ontología.
 
 # Contenidos
-Include here any files  used to publish the ontology, such as:
 Incluir cualquier fichero utilizado para publicar la ontología en la web, como por ejemplo:
 
-- **Ficheros HTML** — Generados usando[Widoco](https://github.com/dgarijo/Widoco). Estos fichero spueden incluir ejemplos de uso de la ontología, consultas SPARQL, enlaces restricciones en SHACL, etc.
+- **Ficheros HTML** — Generados usando [Widoco](https://github.com/dgarijo/Widoco). Estos ficheros pueden incluir ejemplos de uso de la ontología, consultas SPARQL, enlaces a restricciones en SHACL, etc.
 
 
 # Formatos aceptados

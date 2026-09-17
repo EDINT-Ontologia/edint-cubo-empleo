@@ -29,7 +29,7 @@ Las medidas principales incluidas en el cubo son:
 * **número de personas afiliadas a la Seguridad Social:** personas afiliadas al sistema de Seguridad Social.
 * **tasa de desempleo:** cociente entre el número de parados y el de activos.
 * **tasa de empleo:** cociente entre el número de ocupados y el de activos.
-* **puestos de trabajo generados:** puestos de trabajo generados en sectores económicos específico.
+* **puestos de trabajo generados:** puestos de trabajo generados en sectores económicos específicos.
 * **perfiles de empleo generados:** perfiles de empleo generados en sectores económicos específicos.
 * **población:** Cada uno de los elementos que forman parte de la población de personas.
 
