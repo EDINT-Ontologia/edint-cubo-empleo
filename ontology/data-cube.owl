@@ -32,6 +32,8 @@
                   [ foaf:name "Oscar Corcho" ; schema:affiliation <https://oeg.fi.upm.es/> ] ;
     dcterms:title "Cubo de Datos EDINT de Indicadores de Empleo"@es  ;
     dcterms:title "EDINT Employment Indicators Data Cube"@en ;
+    rdfs:label "Cubo de Datos de Empleo"@es ;
+    rdfs:label "Employment Data Cube"@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     vann:preferredNamespaceUri <https://edint.es/def/cubo-empleo#> ;
     vann:preferredNamespacePrefix "edintemp" ;
