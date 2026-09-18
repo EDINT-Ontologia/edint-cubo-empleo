@@ -2,6 +2,20 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<..\index-es.html> a prov:Entity;
+<https://edint.es/def/cubo-empleo/0.2.1> a prov:Entity;
+	 dc:title "Cubo de Datos EDINT de Indicadores de Empleo";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <https://edint.es/def/cubo-empleo>;
+	 prov:wasRevisionOf <https://github.com/EDINT-Ontologia/edint-cubo-empleo/releases/tag/v0.2.0>;
+	 prov:wasGeneratedAt "2026-04-20";
 .
+:agent0 a prov:Agent; foaf:name "Daniel Doña".
+:agent1 a prov:Agent; foaf:name "Edna Ruckhaus".
+:agent2 a prov:Agent; foaf:name "Lucía Sánchez".
+:agent3 a prov:Agent; foaf:name "Maria del Socorro Bernardos".
+:agent4 a prov:Agent; foaf:name "Oscar Corcho".

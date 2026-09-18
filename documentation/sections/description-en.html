@@ -1,4 +1,4 @@
-<h2 id="desc" class="list">Vocabulary for the representation of the employment indicators data cube: Description <span class="backlink"> back to <a href="#toc">index</a></span></h2>
+<h2 id="desc" class="list">Employment Data Cube: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
 <span class="markdown">
 For the generation of the employment data cube, the <a href="https://www.w3.org/TR/vocab-data-cube">W3C Data Cube</a> vocabulary is reused. This vocabulary is a W3C recommendation for the publication of multidimensional data on the Web, which facilitates their structured representation, interoperability, and reuse. In addition, this vocabulary is compatible with the SDMX standard (<i>Statistical Data and Metadata eXchange</i>), which is widely used for the exchange of statistical data and metadata across organizations.
@@ -12,7 +12,7 @@ For the generation of the employment data cube, the <a href="https://www.w3.org/
 <span class="markdown">
 As shown in Figure 1, W3C Data Cube contains several concepts and properties that make it possible to describe statistical data at different levels of aggregation. In this vocabulary, the model is organized around the concept of <a href="https://www.w3.org/TR/vocab-data-cube/#reference-datasets">qb:DataSet</a>, which represents a dataset following a structure defined by a <a href="https://www.w3.org/TR/vocab-data-cube/#dsd">qb:DataStructureDefinition</a> and materialized through a set of observations represented by <a href="https://www.w3.org/TR/vocab-data-cube/#reference-datasets">qb:Observation</a>.
 
-Specifically, this vocabulary defines one data cube dataset, represented by the instance <code>edintemp:dataset</code>, and one data structure, represented by the instance <code>edintemp:dsd</code>. The ontology itself is identified separately from the dataset, using the ontology IRI <code>http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo</code>. This separation allows the vocabulary metadata to describe the ontology, while <code>edintemp:dataset</code> represents the actual data cube dataset to which observations are attached.
+Specifically, this vocabulary defines one data cube dataset, represented by the instance <code>edintemp:dataset</code>, and one data structure, represented by the instance <code>edintemp:dsd</code>. The ontology itself is identified separately from the dataset, using the ontology IRI <code>https://edint.es/def/cubo-empleo</code>. This separation allows the vocabulary metadata to describe the ontology, while <code>edintemp:dataset</code> represents the actual data cube dataset to which observations are attached.
 </span>
 
 <ul>
@@ -61,7 +61,7 @@ The structure of the employment cube is defined through the instance <a href="#e
 </span>
 
 <pre>
-&lt;http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo&gt;
+&lt;https://edint.es/def/cubo-empleo&gt;
     a <a href="http://www.w3.org/2002/07/owl#Ontology">owl:Ontology</a> ;
     <a href="http://www.w3.org/2002/07/owl#imports">owl:imports</a> &lt;http://purl.org/linked-data/cube&gt; ;
     <a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a> "0.1.0" .
