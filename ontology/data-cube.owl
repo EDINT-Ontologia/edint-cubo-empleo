@@ -16,20 +16,47 @@
 @prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix ine: <https://lod.ine.es/def/vocabulary/> .
+@prefix schema: <https://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
 
 # -- Ontology metadata --------------------------------------------
 
 <https://edint.es/def/cubo-empleo> a owl:Ontology ;
-    owl:versionIRI <https://edint.es/def/cubo-empleo/0.1.0> ;
+    owl:versionIRI <https://edint.es/def/cubo-empleo/0.2.1> ;
     owl:imports <http://purl.org/linked-data/cube> ;
-    dcterms:creator "Daniel Doña", "Edna Ruckhaus", "Lucía Sánchez", "Oscar Corcho", "Socorro Bernardos", "Diego Conde" ;
-    dcterms:title "Vocabulario para la representación del cubo de indicadores de empleo dentro del proyecto EDINT"@es ,
-                  "Vocabulary for the representation of the employment indicators data cube within the EDINT project"@en ;
-    dcterms:issued "2026-04-20"^^xsd:date ;
+    dcterms:creator                   [ foaf:name "Daniel Doña" ; schema:affiliation <https://oeg.fi.upm.es/> ],
+                  [ foaf:name "Edna Ruckhaus" ; schema:affiliation <https://oeg.fi.upm.es/> ],
+                  [ foaf:name "Lucía Sánchez" ; schema:affiliation <https://oeg.fi.upm.es/> ],
+                  [ foaf:name "Maria del Socorro Bernardos" ; schema:affiliation <https://oeg.fi.upm.es/> ],
+                  [ foaf:name "Oscar Corcho" ; schema:affiliation <https://oeg.fi.upm.es/> ] ;
+    dcterms:title "Cubo de Datos EDINT de Indicadores de Empleo"@es  ;
+    dcterms:title "EDINT Employment Indicators Data Cube"@en ;
+    rdfs:label "Cubo de Datos de Empleo"@es ;
+    rdfs:label "Employment Data Cube"@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     vann:preferredNamespaceUri <https://edint.es/def/cubo-empleo#> ;
     vann:preferredNamespacePrefix "edintemp" ;
-    owl:versionInfo "0.1.0" .
+    owl:versionInfo "0.2.1"  ;
+    dcterms:created "2026-04-20"^^xsd:date ;
+    dcterms:issued  "2026-09-17"^^xsd:date ;
+    dcterms:modified "2026-09-17"^^xsd:date ;
+    owl:priorVersion <https://github.com/EDINT-Ontologia/edint-cubo-empleo/releases/tag/v0.2.0> ;
+    schema:codeRepository <https://github.com/EDINT-Ontologia/edint-cubo-empleo> ;
+    schema:funding "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)" ;
+    dcterms:publisher [ foaf:name "FEMP" ; foaf:homepage <https://www.femp.es/> ; schema:affiliation "Federación Española de Municipios y Provincias" ] ;
+    dcterms:bibliographicCitation """Cubo de Datos EDINT de Indicadores de Empleo. EDINT. Revisión: v0.2.1."""@es ;
+    dcterms:bibliographicCitation """EDINT Employment Indicators Data Cube. EDINT. Revision: v0.2.1."""@en ;
+    schema:creativeWorkStatus "Ontology Specification"@en ;
+    dcterms:description """El propósito de este vocabulario es proporcionar la definición de la estructura del cubo de datos de empleo. Para ello, se reutiliza el vocabulario W3C Data Cube y se han generado las instancias necesarias para definir su estructura, indicando las dimensiones y medidas que se emplean en este cubo.  Adicionalmente, se reutilizan varios vocabularios y listas de códigos que permiten describir los distintos desgloses de la información de empleo, como el territorio, el periodo de referencia, el sexo, la edad o la actividad económica."""@es ,
+                         """The purpose of this vocabulary is to provide the definition of the structure of the employment data cube. To this end, the W3C Data Cube vocabulary is reused, and the necessary instances have been created to define such structure, indicating the dimensions and measures used in this cube.  Additionally, several vocabularies and code lists are reused to describe the different breakdowns of employment information, such as territory, reference period, sex, age, or economic activity."""@en ;
+    dcterms:abstract
+        """El propósito de este vocabulario es proporcionar la definición de la estructura del cubo de datos de empleo. Para ello, se reutiliza el vocabulario W3C Data Cube y se han generado las instancias necesarias para definir su estructura, indicando las dimensiones y medidas que se emplean en este cubo.
+
+Adicionalmente, se reutilizan varios vocabularios y listas de códigos que permiten describir los distintos desgloses de la información de empleo, como el territorio, el periodo de referencia, el sexo, la edad o la actividad económica."""@es,
+        """The purpose of this vocabulary is to provide the definition of the structure of the employment data cube. To this end, the W3C Data Cube vocabulary is reused, and the necessary instances have been created to define such structure, indicating the dimensions and measures used in this cube.
+
+Additionally, several vocabularies and code lists are reused to describe the different breakdowns of employment information, such as territory, reference period, sex, age, or economic activity."""@en  .
 
 # -- Data Set --------------------------------------------
 
@@ -197,3 +224,31 @@ ine:numberOfPeople a rdf:Property , qb:MeasureProperty ;
     rdfs:subPropertyOf ine:numberOfIndividuals ;
     rdfs:domain qb:Observation ;
     rdfs:range xsd:integer .
+
+<https://oeg.fi.upm.es/> a foaf:Organization ; foaf:name "Ontology Engineering Group, UPM" .
+@prefix widoco: <https://w3id.org/widoco/vocab#> .
+
+# -- Nombres de fichero de las serializaciones (vocabulario Widoco) --
+<https://edint.es/def/cubo-empleo> widoco:rdfxmlSerialization "ontology.rdf" ;
+    widoco:turtleSerialization "ontology.ttl" ;
+    widoco:ntSerialization "ontology.nt" ;
+    widoco:jsonldSerialization "ontology.jsonld" .
+# -- Etiquetas de vocabularios (vocabulario Widoco) --
+<https://edint.es/def/cubo-empleo> widoco:vocabularyLabel [
+    widoco:vocabularyIRI <http://purl.org/linked-data/cube> ;
+    rdfs:label "W3C Data Cube"@es , "W3C Data Cube"@en ] .
+<https://edint.es/def/cubo-empleo> widoco:vocabularyLabel [
+    widoco:vocabularyIRI <http://vocab.linkeddata.es/datosabiertos/def/dimension> ;
+    rdfs:label "Dimensiones EDINT"@es , "EDINT Dimensions"@en ] .
+<https://edint.es/def/cubo-empleo> widoco:vocabularyLabel [
+    widoco:vocabularyIRI <http://vocab.linkeddata.es/datosabiertos/def/measure> ;
+    rdfs:label "Medidas EDINT"@es , "EDINT Measures"@en ] .
+<https://edint.es/def/cubo-empleo> widoco:vocabularyLabel [
+    widoco:vocabularyIRI <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    rdfs:label "Territorio (esadm)"@es , "Territory (esadm)"@en ] .
+<https://edint.es/def/cubo-empleo> widoco:vocabularyLabel [
+    widoco:vocabularyIRI <http://www.w3.org/2006/time> ;
+    rdfs:label "OWL-Time"@es , "OWL-Time"@en ] .
+<https://edint.es/def/cubo-empleo> widoco:vocabularyLabel [
+    widoco:vocabularyIRI <https://lod.ine.es/def/vocabulary> ;
+    rdfs:label "Vocabulario INE"@es , "INE Vocabulary"@en ] .
