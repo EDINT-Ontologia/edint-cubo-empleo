@@ -1,4 +1,8 @@
-# Cubo de datos EDINT de Indicadores de Empleo (EDINT Employment  Indicators Data Cube)
+# Cubo de Datos EDINT de Indicadores de Empleo
+
+[![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/cubo-empleo)
+![Prefijo](https://img.shields.io/badge/prefijo-edintemp-informational)
+[![Licencia](https://img.shields.io/badge/licencia-CC%20BY--SA%204.0-lightgrey)](LICENSE)
 
 Este recurso define un **cubo de datos RDF** para representar indicadores agregados relacionados con el **empleo** en función de distintas dimensiones, como la región administrativa, el periodo temporal, el sector, la actividad económica, el sexo, la edad y el tipo de contrato. El modelo se ha desarrollado siguiendo el vocabulario **RDF Data Cube**, lo que permite estructurar la información de forma interoperable, reutilizable y preparada para su consulta mediante SPARQL.
 
@@ -29,23 +33,23 @@ Las medidas principales incluidas en el cubo son:
 * **número de personas afiliadas a la Seguridad Social:** personas afiliadas al sistema de Seguridad Social.
 * **tasa de desempleo:** cociente entre el número de parados y el de activos.
 * **tasa de empleo:** cociente entre el número de ocupados y el de activos.
-* **puestos de trabajo generados:** puestos de trabajo generados en sectores económicos específico.
+* **puestos de trabajo generados:** puestos de trabajo generados en sectores económicos específicos.
 * **perfiles de empleo generados:** perfiles de empleo generados en sectores económicos específicos.
 * **población:** Cada uno de los elementos que forman parte de la población de personas.
 
-# Prefijo y espacio de nombres (Prefix and namespace)
+## Prefijo y espacio de nombres (Prefix and namespace)
 
-El prefijo del cubo de datos es **edintemp** y se encuentra publicada en el espacio de nombres: **[https://edint.es/def/cubo-empleo#](https://edint.es/def/cubo-empleo#)**
+El prefijo de este cubo de datos es `edintemp` y se publica bajo el espacio de nombres https://edint.es/def/cubo-empleo#
 
-Las dimensiones se representan con el prefijo **edintdimension** y se encuentra en el espacio de nombres: **[http://vocab.linkeddata.es/datosabiertos/def/dimension#](http://vocab.linkeddata.es/datosabiertos/def/dimension#)**
+Las dimensiones se representan con el prefijo `edintdimension` y se encuentran en el espacio de nombres http://vocab.linkeddata.es/datosabiertos/def/dimension#
 
-Las medidas se representan con el prefijo **edintmeasure** y se encuentre en el espacio de nombres: **[http://vocab.linkeddata.es/datosabiertos/def/measure#](http://vocab.linkeddata.es/datosabiertos/def/measure#)**
+Las medidas se representan con el prefijo `edintmeasure` y se encuentran en el espacio de nombres http://vocab.linkeddata.es/datosabiertos/def/measure#
 
-# Modelo conceptual (Data cube conceptualization)
+## Modelo conceptual (Data cube conceptualization)
 
 ![Diagrama del modelo conceptual](diagrams/diagram.png)
 
-# Estructura del repositorio (Repository structure)
+## Estructura del repositorio (Repository structure)
 
 El repositorio contiene las siguientes carpetas
 
@@ -57,11 +61,11 @@ El repositorio contiene las siguientes carpetas
 | **data-cube-ontology/** | Contiene los archivos de implementación del cubo de datos en formatos como .owl .                                                                  |
 | **requirements/**       | Contiene todos los documentos utilizados para definir los requisitos del cubo de datos: preguntas de competencia y sus respectivas SPARQL queries. |
 
-# Mantenimiento y evolución (Maintenance and evolution)
+## Mantenimiento y evolución (Maintenance and evolution)
 
 Para manejar las incidencias o mejoras sugeridas con respecto al cubo de datos, recomendamos seguir las guías proporcionadas en ([Issues Management](./ISSUES.md)) para generar una incidencia.
 
-# Financiación (Funding)
+## Financiación (Funding)
 
 Esta ontología ha sido desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es)).
 
