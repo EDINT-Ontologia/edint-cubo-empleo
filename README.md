@@ -37,7 +37,7 @@ Las medidas principales incluidas en el cubo son:
 * **perfiles de empleo generados:** perfiles de empleo generados en sectores económicos específicos.
 * **población:** Cada uno de los elementos que forman parte de la población de personas.
 
-# Prefijo y espacio de nombres (Prefix and namespace)
+## Prefijo y espacio de nombres (Prefix and namespace)
 
 El prefijo de este cubo de datos es `edintemp` y se publica bajo el espacio de nombres https://edint.es/def/cubo-empleo#
 
@@ -45,11 +45,11 @@ Las dimensiones se representan con el prefijo `edintdimension` y se encuentran e
 
 Las medidas se representan con el prefijo `edintmeasure` y se encuentran en el espacio de nombres http://vocab.linkeddata.es/datosabiertos/def/measure#
 
-# Modelo conceptual (Data cube conceptualization)
+## Modelo conceptual (Data cube conceptualization)
 
 ![Diagrama del modelo conceptual](diagrams/diagram.png)
 
-# Estructura del repositorio (Repository structure)
+## Estructura del repositorio (Repository structure)
 
 El repositorio contiene las siguientes carpetas
 
@@ -61,11 +61,11 @@ El repositorio contiene las siguientes carpetas
 | **data-cube-ontology/** | Contiene los archivos de implementación del cubo de datos en formatos como .owl .                                                                  |
 | **requirements/**       | Contiene todos los documentos utilizados para definir los requisitos del cubo de datos: preguntas de competencia y sus respectivas SPARQL queries. |
 
-# Mantenimiento y evolución (Maintenance and evolution)
+## Mantenimiento y evolución (Maintenance and evolution)
 
 Para manejar las incidencias o mejoras sugeridas con respecto al cubo de datos, recomendamos seguir las guías proporcionadas en ([Issues Management](./ISSUES.md)) para generar una incidencia.
 
-# Financiación (Funding)
+## Financiación (Funding)
 
 Esta ontología ha sido desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es)).
 
