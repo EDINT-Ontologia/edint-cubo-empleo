@@ -33,13 +33,13 @@ Additionally, several vocabularies and code lists are reused to describe the dif
                                                                      "EDINT Employment Indicators Data Cube"@en ;
                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintemp" ;
                                     <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
-                                    <http://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-cubo-empleo> ;
-                                    <http://schema.org/creativeWorkStatus> "Ontology Specification"@en ;
-                                    <http://schema.org/funding> "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)" ;
                                     rdfs:label "Cubo de Datos de Empleo"@es ,
                                                "Employment Data Cube"@en ;
                                     owl:priorVersion <https://github.com/EDINT-Ontologia/edint-cubo-empleo/releases/tag/v0.2.0> ;
                                     owl:versionInfo "0.2.1" ;
+                                    <https://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-cubo-empleo> ;
+                                    <https://schema.org/creativeWorkStatus> "Ontology Specification"@en ;
+                                    <https://schema.org/funding> "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)" ;
                                     <https://w3id.org/widoco/vocab#jsonldSerialization> "ontology.jsonld" ;
                                     <https://w3id.org/widoco/vocab#ntSerialization> "ontology.nt" ;
                                     <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" ;
@@ -51,48 +51,48 @@ Additionally, several vocabularies and code lists are reused to describe the dif
                                                                                     _:genid11 ,
                                                                                     _:genid12 .
 
-_:genid1 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> ;
-          <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" ;
+          <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid2 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> ;
-          <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Maria del Socorro Bernardos" ;
+          <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid3 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> ;
-          <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" ;
+          <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid4 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> ;
-          <http://xmlns.com/foaf/0.1/name> "Maria del Socorro Bernardos" .
+_:genid4 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" ;
+          <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid5 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> ;
-          <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" .
+_:genid5 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" ;
+          <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid6 <http://schema.org/affiliation> "Federación Española de Municipios y Provincias" ;
-          <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> ;
-          <http://xmlns.com/foaf/0.1/name> "FEMP" .
+_:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> ;
+          <http://xmlns.com/foaf/0.1/name> "FEMP" ;
+          <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
 
 _:genid7 rdfs:label "W3C Data Cube"@en ,
                      "W3C Data Cube"@es ;
           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://purl.org/linked-data/cube> .
 
-_:genid8 rdfs:label "INE Vocabulary"@en ,
-                     "Vocabulario INE"@es ;
-          <https://w3id.org/widoco/vocab#vocabularyIRI> <https://lod.ine.es/def/vocabulary> .
+_:genid8 rdfs:label "Dimensiones EDINT"@es ,
+                     "EDINT Dimensions"@en ;
+          <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/dimension> .
 
-_:genid9 rdfs:label "OWL-Time"@en ,
-                     "OWL-Time"@es ;
-          <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
+_:genid9 rdfs:label "EDINT Measures"@en ,
+                     "Medidas EDINT"@es ;
+          <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/measure> .
 
 _:genid10 rdfs:label "Territorio (esadm)"@es ,
                       "Territory (esadm)"@en ;
            <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
 
-_:genid11 rdfs:label "EDINT Measures"@en ,
-                      "Medidas EDINT"@es ;
-           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/measure> .
+_:genid11 rdfs:label "OWL-Time"@en ,
+                      "OWL-Time"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
 
-_:genid12 rdfs:label "Dimensiones EDINT"@es ,
-                      "EDINT Dimensions"@en ;
-           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/dimension> .
+_:genid12 rdfs:label "INE Vocabulary"@en ,
+                      "Vocabulario INE"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <https://lod.ine.es/def/vocabulary> .
 
 #################################################################
 #    Annotation properties
@@ -148,22 +148,6 @@ _:genid12 rdfs:label "Dimensiones EDINT"@es ,
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/affiliation
-<http://schema.org/affiliation> rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/codeRepository
-<http://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/creativeWorkStatus
-<http://schema.org/creativeWorkStatus> rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/funding
-<http://schema.org/funding> rdf:type owl:AnnotationProperty .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/dimension#age
@@ -250,6 +234,22 @@ _:genid12 rdfs:label "Dimensiones EDINT"@es ,
 ###  https://lod.ine.es/def/vocabulary/numberOfPeople
 <https://lod.ine.es/def/vocabulary/numberOfPeople> rdf:type owl:AnnotationProperty ;
                                                    rdfs:subPropertyOf <https://lod.ine.es/def/vocabulary/numberOfIndividuals> .
+
+
+###  https://schema.org/affiliation
+<https://schema.org/affiliation> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/codeRepository
+<https://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/creativeWorkStatus
+<https://schema.org/creativeWorkStatus> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/funding
+<https://schema.org/funding> rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/widoco/vocab#jsonldSerialization
@@ -537,62 +537,62 @@ rdfs:Resource rdf:type owl:Class .
                                                   _:genid34 ,
                                                   _:genid35 .
 
-_:genid17 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/numberOfPeople> ;
-           <http://purl.org/linked-data/cube#order> 19 .
-
-_:genid18 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#jobProfiles> ;
-           <http://purl.org/linked-data/cube#order> 18 .
-
-_:genid19 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/jobs> ;
-           <http://purl.org/linked-data/cube#order> 17 .
-
-_:genid20 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/employmentRate> ;
-           <http://purl.org/linked-data/cube#order> 16 .
-
-_:genid21 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/unemploymentRate> ;
-           <http://purl.org/linked-data/cube#order> 15 .
-
-_:genid22 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> ;
+_:genid17 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> ;
            <http://purl.org/linked-data/cube#order> 1 .
 
-_:genid23 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> ;
+_:genid18 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> ;
            <http://purl.org/linked-data/cube#order> 2 .
 
-_:genid24 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> ;
+_:genid19 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> ;
            <http://purl.org/linked-data/cube#order> 3 .
 
-_:genid25 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> ;
+_:genid20 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> ;
            <http://purl.org/linked-data/cube#order> 4 .
 
-_:genid26 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> ;
+_:genid21 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> ;
            <http://purl.org/linked-data/cube#order> 5 .
 
-_:genid27 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#age> ;
-           <http://purl.org/linked-data/cube#order> 6 .
-
-_:genid28 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> ;
-           <http://purl.org/linked-data/cube#order> 7 .
-
-_:genid29 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> ;
+_:genid22 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> ;
            <http://purl.org/linked-data/cube#order> 8 .
 
-_:genid30 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> ;
+_:genid23 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> ;
            <http://purl.org/linked-data/cube#order> 9 .
 
-_:genid31 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> ;
-           <http://purl.org/linked-data/cube#order> 10 .
+_:genid24 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#age> ;
+           <http://purl.org/linked-data/cube#order> 6 .
 
-_:genid32 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> ;
-           <http://purl.org/linked-data/cube#order> 11 .
+_:genid25 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> ;
+           <http://purl.org/linked-data/cube#order> 7 .
 
-_:genid33 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> ;
+_:genid26 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> ;
            <http://purl.org/linked-data/cube#order> 12 .
 
-_:genid34 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> ;
+_:genid27 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> ;
            <http://purl.org/linked-data/cube#order> 13 .
 
-_:genid35 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> ;
+_:genid28 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> ;
+           <http://purl.org/linked-data/cube#order> 10 .
+
+_:genid29 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> ;
+           <http://purl.org/linked-data/cube#order> 11 .
+
+_:genid30 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> ;
            <http://purl.org/linked-data/cube#order> 14 .
+
+_:genid31 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/unemploymentRate> ;
+           <http://purl.org/linked-data/cube#order> 15 .
+
+_:genid32 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/employmentRate> ;
+           <http://purl.org/linked-data/cube#order> 16 .
+
+_:genid33 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/numberOfPeople> ;
+           <http://purl.org/linked-data/cube#order> 19 .
+
+_:genid34 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/jobs> ;
+           <http://purl.org/linked-data/cube#order> 17 .
+
+_:genid35 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#jobProfiles> ;
+           <http://purl.org/linked-data/cube#order> 18 .
 
 
 ###  https://edint.es/kos/contractType

@@ -14,8 +14,8 @@
 	 prov:wasRevisionOf <https://github.com/EDINT-Ontologia/edint-cubo-empleo/releases/tag/v0.2.0>;
 	 prov:wasGeneratedAt "2026-04-20";
 .
-:agent0 a prov:Agent; foaf:name "Daniel Doña".
-:agent1 a prov:Agent; foaf:name "Edna Ruckhaus".
-:agent2 a prov:Agent; foaf:name "Lucía Sánchez".
-:agent3 a prov:Agent; foaf:name "Maria del Socorro Bernardos".
+:agent0 a prov:Agent; foaf:name "Lucía Sánchez".
+:agent1 a prov:Agent; foaf:name "Maria del Socorro Bernardos".
+:agent2 a prov:Agent; foaf:name "Daniel Doña".
+:agent3 a prov:Agent; foaf:name "Edna Ruckhaus".
 :agent4 a prov:Agent; foaf:name "Oscar Corcho".
