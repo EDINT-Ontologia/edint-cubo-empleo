@@ -1,14 +1,8 @@
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix edintemp: <https://edint.es/def/cubo-empleo#> .
 @prefix edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#> .
 @prefix edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#> .
 @prefix ine: <https://lod.ine.es/def/vocabulary/> .
-
-<https://edint.es/def/cubo-empleo>
-    a owl:Ontology ;
-    owl:imports <http://purl.org/linked-data/cube> ;
-    owl:versionInfo "0.1.0" .
 
 edintemp:dataset a qb:DataSet ;
     qb:structure edintemp:dsd .
