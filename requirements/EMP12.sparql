@@ -1,6 +1,6 @@
 # EMP12: ¿Cuál es el número de parados por actividad económica en una región administrativa y periodo concretos?
 
-PPREFIX edintemp: <https://edint.es/def/cubo-empleo#>
+PREFIX edintemp: <https://edint.es/def/cubo-empleo#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
 PREFIX edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#>
 PREFIX edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#>
