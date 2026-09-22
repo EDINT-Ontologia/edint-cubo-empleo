@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#"
-     xml:base="http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo"
+<rdf:RDF xmlns="https://edint.es/def/cubo-empleo#"
+     xml:base="https://edint.es/def/cubo-empleo"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -10,28 +10,113 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vocab="https://w3id.org/widoco/vocab#"
+     xmlns:schema="https://schema.org/"
      xmlns:measure="http://vocab.linkeddata.es/datosabiertos/def/measure#"
      xmlns:measure2="http://purl.org/linked-data/sdmx/2009/measure#"
      xmlns:dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
      xmlns:dimension1="http://vocab.linkeddata.es/datosabiertos/def/dimension#"
      xmlns:vocabulary="https://lod.ine.es/def/vocabulary/">
-    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo">
-        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo/0.1.0"/>
+    <owl:Ontology rdf:about="https://edint.es/def/cubo-empleo">
+        <owl:versionIRI rdf:resource="https://edint.es/def/cubo-empleo/0.2.1"/>
         <owl:imports rdf:resource="http://purl.org/linked-data/cube"/>
-        <terms:creator>Daniel Doña</terms:creator>
-        <terms:creator>Diego Conde</terms:creator>
-        <terms:creator>Edna Ruckhaus</terms:creator>
-        <terms:creator>Lucía Sánchez</terms:creator>
-        <terms:creator>Oscar Corcho</terms:creator>
-        <terms:creator>Socorro Bernardos</terms:creator>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-20</terms:issued>
+        <terms:abstract xml:lang="es">El propósito de este vocabulario es proporcionar la definición de la estructura del cubo de datos de empleo. Para ello, se reutiliza el vocabulario W3C Data Cube y se han generado las instancias necesarias para definir su estructura, indicando las dimensiones y medidas que se emplean en este cubo.
+
+Adicionalmente, se reutilizan varios vocabularios y listas de códigos que permiten describir los distintos desgloses de la información de empleo, como el territorio, el periodo de referencia, el sexo, la edad o la actividad económica.</terms:abstract>
+        <terms:abstract xml:lang="en">The purpose of this vocabulary is to provide the definition of the structure of the employment data cube. To this end, the W3C Data Cube vocabulary is reused, and the necessary instances have been created to define such structure, indicating the dimensions and measures used in this cube.
+
+Additionally, several vocabularies and code lists are reused to describe the different breakdowns of employment information, such as territory, reference period, sex, age, or economic activity.</terms:abstract>
+        <terms:bibliographicCitation xml:lang="es">Cubo de Datos EDINT de Indicadores de Empleo. EDINT. Revisión: v0.2.1.</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">EDINT Employment Indicators Data Cube. EDINT. Revision: v0.2.1.</terms:bibliographicCitation>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-20</terms:created>
+        <terms:creator rdf:nodeID="genid1"/>
+        <terms:creator rdf:nodeID="genid2"/>
+        <terms:creator rdf:nodeID="genid3"/>
+        <terms:creator rdf:nodeID="genid4"/>
+        <terms:creator rdf:nodeID="genid5"/>
+        <terms:description xml:lang="es">El propósito de este vocabulario es proporcionar la definición de la estructura del cubo de datos de empleo. Para ello, se reutiliza el vocabulario W3C Data Cube y se han generado las instancias necesarias para definir su estructura, indicando las dimensiones y medidas que se emplean en este cubo.  Adicionalmente, se reutilizan varios vocabularios y listas de códigos que permiten describir los distintos desgloses de la información de empleo, como el territorio, el periodo de referencia, el sexo, la edad o la actividad económica.</terms:description>
+        <terms:description xml:lang="en">The purpose of this vocabulary is to provide the definition of the structure of the employment data cube. To this end, the W3C Data Cube vocabulary is reused, and the necessary instances have been created to define such structure, indicating the dimensions and measures used in this cube.  Additionally, several vocabularies and code lists are reused to describe the different breakdowns of employment information, such as territory, reference period, sex, age, or economic activity.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:title xml:lang="es">Vocabulario para la representación del cubo de indicadores de empleo dentro del proyecto EDINT</terms:title>
-        <terms:title xml:lang="en">Vocabulary for the representation of the employment indicators data cube within the EDINT project</terms:title>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</terms:modified>
+        <terms:publisher rdf:nodeID="genid6"/>
+        <terms:title xml:lang="es">Cubo de Datos EDINT de Indicadores de Empleo</terms:title>
+        <terms:title xml:lang="en">EDINT Employment Indicators Data Cube</terms:title>
         <vann:preferredNamespacePrefix>edintemp</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#"/>
-        <owl:versionInfo>0.1.0</owl:versionInfo>
+        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/cubo-empleo#"/>
+        <rdfs:label xml:lang="es">Cubo de Datos de Empleo</rdfs:label>
+        <rdfs:label xml:lang="en">Employment Data Cube</rdfs:label>
+        <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-cubo-empleo/releases/tag/v0.2.0"/>
+        <owl:versionInfo>0.2.1</owl:versionInfo>
+        <schema:codeRepository rdf:resource="https://github.com/EDINT-Ontologia/edint-cubo-empleo"/>
+        <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
+        <schema:funding>Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)</schema:funding>
+        <vocab:jsonldSerialization>ontology.jsonld</vocab:jsonldSerialization>
+        <vocab:ntSerialization>ontology.nt</vocab:ntSerialization>
+        <vocab:rdfxmlSerialization>ontology.rdf</vocab:rdfxmlSerialization>
+        <vocab:turtleSerialization>ontology.ttl</vocab:turtleSerialization>
+        <vocab:vocabularyLabel rdf:nodeID="genid7"/>
+        <vocab:vocabularyLabel rdf:nodeID="genid8"/>
+        <vocab:vocabularyLabel rdf:nodeID="genid9"/>
+        <vocab:vocabularyLabel rdf:nodeID="genid10"/>
+        <vocab:vocabularyLabel rdf:nodeID="genid11"/>
+        <vocab:vocabularyLabel rdf:nodeID="genid12"/>
     </owl:Ontology>
+    <rdf:Description rdf:nodeID="genid1">
+        <foaf:name>Lucía Sánchez</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
+        <foaf:name>Maria del Socorro Bernardos</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid3">
+        <foaf:name>Daniel Doña</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid4">
+        <foaf:name>Edna Ruckhaus</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid5">
+        <foaf:name>Oscar Corcho</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid6">
+        <foaf:homepage rdf:resource="https://www.femp.es/"/>
+        <foaf:name>FEMP</foaf:name>
+        <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid7">
+        <rdfs:label xml:lang="en">W3C Data Cube</rdfs:label>
+        <rdfs:label xml:lang="es">W3C Data Cube</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://purl.org/linked-data/cube"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid8">
+        <rdfs:label xml:lang="es">Dimensiones EDINT</rdfs:label>
+        <rdfs:label xml:lang="en">EDINT Dimensions</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid9">
+        <rdfs:label xml:lang="en">EDINT Measures</rdfs:label>
+        <rdfs:label xml:lang="es">Medidas EDINT</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid10">
+        <rdfs:label xml:lang="es">Territorio (esadm)</rdfs:label>
+        <rdfs:label xml:lang="en">Territory (esadm)</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid11">
+        <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
+        <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid12">
+        <rdfs:label xml:lang="en">INE Vocabulary</rdfs:label>
+        <rdfs:label xml:lang="es">Vocabulario INE</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="https://lod.ine.es/def/vocabulary"/>
+    </rdf:Description>
     
 
 
@@ -47,6 +132,20 @@
     
 
 
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
     <!-- http://purl.org/dc/terms/creator -->
 
 
@@ -54,10 +153,24 @@
     
 
 
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
     <!-- http://purl.org/dc/terms/issued -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
     
 
 
@@ -218,6 +331,20 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
     <!-- https://lod.ine.es/def/vocabulary/inMeasureSet -->
 
 
@@ -247,6 +374,76 @@
     <owl:AnnotationProperty rdf:about="https://lod.ine.es/def/vocabulary/numberOfPeople">
         <rdfs:subPropertyOf rdf:resource="https://lod.ine.es/def/vocabulary/numberOfIndividuals"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- https://schema.org/affiliation -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/affiliation"/>
+    
+
+
+    <!-- https://schema.org/codeRepository -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/codeRepository"/>
+    
+
+
+    <!-- https://schema.org/creativeWorkStatus -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/creativeWorkStatus"/>
+    
+
+
+    <!-- https://schema.org/funding -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/funding"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#jsonldSerialization -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#jsonldSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#ntSerialization -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#ntSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#rdfxmlSerialization -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#rdfxmlSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#turtleSerialization -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#turtleSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#vocabularyIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyIRI"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#vocabularyLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyLabel"/>
     
 
 
@@ -531,122 +728,6 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dataset -->
-
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dataset">
-        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataSet"/>
-        <cube:structure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd"/>
-        <rdfs:label xml:lang="es">Cubo de indicadores de empleo</rdfs:label>
-        <rdfs:label xml:lang="en">Employment indicators data cube</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd -->
-
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo#dsd">
-        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
-        <cube:component rdf:nodeID="genid5"/>
-        <cube:component rdf:nodeID="genid6"/>
-        <cube:component rdf:nodeID="genid7"/>
-        <cube:component rdf:nodeID="genid8"/>
-        <cube:component rdf:nodeID="genid9"/>
-        <cube:component rdf:nodeID="genid10"/>
-        <cube:component rdf:nodeID="genid11"/>
-        <cube:component rdf:nodeID="genid12"/>
-        <cube:component rdf:nodeID="genid13"/>
-        <cube:component rdf:nodeID="genid14"/>
-        <cube:component rdf:nodeID="genid15"/>
-        <cube:component rdf:nodeID="genid16"/>
-        <cube:component rdf:nodeID="genid17"/>
-        <cube:component rdf:nodeID="genid18"/>
-        <cube:component rdf:nodeID="genid19"/>
-        <cube:component rdf:nodeID="genid20"/>
-        <cube:component rdf:nodeID="genid21"/>
-        <cube:component rdf:nodeID="genid22"/>
-        <cube:component rdf:nodeID="genid23"/>
-    </owl:NamedIndividual>
-    <rdf:Description rdf:nodeID="genid5">
-        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid6">
-        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#sector"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid7">
-        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid8">
-        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid9">
-        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#sex"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid10">
-        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#age"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid11">
-        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid12">
-        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid13">
-        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid14">
-        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid15">
-        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid16">
-        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid17">
-        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid18">
-        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid19">
-        <cube:measure rdf:resource="https://lod.ine.es/def/vocabulary/unemploymentRate"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid20">
-        <cube:measure rdf:resource="https://lod.ine.es/def/vocabulary/employmentRate"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid21">
-        <cube:measure rdf:resource="https://lod.ine.es/def/vocabulary/jobs"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid22">
-        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#jobProfiles"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid23">
-        <cube:measure rdf:resource="https://lod.ine.es/def/vocabulary/numberOfPeople"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</cube:order>
-    </rdf:Description>
-    
-
-
     <!-- http://vocab.linkeddata.es/datosabiertos/def/dimension#age -->
 
 
@@ -662,7 +743,7 @@
     <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DimensionProperty"/>
-        <cube:codeList rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/contractType"/>
+        <cube:codeList rdf:resource="https://edint.es/kos/contractType"/>
     </owl:NamedIndividual>
     
 
@@ -788,10 +869,126 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/contractType -->
+    <!-- https://edint.es/def/cubo-empleo#dataset -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/contractType"/>
+    <owl:NamedIndividual rdf:about="https://edint.es/def/cubo-empleo#dataset">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataSet"/>
+        <cube:structure rdf:resource="https://edint.es/def/cubo-empleo#dsd"/>
+        <rdfs:label xml:lang="es">Cubo de indicadores de empleo</rdfs:label>
+        <rdfs:label xml:lang="en">Employment indicators data cube</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://edint.es/def/cubo-empleo#dsd -->
+
+
+    <owl:NamedIndividual rdf:about="https://edint.es/def/cubo-empleo#dsd">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
+        <cube:component rdf:nodeID="genid17"/>
+        <cube:component rdf:nodeID="genid18"/>
+        <cube:component rdf:nodeID="genid19"/>
+        <cube:component rdf:nodeID="genid20"/>
+        <cube:component rdf:nodeID="genid21"/>
+        <cube:component rdf:nodeID="genid22"/>
+        <cube:component rdf:nodeID="genid23"/>
+        <cube:component rdf:nodeID="genid24"/>
+        <cube:component rdf:nodeID="genid25"/>
+        <cube:component rdf:nodeID="genid26"/>
+        <cube:component rdf:nodeID="genid27"/>
+        <cube:component rdf:nodeID="genid28"/>
+        <cube:component rdf:nodeID="genid29"/>
+        <cube:component rdf:nodeID="genid30"/>
+        <cube:component rdf:nodeID="genid31"/>
+        <cube:component rdf:nodeID="genid32"/>
+        <cube:component rdf:nodeID="genid33"/>
+        <cube:component rdf:nodeID="genid34"/>
+        <cube:component rdf:nodeID="genid35"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid17">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid18">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#sector"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid19">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid20">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid21">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#sex"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid22">
+        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid23">
+        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid24">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#age"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid25">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid26">
+        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid27">
+        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid28">
+        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid29">
+        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid30">
+        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid31">
+        <cube:measure rdf:resource="https://lod.ine.es/def/vocabulary/unemploymentRate"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid32">
+        <cube:measure rdf:resource="https://lod.ine.es/def/vocabulary/employmentRate"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid33">
+        <cube:measure rdf:resource="https://lod.ine.es/def/vocabulary/numberOfPeople"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid34">
+        <cube:measure rdf:resource="https://lod.ine.es/def/vocabulary/jobs"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid35">
+        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#jobProfiles"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</cube:order>
+    </rdf:Description>
+    
+
+
+    <!-- https://edint.es/kos/contractType -->
+
+
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/contractType"/>
     
 
 
@@ -952,6 +1149,9 @@
         <rdfs:label xml:lang="es">Tasa de paro</rdfs:label>
         <rdfs:label xml:lang="en">Unemployment rate</rdfs:label>
         <vocabulary:inMeasureSet rdf:resource="https://lod.ine.es/def/vocabulary/rate"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://oeg.fi.upm.es/">
+        <foaf:name>Ontology Engineering Group, UPM</foaf:name>
     </rdf:Description>
 </rdf:RDF>
 
