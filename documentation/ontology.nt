@@ -8,7 +8,7 @@
 <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo> <http://purl.org/dc/terms/creator> "Oscar Corcho" .
 <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo> <http://purl.org/dc/terms/creator> "Socorro Bernardos" .
 <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo> <http://purl.org/dc/terms/issued> "2026-04-20"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> .
 <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo> <http://purl.org/dc/terms/title> "Vocabulario para la representación del cubo de indicadores de empleo dentro del proyecto EDINT"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo> <http://purl.org/dc/terms/title> "Vocabulary for the representation of the employment indicators data cube within the EDINT project"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/actividad-economica/cubo-empleo> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintemp" .
