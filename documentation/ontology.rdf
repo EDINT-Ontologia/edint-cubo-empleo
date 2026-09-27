@@ -25,7 +25,7 @@
         <terms:creator>Oscar Corcho</terms:creator>
         <terms:creator>Socorro Bernardos</terms:creator>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-20</terms:issued>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <terms:title xml:lang="es">Vocabulario para la representación del cubo de indicadores de empleo dentro del proyecto EDINT</terms:title>
         <terms:title xml:lang="en">Vocabulary for the representation of the employment indicators data cube within the EDINT project</terms:title>
         <vann:preferredNamespacePrefix>edintemp</vann:preferredNamespacePrefix>
