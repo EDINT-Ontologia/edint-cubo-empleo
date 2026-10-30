@@ -34,7 +34,7 @@
     dcterms:title "EDINT Employment Indicators Data Cube"@en ;
     rdfs:label "Cubo de Datos de Empleo"@es ;
     rdfs:label "Employment Data Cube"@en ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     vann:preferredNamespaceUri <https://edint.es/def/cubo-empleo#> ;
     vann:preferredNamespacePrefix "edintemp" ;
     owl:versionInfo "0.2.1"  ;
