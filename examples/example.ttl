@@ -1,16 +1,35 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix edintemp: <https://edint.es/def/cubo-empleo#> .
 @prefix edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#> .
 @prefix edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#> .
+@prefix edintcontracttype: <https://edint.es/kos/EmploymentContractType/> .
 @prefix ine: <https://lod.ine.es/def/vocabulary/> .
+@prefix edintkos: <https://edint.es/kos/> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#######################################################################
+#  Ontologia (reutilizada del repositorio)
+#######################################################################
 
 <https://edint.es/def/cubo-empleo>
     a owl:Ontology ;
     owl:imports <http://purl.org/linked-data/cube> ;
     owl:versionInfo "0.1.0" .
 
-edintemp:dataset a qb:DataSet ;
+#######################################################################
+#  Data Set y Data Structure Definition
+#######################################################################
+
+<https://edint.es/def/cubo-empleo#> a qb:DataSet ;
+    dct:title "Cubo de indicadores de empleo"@es ,
+              "Employment indicators data cube"@en ;
     qb:structure edintemp:dsd .
 
 edintemp:dsd a qb:DataStructureDefinition ;
@@ -34,3 +53,340 @@ edintemp:dsd a qb:DataStructureDefinition ;
         [ qb:measure ine:jobs ; qb:order 17 ] ,
         [ qb:measure edintmeasure:jobProfiles ; qb:order 18 ] ,
         [ qb:measure ine:numberOfPeople ; qb:order 19 ] .
+
+#######################################################################
+#  Observaciones de ejemplo
+#
+#  Cobertura de datos por combinacion region x trimestre:
+#    Aragon:       Q1 2024, Q2 2024
+#    Zaragoza:     Q1 2024, Q2 2024
+#    Huesca:       Q1 2024
+#
+#  Cada observacion incluye TODAS las dimensiones y medidas del DSD.
+#  Se usan valores numericos ficticios para que las 14 consultas
+#  devuelvan filas.
+#######################################################################
+
+# -------------------------------------------------------------------
+#  Aragon - Q1 2024
+# -------------------------------------------------------------------
+
+edintemp:obs_aragon-Q12024 a qb:Observation ;
+    qb:dataSet <https://edint.es/def/cubo-empleo#> ;
+    qb:structure         edintemp:dsd ;
+
+    # --- dimensiones ---
+    edintdimension:refAdminRegion <http://id.ine.es/inegm/zona/98076> ;
+    edintdimension:sector       <http://datos.gob.es/kos/sector-publico/sector/empleo> ;
+    edintdimension:economicActivity <http://lod.ine.es/kos/cnae/CNAE-2025/section/a> ;
+    edintdimension:refPeriod    <http://id.ine.es/recurso/time-interval/P2024-Q1> ;
+    edintdimension:sex          <http://id.ine.es/dato/sexo/1> ;
+    edintdimension:age          <http://id.ine.es/dato/edad/25-54> ;
+    edintdimension:contractType edintcontracttype:permanent ;
+
+    # --- medidas ---
+    edintmeasure:activePopulationCount       125000 ;
+    edintmeasure:employedPopulationCount     110000 ;
+    edintmeasure:unemployedPopulationCount   15000 ;
+    edintmeasure:registeredContractsCount    12000 ;
+    edintmeasure:jobSeekersCount             15000 ;
+    edintmeasure:registeredUnemploymentCount 14500 ;
+    edintmeasure:socialSecurityAffiliatesCount 118000 ;
+    ine:unemploymentRate                     12.0 ;
+    ine:employmentRate                       55.0 ;
+    ine:jobs                                108000 ;
+    edintmeasure:jobProfiles                "ingeniero;tecnico;administrativo" ;
+    ine:numberOfPeople                      200000 .
+
+# Aragon - Q1 2024 (mujeres, para EMP08/EMP14 por sexo)
+edintemp:obs_aragon-Q12024-mujeres a qb:Observation ;
+    qb:dataSet <https://edint.es/def/cubo-empleo#> ;
+    qb:structure         edintemp:dsd ;
+
+    edintdimension:refAdminRegion <http://id.ine.es/inegm/zona/98076> ;
+    edintdimension:sector       <http://datos.gob.es/kos/sector-publico/sector/empleo> ;
+    edintdimension:economicActivity <http://lod.ine.es/kos/cnae/CNAE-2025/section/a> ;
+    edintdimension:refPeriod    <http://id.ine.es/recurso/time-interval/P2024-Q1> ;
+    edintdimension:sex          <http://id.ine.es/dato/sexo/2> ;
+    edintdimension:age          <http://id.ine.es/dato/edad/25-54> ;
+    edintdimension:contractType edintcontracttype:permanent ;
+
+    edintmeasure:activePopulationCount       120000 ;
+    edintmeasure:employedPopulationCount     105000 ;
+    edintmeasure:unemployedPopulationCount   15000 ;
+    edintmeasure:registeredContractsCount    10000 ;
+    edintmeasure:jobSeekersCount             15000 ;
+    edintmeasure:registeredUnemploymentCount 14000 ;
+    edintmeasure:socialSecurityAffiliatesCount 113000 ;
+    ine:unemploymentRate                     12.5 ;
+    ine:employmentRate                       54.5 ;
+    ine:jobs                                103000 ;
+    edintmeasure:jobProfiles                "profesor;enfermera;administrativa" ;
+    ine:numberOfPeople                      195000 .
+
+# Aragon - Q1 2024 (jovenes 15-24, para EMP09 por edad)
+edintemp:obs_aragon-Q12024-jovenes a qb:Observation ;
+    qb:dataSet <https://edint.es/def/cubo-empleo#> ;
+    qb:structure         edintemp:dsd ;
+
+    edintdimension:refAdminRegion <http://id.ine.es/inegm/zona/98076> ;
+    edintdimension:sector       <http://datos.gob.es/kos/sector-publico/sector/empleo> ;
+    edintdimension:economicActivity <http://lod.ine.es/kos/cnae/CNAE-2025/section/a> ;
+    edintdimension:refPeriod    <http://id.ine.es/recurso/time-interval/P2024-Q1> ;
+    edintdimension:sex          <http://id.ine.es/dato/sexo/1> ;
+    edintdimension:age          <http://id.ine.es/dato/edad/15-24> ;
+    edintdimension:contractType edintcontracttype:temporary ;
+
+    edintmeasure:activePopulationCount       18000 ;
+    edintmeasure:employedPopulationCount     14000 ;
+    edintmeasure:unemployedPopulationCount   4000 ;
+    edintmeasure:registeredContractsCount    3500 ;
+    edintmeasure:jobSeekersCount             4000 ;
+    edintmeasure:registeredUnemploymentCount 3800 ;
+    edintmeasure:socialSecurityAffiliatesCount 14500 ;
+    ine:unemploymentRate                     22.2 ;
+    ine:employmentRate                       42.0 ;
+    ine:jobs                                13000 ;
+    edintmeasure:jobProfiles                "auxiliar;temporal" ;
+    ine:numberOfPeople                      28000 .
+
+# Aragon - Q1 2024 (temporario, para EMP10 por tipo de contrato)
+edintemp:obs_aragon-Q12024-temporal a qb:Observation ;
+    qb:dataSet <https://edint.es/def/cubo-empleo#> ;
+    qb:structure         edintemp:dsd ;
+
+    edintdimension:refAdminRegion <http://id.ine.es/inegm/zona/98076> ;
+    edintdimension:sector       <http://datos.gob.es/kos/sector-publico/sector/empleo> ;
+    edintdimension:economicActivity <http://lod.ine.es/kos/cnae/CNAE-2025/section/a> ;
+    edintdimension:refPeriod    <http://id.ine.es/recurso/time-interval/P2024-Q1> ;
+    edintdimension:sex          <http://id.ine.es/dato/sexo/1> ;
+    edintdimension:age          <http://id.ine.es/dato/edad/25-54> ;
+    edintdimension:contractType edintcontracttype:temporary ;
+
+    edintmeasure:activePopulationCount       22000 ;
+    edintmeasure:employedPopulationCount     19000 ;
+    edintmeasure:unemployedPopulationCount   3000 ;
+    edintmeasure:registeredContractsCount    4200 ;
+    edintmeasure:jobSeekersCount             3000 ;
+    edintmeasure:registeredUnemploymentCount 2900 ;
+    edintmeasure:socialSecurityAffiliatesCount 18500 ;
+    ine:unemploymentRate                     13.6 ;
+    ine:employmentRate                       52.0 ;
+    ine:jobs                                18000 ;
+    edintmeasure:jobProfiles                "obrero;operario" ;
+    ine:numberOfPeople                      35000 .
+
+# Aragon - Q2 2024
+edintemp:obs_aragon-Q22024 a qb:Observation ;
+    qb:dataSet <https://edint.es/def/cubo-empleo#> ;
+    qb:structure         edintemp:dsd ;
+
+    edintdimension:refAdminRegion <http://id.ine.es/inegm/zona/98076> ;
+    edintdimension:sector       <http://datos.gob.es/kos/sector-publico/sector/empleo> ;
+    edintdimension:economicActivity <http://lod.ine.es/kos/cnae/CNAE-2025/section/a> ;
+    edintdimension:refPeriod    <http://id.ine.es/recurso/time-interval/P2024-Q2> ;
+    edintdimension:sex          <http://id.ine.es/dato/sexo/1> ;
+    edintdimension:age          <http://id.ine.es/dato/edad/25-54> ;
+    edintdimension:contractType edintcontracttype:permanent ;
+
+    edintmeasure:activePopulationCount       128000 ;
+    edintmeasure:employedPopulationCount     113000 ;
+    edintmeasure:unemployedPopulationCount   15000 ;
+    edintmeasure:registeredContractsCount    12500 ;
+    edintmeasure:jobSeekersCount             15000 ;
+    edintmeasure:registeredUnemploymentCount 14800 ;
+    edintmeasure:socialSecurityAffiliatesCount 121000 ;
+    ine:unemploymentRate                     11.7 ;
+    ine:employmentRate                       56.0 ;
+    ine:jobs                                111000 ;
+    edintmeasure:jobProfiles                "ingeniero;tecnico;administrativo" ;
+    ine:numberOfPeople                      205000 .
+
+# -------------------------------------------------------------------
+#  Zaragoza - Q1 2024
+# -------------------------------------------------------------------
+
+edintemp:obs_zaragoza-Q12024 a qb:Observation ;
+    qb:dataSet <https://edint.es/def/cubo-empleo#> ;
+    qb:structure         edintemp:dsd ;
+
+    edintdimension:refAdminRegion <http://id.ine.es/inegm/zona/50001> ;
+    edintdimension:sector       <http://datos.gob.es/kos/sector-publico/sector/empleo> ;
+    edintdimension:economicActivity <http://lod.ine.es/kos/cnae/CNAE-2025/section/a> ;
+    edintdimension:refPeriod    <http://id.ine.es/recurso/time-interval/P2024-Q1> ;
+    edintdimension:sex          <http://id.ine.es/dato/sexo/1> ;
+    edintdimension:age          <http://id.ine.es/dato/edad/25-54> ;
+    edintdimension:contractType edintcontracttype:permanent ;
+
+    edintmeasure:activePopulationCount       85000 ;
+    edintmeasure:employedPopulationCount     75000 ;
+    edintmeasure:unemployedPopulationCount   10000 ;
+    edintmeasure:registeredContractsCount    8000 ;
+    edintmeasure:jobSeekersCount             10000 ;
+    edintmeasure:registeredUnemploymentCount 9800 ;
+    edintmeasure:socialSecurityAffiliatesCount 80000 ;
+    ine:unemploymentRate                     11.8 ;
+    ine:employmentRate                       56.5 ;
+    ine:jobs                                73000 ;
+    edintmeasure:jobProfiles                "ingeniero;comerciante" ;
+    ine:numberOfPeople                      130000 .
+
+# Zaragoza - Q1 2024 (contratos temporales, para EMP10)
+edintemp:obs_zaragoza-Q12024-temporal a qb:Observation ;
+    qb:dataSet <https://edint.es/def/cubo-empleo#> ;
+    qb:structure         edintemp:dsd ;
+
+    edintdimension:refAdminRegion <http://id.ine.es/inegm/zona/50001> ;
+    edintdimension:sector       <http://datos.gob.es/kos/sector-publico/sector/empleo> ;
+    edintdimension:economicActivity <http://lod.ine.es/kos/cnae/CNAE-2025/section/a> ;
+    edintdimension:refPeriod    <http://id.ine.es/recurso/time-interval/P2024-Q1> ;
+    edintdimension:sex          <http://id.ine.es/dato/sexo/2> ;
+    edintdimension:age          <http://id.ine.es/dato/edad/25-54> ;
+    edintdimension:contractType edintcontracttype:temporary ;
+
+    edintmeasure:activePopulationCount       15000 ;
+    edintmeasure:employedPopulationCount     13000 ;
+    edintmeasure:unemployedPopulationCount   2000 ;
+    edintmeasure:registeredContractsCount    3000 ;
+    edintmeasure:jobSeekersCount             2000 ;
+    edintmeasure:registeredUnemploymentCount 1900 ;
+    edintmeasure:socialSecurityAffiliatesCount 12500 ;
+    ine:unemploymentRate                     13.3 ;
+    ine:employmentRate                       50.0 ;
+    ine:jobs                                12000 ;
+    edintmeasure:jobProfiles                "auxiliar;ventas" ;
+    ine:numberOfPeople                      25000 .
+
+# Zaragoza - Q1 2024 (con CNAE diferente, para EMP11/EMP12 por actividad)
+edintemp:obs_zaragoza-Q12024-cnae-b a qb:Observation ;
+    qb:dataSet <https://edint.es/def/cubo-empleo#> ;
+    qb:structure         edintemp:dsd ;
+
+    edintdimension:refAdminRegion <http://id.ine.es/inegm/zona/50001> ;
+    edintdimension:sector       <http://datos.gob.es/kos/sector-publico/sector/empleo> ;
+    edintdimension:economicActivity <http://lod.ine.es/kos/cnae/CNAE-2025/section/b> ;
+    edintdimension:refPeriod    <http://id.ine.es/recurso/time-interval/P2024-Q1> ;
+    edintdimension:sex          <http://id.ine.es/dato/sexo/1> ;
+    edintdimension:age          <http://id.ine.es/dato/edad/25-54> ;
+    edintdimension:contractType edintcontracttype:permanent ;
+
+    edintmeasure:activePopulationCount       5000 ;
+    edintmeasure:employedPopulationCount     4500 ;
+    edintmeasure:unemployedPopulationCount   500 ;
+    edintmeasure:registeredContractsCount    400 ;
+    edintmeasure:jobSeekersCount             500 ;
+    edintmeasure:registeredUnemploymentCount 480 ;
+    edintmeasure:socialSecurityAffiliatesCount 4200 ;
+    ine:unemploymentRate                     10.0 ;
+    ine:employmentRate                       60.0 ;
+    ine:jobs                                4300 ;
+    edintmeasure:jobProfiles                "miner;obrero" ;
+    ine:numberOfPeople                      8000 .
+
+# Zaragoza - Q2 2024
+edintemp:obs_zaragoza-Q22024 a qb:Observation ;
+    qb:dataSet <https://edint.es/def/cubo-empleo#> ;
+    qb:structure         edintemp:dsd ;
+
+    edintdimension:refAdminRegion <http://id.ine.es/inegm/zona/50001> ;
+    edintdimension:sector       <http://datos.gob.es/kos/sector-publico/sector/empleo> ;
+    edintdimension:economicActivity <http://lod.ine.es/kos/cnae/CNAE-2025/section/a> ;
+    edintdimension:refPeriod    <http://id.ine.es/recurso/time-interval/P2024-Q2> ;
+    edintdimension:sex          <http://id.ine.es/dato/sexo/1> ;
+    edintdimension:age          <http://id.ine.es/dato/edad/25-54> ;
+    edintdimension:contractType edintcontracttype:permanent ;
+
+    edintmeasure:activePopulationCount       87000 ;
+    edintmeasure:employedPopulationCount     77000 ;
+    edintmeasure:unemployedPopulationCount   10000 ;
+    edintmeasure:registeredContractsCount    8200 ;
+    edintmeasure:jobSeekersCount             10000 ;
+    edintmeasure:registeredUnemploymentCount 10000 ;
+    edintmeasure:socialSecurityAffiliatesCount 82000 ;
+    ine:unemploymentRate                     11.5 ;
+    ine:employmentRate                       57.0 ;
+    ine:jobs                                75000 ;
+    edintmeasure:jobProfiles                "ingeniero;comerciante" ;
+    ine:numberOfPeople                      133000 .
+
+# -------------------------------------------------------------------
+#  Huesca - Q1 2024
+# -------------------------------------------------------------------
+
+edintemp:obs_huesca-Q12024 a qb:Observation ;
+    qb:dataSet <https://edint.es/def/cubo-empleo#> ;
+    qb:structure         edintemp:dsd ;
+
+    edintdimension:refAdminRegion <http://id.ine.es/inegm/zona/22001> ;
+    edintdimension:sector       <http://datos.gob.es/kos/sector-publico/sector/empleo> ;
+    edintdimension:economicActivity <http://lod.ine.es/kos/cnae/CNAE-2025/section/a> ;
+    edintdimension:refPeriod    <http://id.ine.es/recurso/time-interval/P2024-Q1> ;
+    edintdimension:sex          <http://id.ine.es/dato/sexo/1> ;
+    edintdimension:age          <http://id.ine.es/dato/edad/25-54> ;
+    edintdimension:contractType edintcontracttype:permanent ;
+
+    edintmeasure:activePopulationCount       12000 ;
+    edintmeasure:employedPopulationCount     10500 ;
+    edintmeasure:unemployedPopulationCount   1500 ;
+    edintmeasure:registeredContractsCount    1000 ;
+    edintmeasure:jobSeekersCount             1500 ;
+    edintmeasure:registeredUnemploymentCount 1400 ;
+    edintmeasure:socialSecurityAffiliatesCount 10000 ;
+    ine:unemploymentRate                     12.5 ;
+    ine:employmentRate                       53.0 ;
+    ine:jobs                                10000 ;
+    edintmeasure:jobProfiles                "guia;turismo" ;
+    ine:numberOfPeople                      20000 .
+
+# Huesca - Q1 2024 (contratos formativos, para EMP10/EMP14)
+edintemp:obs_huesca-Q12024-formativo a qb:Observation ;
+    qb:dataSet <https://edint.es/def/cubo-empleo#> ;
+    qb:structure         edintemp:dsd ;
+
+    edintdimension:refAdminRegion <http://id.ine.es/inegm/zona/22001> ;
+    edintdimension:sector       <http://datos.gob.es/kos/sector-publico/sector/empleo> ;
+    edintdimension:economicActivity <http://lod.ine.es/kos/cnae/CNAE-2025/section/a> ;
+    edintdimension:refPeriod    <http://id.ine.es/recurso/time-interval/P2024-Q1> ;
+    edintdimension:sex          <http://id.ine.es/dato/sexo/2> ;
+    edintdimension:age          <http://id.ine.es/dato/edad/15-24> ;
+    edintdimension:contractType edintcontracttype:alternatingTraining ;
+
+    edintmeasure:activePopulationCount       800 ;
+    edintmeasure:employedPopulationCount     700 ;
+    edintmeasure:unemployedPopulationCount   100 ;
+    edintmeasure:registeredContractsCount    120 ;
+    edintmeasure:jobSeekersCount             100 ;
+    edintmeasure:registeredUnemploymentCount 95 ;
+    edintmeasure:socialSecurityAffiliatesCount 650 ;
+    ine:unemploymentRate                     12.5 ;
+    ine:employmentRate                       45.0 ;
+    ine:jobs                                650 ;
+    edintmeasure:jobProfiles                "formando;practicas" ;
+    ine:numberOfPeople                      1500 .
+
+# Huesca - Q1 2024 (paro jovenes, para EMP09)
+edintemp:obs_huesca-Q12024-paradujoven a qb:Observation ;
+    qb:dataSet <https://edint.es/def/cubo-empleo#> ;
+    qb:structure         edintemp:dsd ;
+
+    edintdimension:refAdminRegion <http://id.ine.es/inegm/zona/22001> ;
+    edintdimension:sector       <http://datos.gob.es/kos/sector-publico/sector/empleo> ;
+    edintdimension:economicActivity <http://lod.ine.es/kos/cnae/CNAE-2025/section/a> ;
+    edintdimension:refPeriod    <http://id.ine.es/recurso/time-interval/P2024-Q1> ;
+    edintdimension:sex          <http://id.ine.es/dato/sexo/1> ;
+    edintdimension:age          <http://id.ine.es/dato/edad/15-24> ;
+    edintdimension:contractType edintcontracttype:other ;
+
+    edintmeasure:activePopulationCount       2000 ;
+    edintmeasure:employedPopulationCount     1500 ;
+    edintmeasure:unemployedPopulationCount   500 ;
+    edintmeasure:registeredContractsCount    200 ;
+    edintmeasure:jobSeekersCount             500 ;
+    edintmeasure:registeredUnemploymentCount 480 ;
+    edintmeasure:socialSecurityAffiliatesCount 1600 ;
+    ine:unemploymentRate                     25.0 ;
+    ine:employmentRate                       40.0 ;
+    ine:jobs                                1400 ;
+    edintmeasure:jobProfiles                "temporal;auxiliar" ;
+    ine:numberOfPeople                      3500 .
+
