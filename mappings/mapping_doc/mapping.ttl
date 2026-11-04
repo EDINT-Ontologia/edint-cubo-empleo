@@ -26,6 +26,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix dct: <http://purl.org/dc/terms/>.
 @prefix inelod: <http://lod.ine.es/recurso/cubes/>.
 @prefix ql: <http://semweb.mmlab.be/ns/ql#>.
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
@@ -42,7 +43,6 @@
 @prefix fnml: <http://semweb.mmlab.be/ns/fnml#>.
 @prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#>.
 @base <http://example.com/ns#>.
-@prefix dct:    <http://purl.org/dc/terms/> .
 @prefix map:    <https://w3id.org/edint/cubo-empleo/mapping/> .
 
 map:person_000 rdf:type foaf:Person ;
