@@ -57,29 +57,29 @@
 }, {
   "@id" : "_:genid17",
   "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount"
+    "@id" : "https://lod.ine.es/def/vocabulary/unemploymentRate"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "10"
+    "@value" : "15"
   } ]
 }, {
   "@id" : "_:genid18",
   "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#jobProfiles"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "11"
+    "@value" : "18"
   } ]
 }, {
   "@id" : "_:genid19",
   "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount"
+    "@id" : "https://lod.ine.es/def/vocabulary/numberOfPeople"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "12"
+    "@value" : "19"
   } ]
 }, {
   "@id" : "_:genid2",
@@ -92,33 +92,6 @@
 }, {
   "@id" : "_:genid20",
   "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "13"
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "14"
-  } ]
-}, {
-  "@id" : "_:genid22",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "https://lod.ine.es/def/vocabulary/unemploymentRate"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "15"
-  } ]
-}, {
-  "@id" : "_:genid23",
-  "http://purl.org/linked-data/cube#measure" : [ {
     "@id" : "https://lod.ine.es/def/vocabulary/employmentRate"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
@@ -126,7 +99,7 @@
     "@value" : "16"
   } ]
 }, {
-  "@id" : "_:genid24",
+  "@id" : "_:genid21",
   "http://purl.org/linked-data/cube#measure" : [ {
     "@id" : "https://lod.ine.es/def/vocabulary/jobs"
   } ],
@@ -135,49 +108,76 @@
     "@value" : "17"
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid22",
   "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#jobProfiles"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "18"
+    "@value" : "11"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "12"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "9"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
   } ]
 }, {
   "@id" : "_:genid26",
   "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "https://lod.ine.es/def/vocabulary/numberOfPeople"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "19"
+    "@value" : "13"
   } ]
 }, {
   "@id" : "_:genid27",
-  "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion"
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
+    "@value" : "14"
   } ]
 }, {
   "@id" : "_:genid28",
   "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#sector"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "2"
+    "@value" : "7"
   } ]
 }, {
   "@id" : "_:genid29",
-  "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity"
+  "http://purl.org/linked-data/cube#measure" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "3"
+    "@value" : "8"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -190,15 +190,6 @@
 }, {
   "@id" : "_:genid30",
   "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod"
-  } ],
-  "http://purl.org/linked-data/cube#order" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "4"
-  } ]
-}, {
-  "@id" : "_:genid31",
-  "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#sex"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
@@ -206,7 +197,7 @@
     "@value" : "5"
   } ]
 }, {
-  "@id" : "_:genid32",
+  "@id" : "_:genid31",
   "http://purl.org/linked-data/cube#dimension" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#age"
   } ],
@@ -215,31 +206,40 @@
     "@value" : "6"
   } ]
 }, {
-  "@id" : "_:genid33",
+  "@id" : "_:genid32",
   "http://purl.org/linked-data/cube#dimension" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "7"
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#sector"
+  } ],
+  "http://purl.org/linked-data/cube#order" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid34",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount"
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "8"
+    "@value" : "3"
   } ]
 }, {
   "@id" : "_:genid35",
-  "http://purl.org/linked-data/cube#measure" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount"
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod"
   } ],
   "http://purl.org/linked-data/cube#order" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "9"
+    "@value" : "4"
   } ]
 }, {
   "@id" : "_:genid4",

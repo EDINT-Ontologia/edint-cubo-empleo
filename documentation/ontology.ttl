@@ -537,62 +537,62 @@ rdfs:Resource rdf:type owl:Class .
                                                   _:genid34 ,
                                                   _:genid35 .
 
-_:genid17 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> ;
-           <http://purl.org/linked-data/cube#order> 10 .
-
-_:genid18 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> ;
-           <http://purl.org/linked-data/cube#order> 11 .
-
-_:genid19 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> ;
-           <http://purl.org/linked-data/cube#order> 12 .
-
-_:genid20 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> ;
-           <http://purl.org/linked-data/cube#order> 13 .
-
-_:genid21 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> ;
-           <http://purl.org/linked-data/cube#order> 14 .
-
-_:genid22 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/unemploymentRate> ;
+_:genid17 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/unemploymentRate> ;
            <http://purl.org/linked-data/cube#order> 15 .
 
-_:genid23 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/employmentRate> ;
-           <http://purl.org/linked-data/cube#order> 16 .
-
-_:genid24 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/jobs> ;
-           <http://purl.org/linked-data/cube#order> 17 .
-
-_:genid25 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#jobProfiles> ;
+_:genid18 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#jobProfiles> ;
            <http://purl.org/linked-data/cube#order> 18 .
 
-_:genid26 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/numberOfPeople> ;
+_:genid19 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/numberOfPeople> ;
            <http://purl.org/linked-data/cube#order> 19 .
 
-_:genid27 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> ;
-           <http://purl.org/linked-data/cube#order> 1 .
+_:genid20 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/employmentRate> ;
+           <http://purl.org/linked-data/cube#order> 16 .
 
-_:genid28 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> ;
-           <http://purl.org/linked-data/cube#order> 2 .
+_:genid21 <http://purl.org/linked-data/cube#measure> <https://lod.ine.es/def/vocabulary/jobs> ;
+           <http://purl.org/linked-data/cube#order> 17 .
 
-_:genid29 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> ;
-           <http://purl.org/linked-data/cube#order> 3 .
+_:genid22 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount> ;
+           <http://purl.org/linked-data/cube#order> 11 .
 
-_:genid30 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> ;
-           <http://purl.org/linked-data/cube#order> 4 .
+_:genid23 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount> ;
+           <http://purl.org/linked-data/cube#order> 12 .
 
-_:genid31 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> ;
-           <http://purl.org/linked-data/cube#order> 5 .
+_:genid24 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> ;
+           <http://purl.org/linked-data/cube#order> 9 .
 
-_:genid32 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#age> ;
-           <http://purl.org/linked-data/cube#order> 6 .
+_:genid25 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount> ;
+           <http://purl.org/linked-data/cube#order> 10 .
 
-_:genid33 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> ;
+_:genid26 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount> ;
+           <http://purl.org/linked-data/cube#order> 13 .
+
+_:genid27 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount> ;
+           <http://purl.org/linked-data/cube#order> 14 .
+
+_:genid28 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType> ;
            <http://purl.org/linked-data/cube#order> 7 .
 
-_:genid34 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> ;
+_:genid29 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount> ;
            <http://purl.org/linked-data/cube#order> 8 .
 
-_:genid35 <http://purl.org/linked-data/cube#measure> <http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount> ;
-           <http://purl.org/linked-data/cube#order> 9 .
+_:genid30 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#sex> ;
+           <http://purl.org/linked-data/cube#order> 5 .
+
+_:genid31 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#age> ;
+           <http://purl.org/linked-data/cube#order> 6 .
+
+_:genid32 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion> ;
+           <http://purl.org/linked-data/cube#order> 1 .
+
+_:genid33 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#sector> ;
+           <http://purl.org/linked-data/cube#order> 2 .
+
+_:genid34 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity> ;
+           <http://purl.org/linked-data/cube#order> 3 .
+
+_:genid35 <http://purl.org/linked-data/cube#dimension> <http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod> ;
+           <http://purl.org/linked-data/cube#order> 4 .
 
 
 ###  https://edint.es/kos/contractType
