@@ -27,19 +27,19 @@ Para definir estas dimensiones y medidas se reutilizan varios vocabularios de re
 <ol>
   <li>Vocabularios SDMX (<i>Statistical Data and Metadata eXchange</i>):</li>
   <ul>
-    <li><a href="http://purl.org/linked-data/sdmx/2009/dimension">sdmx-dimension</a>: se reutiliza como base para dimensiones estadísticas generales, especialmente mediante relaciones de especialización como <a href="#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#refPeriod">edintdimension:refPeriod</a>, <a href="#sex">edintdimension:sex</a> y <a href="#age">edintdimension:age</a>.</li>
+    <li><a href="http://purl.org/linked-data/sdmx/2009/dimension">sdmx-dimension</a>: se reutiliza como base para dimensiones estadísticas generales, especialmente mediante relaciones de especialización como <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod">edintdimension:refPeriod</a>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#sex">edintdimension:sex</a> y <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#age">edintdimension:age</a>.</li>
     <li><a href="http://purl.org/linked-data/sdmx/2009/measure">sdmx-measure</a>: se reutiliza como base para varias medidas del cubo, definidas como subpropiedades de <code>sdmx-measure:obsValue</code>.</li>
   </ul>
   <li>Vocabularios territoriales y temporales:</li>
   <ul>
-    <li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">esadm</a>: se reutiliza para indicar que la dimensión <a href="#refAdminRegion">edintdimension:refAdminRegion</a> puede tomar valores correspondientes a municipios, barrios o distritos.</li>
-    <li><a href="https://www.w3.org/TR/owl-time/">OWL-Time</a>: se reutiliza para modelar la dimensión temporal, estableciendo que <a href="#refPeriod">edintdimension:refPeriod</a> tiene como rango <code>time:Interval</code>.</li>
+    <li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">esadm</a>: se reutiliza para indicar que la dimensión <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion">edintdimension:refAdminRegion</a> puede tomar valores correspondientes a municipios, barrios o distritos.</li>
+    <li><a href="https://www.w3.org/TR/owl-time/">OWL-Time</a>: se reutiliza para modelar la dimensión temporal, estableciendo que <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod">edintdimension:refPeriod</a> tiene como rango <code>time:Interval</code>.</li>
   </ul>
   <li>Listas de códigos SKOS:</li>
   <ul>
-    <li>La dimensión <a href="#sector">edintdimension:sector</a> reutiliza como lista de códigos el esquema del sector público publicado en <a href="https://datos.gob.es/kos/sector-publico/sector">datos.gob.es</a>.</li>
-    <li>La dimensión <a href="#economicActivity">edintdimension:economicActivity</a> reutiliza una clasificación controlada de actividad económica, como <a href="http://lod.ine.es/kos/cnae/CNAE-2025">CNAE 2025</a>.</li>
-    <li>La dimensión <a href="#contractType">edintdimension:contractType</a> utiliza una lista de códigos propia definida en <code>edintkos:contractType</code>.</li>
+    <li>La dimensión <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#sector">edintdimension:sector</a> reutiliza como lista de códigos el esquema del sector público publicado en <a href="https://datos.gob.es/kos/sector-publico/sector">datos.gob.es</a>.</li>
+    <li>La dimensión <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity">edintdimension:economicActivity</a> reutiliza una clasificación controlada de actividad económica, como <a href="http://lod.ine.es/kos/cnae/CNAE-2025">CNAE 2025</a>.</li>
+    <li>La dimensión <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType">edintdimension:contractType</a> utiliza una lista de códigos propia definida en <code>edintkos:contractType</code>.</li>
   </ul>
   <li>Vocabulario del INE:</li>
   <ul>
@@ -57,7 +57,7 @@ El modelo del cubo de empleo se muestra en la Figura 2, donde se presentan las d
 </center>
 
 <span class="markdown">
-La estructura del cubo de empleo se define mediante la instancia <a href="#edintemp:dsd">edintemp:dsd</a>, que agrupa todas las dimensiones y medidas del modelo. En este caso, se han definido como dimensiones la región administrativa de referencia, el sector, la actividad económica, el periodo de referencia, el sexo, la edad y el tipo de contrato. Como medidas, el modelo incluye distintos recuentos e indicadores asociados al empleo, como el número de personas activas, ocupadas y desempleadas, contratos registrados, demandantes de empleo, paro registrado, afiliaciones a la Seguridad Social, tasa de paro, tasa de empleo, puestos de trabajo, perfiles de empleo y número de personas.
+La estructura del cubo de empleo se define mediante la instancia <a href="https://edint.es/def/cubo-empleo#dsd">edintemp:dsd</a>, que agrupa todas las dimensiones y medidas del modelo. En este caso, se han definido como dimensiones la región administrativa de referencia, el sector, la actividad económica, el periodo de referencia, el sexo, la edad y el tipo de contrato. Como medidas, el modelo incluye distintos recuentos e indicadores asociados al empleo, como el número de personas activas, ocupadas y desempleadas, contratos registrados, demandantes de empleo, paro registrado, afiliaciones a la Seguridad Social, tasa de paro, tasa de empleo, puestos de trabajo, perfiles de empleo y número de personas.
 </span>
 
 <pre>
@@ -67,28 +67,28 @@ La estructura del cubo de empleo se define mediante la instancia <a href="#edint
     <a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a> "0.1.0" .
 
 <a href="#dataset">edintemp:dataset</a> a <a href="http://purl.org/linked-data/cube#DataSet">qb:DataSet</a> ; 
-    <a href="http://purl.org/linked-data/cube#structure">qb:structure</a> <a href="#edintemp:dsd">edintemp:dsd</a> .
+    <a href="http://purl.org/linked-data/cube#structure">qb:structure</a> <a href="https://edint.es/def/cubo-empleo#dsd">edintemp:dsd</a> .
 
-<a href="#edintemp:dsd">edintemp:dsd</a> a <a href="http://purl.org/linked-data/cube#DataStructureDefinition">qb:DataStructureDefinition</a> ;
+<a href="https://edint.es/def/cubo-empleo#dsd">edintemp:dsd</a> a <a href="http://purl.org/linked-data/cube#DataStructureDefinition">qb:DataStructureDefinition</a> ;
     <a href="http://purl.org/linked-data/cube#component">qb:component</a>
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#refAdminRegion">edintdimension:refAdminRegion</a> ; qb:order 1 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#sector">edintdimension:sector</a> ; qb:order 2 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#economicActivity">edintdimension:economicActivity</a> ; qb:order 3 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#refPeriod">edintdimension:refPeriod</a> ; qb:order 4 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#sex">edintdimension:sex</a> ; qb:order 5 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#age">edintdimension:age</a> ; qb:order 6 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#contractType">edintdimension:contractType</a> ; qb:order 7 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#activePopulationCount">edintmeasure:activePopulationCount</a> ; qb:order 8 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#employedPopulationCount">edintmeasure:employedPopulationCount</a> ; qb:order 9 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#unemployedPopulationCount">edintmeasure:unemployedPopulationCount</a> ; qb:order 10 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#registeredContractsCount">edintmeasure:registeredContractsCount</a> ; qb:order 11 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#jobSeekersCount">edintmeasure:jobSeekersCount</a> ; qb:order 12 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#registeredUnemploymentCount">edintmeasure:registeredUnemploymentCount</a> ; qb:order 13 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#socialSecurityAffiliatesCount">edintmeasure:socialSecurityAffiliatesCount</a> ; qb:order 14 ] ,
+        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion">edintdimension:refAdminRegion</a> ; qb:order 1 ] ,
+        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#sector">edintdimension:sector</a> ; qb:order 2 ] ,
+        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity">edintdimension:economicActivity</a> ; qb:order 3 ] ,
+        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod">edintdimension:refPeriod</a> ; qb:order 4 ] ,
+        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#sex">edintdimension:sex</a> ; qb:order 5 ] ,
+        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#age">edintdimension:age</a> ; qb:order 6 ] ,
+        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType">edintdimension:contractType</a> ; qb:order 7 ] ,
+        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount">edintmeasure:activePopulationCount</a> ; qb:order 8 ] ,
+        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount">edintmeasure:employedPopulationCount</a> ; qb:order 9 ] ,
+        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount">edintmeasure:unemployedPopulationCount</a> ; qb:order 10 ] ,
+        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount">edintmeasure:registeredContractsCount</a> ; qb:order 11 ] ,
+        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount">edintmeasure:jobSeekersCount</a> ; qb:order 12 ] ,
+        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount">edintmeasure:registeredUnemploymentCount</a> ; qb:order 13 ] ,
+        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount">edintmeasure:socialSecurityAffiliatesCount</a> ; qb:order 14 ] ,
         [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:unemploymentRate ; qb:order 15 ] ,
         [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:employmentRate ; qb:order 16 ] ,
         [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:jobs ; qb:order 17 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#jobProfiles">edintmeasure:jobProfiles</a> ; qb:order 18 ] ,
+        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#http://vocab.linkeddata.es/datosabiertos/def/measure#jobProfiles">edintmeasure:jobProfiles</a> ; qb:order 18 ] ,
         [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:numberOfPeople ; qb:order 19 ] .
 </pre>
 
@@ -114,13 +114,13 @@ La estructura del cubo de empleo se define mediante la instancia <a href="#edint
 
   <pre>
 <a href="#dataset">edintemp:dataset</a> a <a href="http://purl.org/linked-data/cube#DataSet">qb:DataSet</a> ; 
-    <a href="http://purl.org/linked-data/cube#structure">qb:structure</a> <a href="#edintemp:dsd">edintemp:dsd</a> .
+    <a href="http://purl.org/linked-data/cube#structure">qb:structure</a> <a href="https://edint.es/def/cubo-empleo#dsd">edintemp:dsd</a> .
   </pre>
 
   <span class="markdown">
-  <b>2) Identificación de las dimensiones y medidas relevantes:</b> Aunque la estructura <code>edintemp:dsd</code> contiene todas las dimensiones y medidas del cubo de empleo, este ejemplo solo utiliza las dimensiones <a href="#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#refPeriod">edintdimension:refPeriod</a>, <a href="#sex">edintdimension:sex</a> y <a href="#age">edintdimension:age</a>, junto con la medida <a href="#employedPopulationCount">edintmeasure:employedPopulationCount</a>.
+  <b>2) Identificación de las dimensiones y medidas relevantes:</b> Aunque la estructura <code>edintemp:dsd</code> contiene todas las dimensiones y medidas del cubo de empleo, este ejemplo solo utiliza las dimensiones <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod">edintdimension:refPeriod</a>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#sex">edintdimension:sex</a> y <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#age">edintdimension:age</a>, junto con la medida <a href="#http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount">edintmeasure:employedPopulationCount</a>.
 
-  Es importante señalar que la dimensión <a href="#refPeriod">edintdimension:refPeriod</a> tiene como rango <code>time:Interval</code>, por lo que el periodo de referencia debe representarse mediante una instancia explícita de intervalo temporal.
+  Es importante señalar que la dimensión <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod">edintdimension:refPeriod</a> tiene como rango <code>time:Interval</code>, por lo que el periodo de referencia debe representarse mediante una instancia explícita de intervalo temporal.
   </span>
 
   <pre>
@@ -138,11 +138,11 @@ La estructura del cubo de empleo se define mediante la instancia <a href="#edint
 &lt;http://vocab.linkeddata.es/datosabiertos/recurso/actividad-economica/cubo-empleo/observation/obs001&gt;
     a <a href="http://purl.org/linked-data/cube#Observation">qb:Observation</a> ;
     <a href="http://purl.org/linked-data/cube#dataSet">qb:dataSet</a> <a href="#dataset">edintemp:dataset</a> ;
-    <a href="#refAdminRegion">edintdimension:refAdminRegion</a> &lt;http://vocab.linkeddata.es/datosabiertos/recurso/territorio/municipio/zaragoza&gt; ;
-    <a href="#refPeriod">edintdimension:refPeriod</a> &lt;http://vocab.linkeddata.es/datosabiertos/recurso/actividad-economica/cubo-empleo/interval/2025&gt; ;
-    <a href="#sex">edintdimension:sex</a> &lt;http://purl.org/linked-data/sdmx/2009/code#sex-F&gt; ;
-    <a href="#age">edintdimension:age</a> "25-29"^^xsd:string ;
-    <a href="#employedPopulationCount">edintmeasure:employedPopulationCount</a> "12543"^^xsd:nonNegativeInteger .
+    <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion">edintdimension:refAdminRegion</a> &lt;http://vocab.linkeddata.es/datosabiertos/recurso/territorio/municipio/zaragoza&gt; ;
+    <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod">edintdimension:refPeriod</a> &lt;http://vocab.linkeddata.es/datosabiertos/recurso/actividad-economica/cubo-empleo/interval/2025&gt; ;
+    <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#sex">edintdimension:sex</a> &lt;http://purl.org/linked-data/sdmx/2009/code#sex-F&gt; ;
+    <a href="#http://vocab.linkeddata.es/datosabiertos/def/dimension#age">edintdimension:age</a> "25-29"^^xsd:string ;
+    <a href="#http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount">edintmeasure:employedPopulationCount</a> "12543"^^xsd:nonNegativeInteger .
   </pre>
 
   <span class="markdown">
