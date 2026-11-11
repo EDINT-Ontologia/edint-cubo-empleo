@@ -63,11 +63,11 @@ Additionally, several vocabularies and code lists are reused to describe the dif
         <vocab:vocabularyLabel rdf:nodeID="genid12"/>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
-        <foaf:name>Oscar Corcho</foaf:name>
+        <foaf:name>Daniel Doña</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid2">
-        <foaf:name>Maria del Socorro Bernardos</foaf:name>
+        <foaf:name>Edna Ruckhaus</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid3">
@@ -75,11 +75,11 @@ Additionally, several vocabularies and code lists are reused to describe the dif
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid4">
-        <foaf:name>Edna Ruckhaus</foaf:name>
+        <foaf:name>Maria del Socorro Bernardos</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid5">
-        <foaf:name>Daniel Doña</foaf:name>
+        <foaf:name>Oscar Corcho</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid6">
@@ -88,9 +88,9 @@ Additionally, several vocabularies and code lists are reused to describe the dif
         <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid7">
-        <rdfs:label xml:lang="en">EDINT Measures</rdfs:label>
-        <rdfs:label xml:lang="es">Medidas EDINT</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure"/>
+        <rdfs:label xml:lang="en">W3C Data Cube</rdfs:label>
+        <rdfs:label xml:lang="es">W3C Data Cube</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://purl.org/linked-data/cube"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid8">
         <rdfs:label xml:lang="es">Dimensiones EDINT</rdfs:label>
@@ -98,24 +98,24 @@ Additionally, several vocabularies and code lists are reused to describe the dif
         <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid9">
-        <rdfs:label xml:lang="en">INE Vocabulary</rdfs:label>
-        <rdfs:label xml:lang="es">Vocabulario INE</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="https://lod.ine.es/def/vocabulary"/>
+        <rdfs:label xml:lang="en">EDINT Measures</rdfs:label>
+        <rdfs:label xml:lang="es">Medidas EDINT</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid10">
-        <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
-        <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid11">
         <rdfs:label xml:lang="es">Territorio (esadm)</rdfs:label>
         <rdfs:label xml:lang="en">Territory (esadm)</rdfs:label>
         <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
     </rdf:Description>
+    <rdf:Description rdf:nodeID="genid11">
+        <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
+        <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
+    </rdf:Description>
     <rdf:Description rdf:nodeID="genid12">
-        <rdfs:label xml:lang="en">W3C Data Cube</rdfs:label>
-        <rdfs:label xml:lang="es">W3C Data Cube</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://purl.org/linked-data/cube"/>
+        <rdfs:label xml:lang="en">INE Vocabulary</rdfs:label>
+        <rdfs:label xml:lang="es">Vocabulario INE</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="https://lod.ine.es/def/vocabulary"/>
     </rdf:Description>
     
 
@@ -907,80 +907,80 @@ Additionally, several vocabularies and code lists are reused to describe the dif
         <cube:component rdf:nodeID="genid35"/>
     </owl:NamedIndividual>
     <rdf:Description rdf:nodeID="genid17">
-        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid18">
-        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid19">
-        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid20">
-        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#sector"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid21">
-        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#sex"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid22">
-        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#age"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid23">
-        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid24">
-        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid25">
-        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount"/>
-        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</cube:order>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid26">
         <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#unemployedPopulationCount"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</cube:order>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid27">
+    <rdf:Description rdf:nodeID="genid18">
         <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#registeredContractsCount"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</cube:order>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid28">
+    <rdf:Description rdf:nodeID="genid19">
         <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#jobSeekersCount"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</cube:order>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid29">
+    <rdf:Description rdf:nodeID="genid20">
         <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#registeredUnemploymentCount"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</cube:order>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid30">
+    <rdf:Description rdf:nodeID="genid21">
         <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#socialSecurityAffiliatesCount"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</cube:order>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid31">
+    <rdf:Description rdf:nodeID="genid22">
         <cube:measure rdf:resource="https://lod.ine.es/def/vocabulary/unemploymentRate"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</cube:order>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid32">
+    <rdf:Description rdf:nodeID="genid23">
         <cube:measure rdf:resource="https://lod.ine.es/def/vocabulary/employmentRate"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</cube:order>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid33">
+    <rdf:Description rdf:nodeID="genid24">
         <cube:measure rdf:resource="https://lod.ine.es/def/vocabulary/jobs"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</cube:order>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid34">
+    <rdf:Description rdf:nodeID="genid25">
         <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#jobProfiles"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</cube:order>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid35">
+    <rdf:Description rdf:nodeID="genid26">
         <cube:measure rdf:resource="https://lod.ine.es/def/vocabulary/numberOfPeople"/>
         <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid27">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#refAdminRegion"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid28">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#sector"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid29">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#economicActivity"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid30">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#refPeriod"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid31">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#sex"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid32">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#age"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid33">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/dimension#contractType"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid34">
+        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#activePopulationCount"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</cube:order>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid35">
+        <cube:measure rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/measure#employedPopulationCount"/>
+        <cube:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</cube:order>
     </rdf:Description>
     
 
