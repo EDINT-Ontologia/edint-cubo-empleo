@@ -35,7 +35,7 @@
     rdfs:label "Cubo de Datos de Empleo"@es ;
     rdfs:label "Employment Data Cube"@en ;
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    vann:preferredNamespaceUri <https://edint.es/def/cubo-empleo#> ;
+    vann:preferredNamespaceUri "https://edint.es/def/cubo-empleo#" ;
     vann:preferredNamespacePrefix "edintemp" ;
     owl:versionInfo "0.2.1"  ;
     dcterms:created "2026-04-20"^^xsd:date ;
