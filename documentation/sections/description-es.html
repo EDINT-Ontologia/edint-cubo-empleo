@@ -12,7 +12,7 @@ Para la generación del cubo de datos de empleo, se reutiliza el vocabulario <a 
 <span class="markdown">
 Como se muestra en la Figura 1, W3C Data Cube contiene varios conceptos y propiedades que permiten describir datos estadísticos en distintos niveles de agregación. En este vocabulario, el modelo se organiza en torno al concepto <a href="https://www.w3.org/TR/vocab-data-cube/#reference-datasets">qb:DataSet</a>, que representa un conjunto de datos definido de acuerdo con una estructura especificada mediante una <a href="https://www.w3.org/TR/vocab-data-cube/#dsd">qb:DataStructureDefinition</a> y materializado a través de un conjunto de observaciones representadas con <a href="https://www.w3.org/TR/vocab-data-cube/#reference-datasets">qb:Observation</a>.
 
-En concreto, este vocabulario define un único dataset del cubo de datos, representado mediante la instancia <code>edintemp:dataset</code>, y una única estructura de datos, representada mediante la instancia <code>edintemp:dsd</code>. La ontología se identifica de forma separada del dataset, utilizando la IRI de ontología <code>https://edint.es/def/cubo-empleo</code>. Esta separación permite que los metadatos describan la ontología, mientras que <code>edintemp:dataset</code> representa el dataset del cubo al que se vinculan las observaciones.
+En concreto, este vocabulario define, como ejemplo, un dataset del cubo de datos representado mediante la instancia <code>ex:dataset/DS_EmploymentIndicators</code> al que se puede vincular un conjunto de observaciones, y una única estructura de datos, representada mediante la instancia <code>edintemp:DSD_EmploymentIndicators</code>. Los componentes de la estructura son los siguientes:
 </span>
 
 <ul>
@@ -39,7 +39,7 @@ Para definir estas dimensiones y medidas se reutilizan varios vocabularios de re
   <ul>
     <li>La dimensión <a href="#sector">edintdimension:sector</a> reutiliza como lista de códigos el esquema del sector público publicado en <a href="https://datos.gob.es/kos/sector-publico/sector">datos.gob.es</a>.</li>
     <li>La dimensión <a href="#economicActivity">edintdimension:economicActivity</a> reutiliza una clasificación controlada de actividad económica, como <a href="http://lod.ine.es/kos/cnae/CNAE-2025">CNAE 2025</a>.</li>
-    <li>La dimensión <a href="#contractType">edintdimension:contractType</a> utiliza una lista de códigos propia definida en <code>edintkos:contractType</code>.</li>
+    <li>La dimensión <a href="#contractType">edintdimension:contractType</a> utiliza una lista de códigos propia definida en <code>edintkos:EmploymentContractType</code>.</li>
   </ul>
   <li>Vocabulario del INE:</li>
   <ul>
@@ -52,98 +52,115 @@ El modelo del cubo de empleo se muestra en la Figura 2, donde se presentan las d
 </span>
 
 <center>
-  <img src="../diagrams/diagram.png">
+  <img src="images/diagram.png"/>
   <figcaption>Figura 2.- Diagrama conceptual del cubo de datos de empleo.</figcaption>
 </center>
 
 <span class="markdown">
-La estructura del cubo de empleo se define mediante la instancia <a href="#edintemp:dsd">edintemp:dsd</a>, que agrupa todas las dimensiones y medidas del modelo. En este caso, se han definido como dimensiones la región administrativa de referencia, el sector, la actividad económica, el periodo de referencia, el sexo, la edad y el tipo de contrato. Como medidas, el modelo incluye distintos recuentos e indicadores asociados al empleo, como el número de personas activas, ocupadas y desempleadas, contratos registrados, demandantes de empleo, paro registrado, afiliaciones a la Seguridad Social, tasa de paro, tasa de empleo, puestos de trabajo, perfiles de empleo y número de personas.
+La estructura del cubo de empleo se define mediante la instancia <a href="#edintemp:DSD_EmploymentIndicators">edintemp:DSD_EmploymentIndicators</a>, que agrupa todas las dimensiones y medidas del modelo. En este caso, se han definido como dimensiones la región administrativa de referencia, el sector, la actividad económica, el periodo de referencia, el sexo, la edad y el tipo de contrato. Como medidas, el modelo incluye distintos recuentos e indicadores asociados al empleo, como el número de personas activas, ocupadas y desempleadas, contratos registrados, demandantes de empleo, paro registrado, afiliaciones a la Seguridad Social, tasa de paro, tasa de empleo, puestos de trabajo, perfiles de empleo y número de personas.
 </span>
 
-<pre>
-&lt;https://edint.es/def/cubo-empleo&gt;
-    a <a href="http://www.w3.org/2002/07/owl#Ontology">owl:Ontology</a> ;
-    <a href="http://www.w3.org/2002/07/owl#imports">owl:imports</a> &lt;http://purl.org/linked-data/cube&gt; ;
-    <a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a> "0.1.0" .
-
-<a href="#dataset">edintemp:dataset</a> a <a href="http://purl.org/linked-data/cube#DataSet">qb:DataSet</a> ; 
-    <a href="http://purl.org/linked-data/cube#structure">qb:structure</a> <a href="#edintemp:dsd">edintemp:dsd</a> .
-
-<a href="#edintemp:dsd">edintemp:dsd</a> a <a href="http://purl.org/linked-data/cube#DataStructureDefinition">qb:DataStructureDefinition</a> ;
-    <a href="http://purl.org/linked-data/cube#component">qb:component</a>
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#refAdminRegion">edintdimension:refAdminRegion</a> ; qb:order 1 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#sector">edintdimension:sector</a> ; qb:order 2 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#economicActivity">edintdimension:economicActivity</a> ; qb:order 3 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#refPeriod">edintdimension:refPeriod</a> ; qb:order 4 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#sex">edintdimension:sex</a> ; qb:order 5 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#age">edintdimension:age</a> ; qb:order 6 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#contractType">edintdimension:contractType</a> ; qb:order 7 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#activePopulationCount">edintmeasure:activePopulationCount</a> ; qb:order 8 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#employedPopulationCount">edintmeasure:employedPopulationCount</a> ; qb:order 9 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#unemployedPopulationCount">edintmeasure:unemployedPopulationCount</a> ; qb:order 10 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#registeredContractsCount">edintmeasure:registeredContractsCount</a> ; qb:order 11 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#jobSeekersCount">edintmeasure:jobSeekersCount</a> ; qb:order 12 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#registeredUnemploymentCount">edintmeasure:registeredUnemploymentCount</a> ; qb:order 13 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#socialSecurityAffiliatesCount">edintmeasure:socialSecurityAffiliatesCount</a> ; qb:order 14 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:unemploymentRate ; qb:order 15 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:employmentRate ; qb:order 16 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:jobs ; qb:order 17 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#jobProfiles">edintmeasure:jobProfiles</a> ; qb:order 18 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:numberOfPeople ; qb:order 19 ] .
-</pre>
+<pre><textarea style="resize:none" readonly id="code" name="code" rows="25" cols="100">
+edintemp:DSD_EmploymentIndicators a 
+    qb:component
+        [ qb:dimension edintdimension:refAdminRegion ; qb:order 1 ] ,
+        [ qb:dimension edintdimension:sector ; qb:order 2 ] ,
+        [ qb:dimension edintdimension:economicActivity ; qb:order 3 ] ,
+        [ qb:dimension edintdimension:refPeriod ; qb:order 4 ] ,
+        [ qb:dimension edintdimension:sex ; qb:order 5 ] ,
+        [ qb:dimension edintdimension:age ; qb:order 6 ] ,
+        [ qb:dimension edintdimension:contractType ; qb:order 7 ] ,
+        [ qb:measure edintmeasure:activePopulationCount ; qb:order 8 ] ,
+        [ qb:measure edintmeasure:employedPopulationCount ; qb:order 9 ] ,
+        [ qb:measure edintmeasure:unemployedPopulationCount ; qb:order 10 ] ,
+        [ qb:measure edintmeasure:registeredContractsCount ; qb:order 11 ] ,
+        [ qb:measure edintmeasure:jobSeekersCount ; qb:order 12 ] ,
+        [ qb:measure edintmeasure:registeredUnemploymentCount ; qb:order 13 ] ,
+        [ qb:measure edintmeasure:socialSecurityAffiliatesCount ; qb:order 14 ] ,
+        [ qb:measure ine:unemploymentRate ; qb:order 15 ] ,
+        [ qb:measure ine:employmentRate ; qb:order 16 ] ,
+        [ qb:measure ine:jobs ; qb:order 17 ] ,
+        [ qb:measure edintmeasure:jobProfiles ; qb:order 18 ] ,
+        [ qb:measure ine:numberOfPeople ; qb:order 19 ] .
+</textarea></pre>
+<script>
+    var editor2 = CodeMirror.fromTextArea(document.getElementById("code"), {
+        mode: "text/turtle",
+        matchBrackets: true
+    });
+</script>
 
 <div id="cuboempleoejemplo">
   <h3 id="qb1" class="list">Ejemplo 1: Número de personas ocupadas por área, periodo, sexo y grupo de edad<span class="backlink"> volver al <a href="#toc">índice</a></span></h3>
 
   <span class="markdown">
-  Este ejemplo representa el dato correspondiente al <b>número de personas ocupadas</b> en una región administrativa determinada, para un periodo de referencia específico, desglosado por <b>sexo</b> y <b>grupo de edad</b>. Dado que este vocabulario ya define el dataset <code>edintemp:dataset</code> y la estructura de datos <code>edintemp:dsd</code>, no es necesario generar nuevas instancias de dataset o de estructura; se pueden reutilizar las ya existentes.
+  Este ejemplo representa el dato correspondiente al <b>número de personas ocupadas</b> en una región administrativa determinada, para un periodo de referencia específico, desglosado por <b>sexo</b> y <b>grupo de edad</b>. 
   </span>
 
   <center>
-    <img src="../diagrams/diagram-example.png">
-    <figcaption>Figura 3.- Ejemplo de una observación en el cubo de empleo para el número de personas ocupadas por área, periodo, sexo y grupo de edad.</figcaption>
-  </center>
+    <p><img src="images/diagram-example.png"/>
+    <figcaption>Figura 3.- Ejemplo de una observación en el cubo de empleo para el número de personas ocupadas por área, periodo, sexo y grupo de edad</figcaption>
+  </center></p>
+
 
   <span class="markdown">
   A continuación, se describen los pasos necesarios para representar una observación concreta.
   </span>
 
   <span class="markdown">
-  <b>1) Reutilización del dataset y de la estructura de datos:</b> Este vocabulario contiene un único dataset, representado por <code>edintemp:dataset</code>, que se vincula con la estructura <code>edintemp:dsd</code> mediante la propiedad <a href="http://purl.org/linked-data/cube#structure">qb:structure</a>.
+  <b>1) Definición del dataset y su relación con la estructura de datos:</b> Se tiene una instancia de dataset, representada por <code>ex:dataset/DS_EmploymentIndicators</code>, que se vincula con la estructura <code>edintemp:DSD_EmploymentIndicators</code> mediante la propiedad <a href="http://purl.org/linked-data/cube#structure">qb:structure</a>.
   </span>
 
-  <pre>
-<a href="#dataset">edintemp:dataset</a> a <a href="http://purl.org/linked-data/cube#DataSet">qb:DataSet</a> ; 
-    <a href="http://purl.org/linked-data/cube#structure">qb:structure</a> <a href="#edintemp:dsd">edintemp:dsd</a> .
-  </pre>
+<pre><textarea style="resize:none" readonly id="code1" name="code1" rows="25" cols="100">
+ex:dataset/DS_EmploymentIndicators a qb:DataSet ; 
+    qb:structure edintemp:DSD_EmploymentIndicators .
+</textarea></pre>
+  <script>
+    var editor2 = CodeMirror.fromTextArea(document.getElementById("code1"), {
+        mode: "text/turtle",
+        matchBrackets: true
+    });
+</script>
 
   <span class="markdown">
-  <b>2) Identificación de las dimensiones y medidas relevantes:</b> Aunque la estructura <code>edintemp:dsd</code> contiene todas las dimensiones y medidas del cubo de empleo, este ejemplo solo utiliza las dimensiones <a href="#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#refPeriod">edintdimension:refPeriod</a>, <a href="#sex">edintdimension:sex</a> y <a href="#age">edintdimension:age</a>, junto con la medida <a href="#employedPopulationCount">edintmeasure:employedPopulationCount</a>.
+  <b>2) Identificación de las dimensiones y medidas relevantes:</b> Aunque la estructura <code>edintemp:DSD_EmploymentIndicators</code> contiene todas las dimensiones y medidas del cubo de empleo, este ejemplo solo utiliza las dimensiones <a href="#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#refPeriod">edintdimension:refPeriod</a>, <a href="#sex">edintdimension:sex</a> y <a href="#age">edintdimension:age</a>, junto con la medida <a href="#employedPopulationCount">edintmeasure:employedPopulationCount</a>.
 
   Es importante señalar que la dimensión <a href="#refPeriod">edintdimension:refPeriod</a> tiene como rango <code>time:Interval</code>, por lo que el periodo de referencia debe representarse mediante una instancia explícita de intervalo temporal.
   </span>
 
-  <pre>
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/actividad-economica/cubo-empleo/interval/2025&gt;
+  <pre><textarea style="resize:none" readonly id="code2" name="code2" rows="25" cols="100">
+  ex:interval/2025;
     a time:Interval ;
     rdfs:label "Year 2025"@en ,
                "Año 2025"@es .
-  </pre>
+ </textarea></pre>
+  <script>
+    var editor2 = CodeMirror.fromTextArea(document.getElementById("code2"), {
+        mode: "text/turtle",
+        matchBrackets: true
+    });
+</script>
 
   <span class="markdown">
   <b>3) Definición de una observación del dataset:</b> El último paso consiste en crear una instancia de <a href="http://purl.org/linked-data/cube#Observation">qb:Observation</a> y vincularla al dataset mediante la propiedad <a href="http://purl.org/linked-data/cube#dataSet">qb:dataSet</a>. A continuación, se asignan los valores correspondientes para las dimensiones y la medida seleccionadas.
   </span>
 
-  <pre>
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/actividad-economica/cubo-empleo/observation/obs001&gt;
-    a <a href="http://purl.org/linked-data/cube#Observation">qb:Observation</a> ;
-    <a href="http://purl.org/linked-data/cube#dataSet">qb:dataSet</a> <a href="#dataset">edintemp:dataset</a> ;
-    <a href="#refAdminRegion">edintdimension:refAdminRegion</a> &lt;http://vocab.linkeddata.es/datosabiertos/recurso/territorio/municipio/zaragoza&gt; ;
-    <a href="#refPeriod">edintdimension:refPeriod</a> &lt;http://vocab.linkeddata.es/datosabiertos/recurso/actividad-economica/cubo-empleo/interval/2025&gt; ;
-    <a href="#sex">edintdimension:sex</a> &lt;http://purl.org/linked-data/sdmx/2009/code#sex-F&gt; ;
-    <a href="#age">edintdimension:age</a> "25-29"^^xsd:string ;
-    <a href="#employedPopulationCount">edintmeasure:employedPopulationCount</a> "12543"^^xsd:nonNegativeInteger .
-  </pre>
+<pre><textarea style="resize:none" readonly id="code3" name="code3" rows="25" cols="100">
+ex:/observation/obs001;
+    a qb:Observation ;
+    qb:dataSet ex:dataset/DS_EmploymentIndicators ;
+    edintdimension:refAdminRegion esadm:zaragoza; ;
+    edintdimension:refPeriod ex:interval/2025 ;
+    edintdimension:sex &lt;http://purl.org/linked-data/sdmx/2009/code#sex-F&gt; ;
+    edintdimension:age "25-29"^^xsd:string ;
+    edintmeasure:employedPopulationCount "12543"^^xsd:nonNegativeInteger .
+  </textarea></pre>
+  <script>
+    var editor2 = CodeMirror.fromTextArea(document.getElementById("code3"), {
+        mode: "text/turtle",
+        matchBrackets: true
+    });
+</script>
 
   <span class="markdown">
   Esta observación indica que, en el municipio de Zaragoza, durante el intervalo temporal correspondiente al año 2025, el número de <b>mujeres ocupadas</b> en el grupo de edad de <b>25 a 29 años</b> es de <b>12.543</b>.

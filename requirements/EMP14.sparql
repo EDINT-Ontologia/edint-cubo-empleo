@@ -2,8 +2,8 @@
 
 PREFIX edintemp: <https://edint.es/def/cubo-empleo#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#>
-PREFIX edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#>
+PREFIX edintdimension: <https://edint.es/def/dimension#>
+PREFIX edintmeasure: <https://edint.es/def/measure#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 

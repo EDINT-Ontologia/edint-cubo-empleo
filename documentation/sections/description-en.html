@@ -1,153 +1,169 @@
-<h2 id="desc" class="list">Employment Data Cube: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="desc" class="list">Employment Data Cube: Description <span class="backlink"> back to <a href="#toc">table of contents</a></span></h2>
 
 <span class="markdown">
-For the generation of the employment data cube, the <a href="https://www.w3.org/TR/vocab-data-cube">W3C Data Cube</a> vocabulary is reused. This vocabulary is a W3C recommendation for the publication of multidimensional data on the Web, which facilitates their structured representation, interoperability, and reuse. In addition, this vocabulary is compatible with the SDMX standard (<i>Statistical Data and Metadata eXchange</i>), which is widely used for the exchange of statistical data and metadata across organizations.
+The <a href="https://www.w3.org/TR/vocab-data-cube">W3C Data Cube</a> vocabulary is used to generate the employment data cube. This vocabulary is a W3C recommendation for publishing multidimensional data on the Web, facilitating its structured representation, interoperability, and reuse. Furthermore, this vocabulary is compatible with the SDMX (<i>Statistical Data and Metadata eXchange</i>) standard, which is widely used for the exchange of statistical data and metadata between organizations.
 </span>
 
 <center>
-  <img src="https://www.w3.org/TR/vocab-data-cube/images/qb-fig1.png">
-  <figcaption>Figure 1.- Diagram of the W3C Data Cube vocabulary.</figcaption>
+<img src="https://www.w3.org/TR/vocab-data-cube/images/qb-fig1.png">
+<figcaption>Figure 1.- Diagram of the W3C Data Cube vocabulary.</figcaption>
 </center>
 
 <span class="markdown">
-As shown in Figure 1, W3C Data Cube contains several concepts and properties that make it possible to describe statistical data at different levels of aggregation. In this vocabulary, the model is organized around the concept of <a href="https://www.w3.org/TR/vocab-data-cube/#reference-datasets">qb:DataSet</a>, which represents a dataset following a structure defined by a <a href="https://www.w3.org/TR/vocab-data-cube/#dsd">qb:DataStructureDefinition</a> and materialized through a set of observations represented by <a href="https://www.w3.org/TR/vocab-data-cube/#reference-datasets">qb:Observation</a>.
-
-Specifically, this vocabulary defines one data cube dataset, represented by the instance <code>edintemp:dataset</code>, and one data structure, represented by the instance <code>edintemp:dsd</code>. The ontology itself is identified separately from the dataset, using the ontology IRI <code>https://edint.es/def/cubo-empleo</code>. This separation allows the vocabulary metadata to describe the ontology, while <code>edintemp:dataset</code> represents the actual data cube dataset to which observations are attached.
+As shown in Figure 1, the W3C Data Cube contains various concepts and properties that allow for the description of statistical data at different levels of aggregation. In this vocabulary, the model is organized around the <a href="https://www.w3.org/TR/vocab-data-cube/#reference-datasets">qb:DataSet</a> concept, which represents a dataset defined according to a structure specified by a <a href="https://www.w3.org/TR/vocab-data-cube/#dsd">qb:DataStructureDefinition</a> and realized through a set of observations represented as <a href="https://www.w3.org/TR/vocab-data-cube/#reference-datasets">qb:Observation</a>.
+</span> Specifically, this vocabulary defines, for example, a data cube dataset—represented by the instance <code>ex:dataset/DS_EmploymentIndicators</code>—to which a set of observations can be linked, as well as a single data structure, represented by the instance <code>edintemp:DSD_EmploymentIndicators</code>. The components of this structure are as follows:
 </span>
 
 <ul>
-  <li><a href="https://www.w3.org/TR/vocab-data-cube/#dsd-dimensions">qb:DimensionProperty</a>: component that identifies the dimensions of the observations, such as the reference administrative region, reference period, sex, age, economic activity, sector, or contract type. Dimensions usually take their values from code lists or classifications, typically represented using SKOS.</li>
-  <li><a href="https://www.w3.org/TR/vocab-data-cube/#dsd-dimensions">qb:MeasureProperty</a>: component that represents the measured value of the observed data. In this cube, the measures correspond to employment indicators such as the number of active persons, employed persons, unemployed persons, job seekers, registered contracts, registered unemployment, Social Security affiliates, unemployment rate, employment rate, jobs, job profiles, and number of people.</li>
+<li><a href="https://www.w3.org/TR/vocab-data-cube/#dsd-dimensions">qb:DimensionProperty</a>: a component that identifies the dimensions of the observations, such as the administrative region, the reference period, sex, age, economic activity, sector, or type of contract. Dimensions typically draw their values ​​from code lists or classifications, usually represented using SKOS.</li>
+<li><a href="https://www.w3.org/TR/vocab-data-cube/#dsd-dimensions">qb:MeasureProperty</a>: a component that represents the measured value of the observed data. In this cube, the measures correspond to employment indicators, such as the number of active persons, employed persons, unemployed persons, job seekers, registered contracts, registered unemployment, Social Security affiliations, unemployment rate, employment rate, jobs, employment profiles, and the total number of individuals.</li>
 </ul>
 
 <span class="markdown">
-Several reference vocabularies are reused to define these dimensions and measures:
+To define these dimensions and measures, several reference vocabularies are reused:
 </span>
 
 <ol>
-  <li>SDMX vocabularies (<i>Statistical Data and Metadata eXchange</i>):</li>
-  <ul>
-    <li><a href="http://purl.org/linked-data/sdmx/2009/dimension">sdmx-dimension</a>: reused as the basis for general statistical dimensions, especially through specialization relationships such as <a href="#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#refPeriod">edintdimension:refPeriod</a>, <a href="#sex">edintdimension:sex</a> and <a href="#age">edintdimension:age</a>.</li>
-    <li><a href="http://purl.org/linked-data/sdmx/2009/measure">sdmx-measure</a>: reused as the basis for several cube measures, which are defined as subproperties of <code>sdmx-measure:obsValue</code>.</li>
-  </ul>
-  <li>Territorial and temporal vocabularies:</li>
-  <ul>
-    <li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">esadm</a>: reused to indicate that the dimension <a href="#refAdminRegion">edintdimension:refAdminRegion</a> may take values corresponding to municipalities, neighborhoods, or districts.</li>
-    <li><a href="https://www.w3.org/TR/owl-time/">OWL-Time</a>: reused to model the temporal dimension, establishing that <a href="#refPeriod">edintdimension:refPeriod</a> has <code>time:Interval</code> as its range.</li>
-  </ul>
-  <li>SKOS code lists:</li>
-  <ul>
-    <li>The dimension <a href="#sector">edintdimension:sector</a> reuses as a code list the public sector scheme published at <a href="https://datos.gob.es/kos/sector-publico/sector">datos.gob.es</a>.</li>
-    <li>The dimension <a href="#economicActivity">edintdimension:economicActivity</a> reuses a controlled classification of economic activity, such as <a href="http://lod.ine.es/kos/cnae/CNAE-2025">CNAE 2025</a>.</li>
-    <li>The dimension <a href="#contractType">edintdimension:contractType</a> uses its own code list defined in <code>edintkos:contractType</code>.</li>
-  </ul>
-  <li>INE vocabulary:</li>
-  <ul>
-    <li>The vocabulary also reuses several properties from the INE vocabulary, such as <code>ine:unemploymentRate</code>, <code>ine:employmentRate</code>, <code>ine:jobs</code>, and <code>ine:numberOfPeople</code>, in order to extend the cube with additional employment-related indicators.</li>
-  </ul>
+<li>SDMX (<i>Statistical Data and Metadata eXchange</i>) vocabularies:</li>
+<ul>
+<li><a href="http://purl.org/linked-data/sdmx/2009/dimension">sdmx-dimension</a>: reused as a foundation for general statistical dimensions, particularly through specialization relationships such as <a href="#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#refPeriod">edintdimension:refPeriod</a>, <a href="#sex">edintdimension:sex</a>, and <a href="#age">edintdimension:age</a>.</li>
+<li><a href="http://purl.org/linked-data/sdmx/2009/measure">sdmx-measure</a>: reused as a foundation for various cube measures, defined as subproperties of <code>sdmx-measure:obsValue</code>.</li>
+</ul>
+<li>Territorial and temporal vocabularies:</li>
+<ul>
+<li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">esadm</a>: reused to indicate that the <a href="#refAdminRegion">edintdimension:refAdminRegion</a> dimension can take values ​​corresponding to municipalities, neighborhoods, or districts.</li>
+<li><a href="https://www.w3.org/TR/owl-time/">OWL-Time</a>: reused to model the temporal dimension, establishing that <a href="#refPeriod">edintdimension:refPeriod</a> has <code>time:Interval</code> as its range.</li>
+</ul>
+<li>SKOS code lists:</li>
+<ul>
+<li>The <a href="#sector">edintdimension:sector</a> dimension reuses the public sector scheme published at <a href="https://datos.gob.es/kos/sector-publico/sector">datos.gob.es</a> as its code list.</li>
+<li>The <a href="#economicActivity">edintdimension:economicActivity</a> dimension reuses a controlled classification of economic activity, such as <a href="http://lod.ine.es/kos/cnae/CNAE-2025">CNAE 2025</a>.</li>
+<li>The <a href="#contractType">edintdimension:contractType</a> dimension uses a custom code list defined in <code>edintkos:EmploymentContractType</code>.</li>
+</ul>
+<li>INE Vocabulary:</li>
+<ul>
+<li>The vocabulary also reuses several properties from the INE vocabulary—such as <code>ine:unemploymentRate</code>, <code>ine:employmentRate</code>, <code>ine:jobs</code>, and <code>ine:numberOfPeople</code>—with the goal of extending the cube with additional employment-related indicators.</li>
+</ul>
 </ol>
 
 <span class="markdown">
-The employment cube model is shown in Figure 2, where the dimensions and measures that compose it are presented.
+The employment cube model is shown in Figure 2, which presents its constituent dimensions and measures.
 </span>
 
 <center>
-  <img src="../diagrams/diagram.png">
-  <figcaption>Figure 2.- Conceptual diagram of the employment data cube.</figcaption>
+<img src="images/diagram.png"/>
+<figcaption>Figure 2.—Conceptual diagram of the employment data cube.</figcaption>
 </center>
 
 <span class="markdown">
-The structure of the employment cube is defined through the instance <a href="#edintemp:dsd">edintemp:dsd</a>, which groups all the dimensions and measures of the model. In this case, the reference administrative region, sector, economic activity, reference period, sex, age, and contract type have been defined as dimensions. As measures, the model includes different counts and indicators associated with employment, such as the number of active persons, employed persons, unemployed persons, registered contracts, job seekers, registered unemployment, Social Security affiliates, unemployment rate, employment rate, jobs, job profiles, and number of people.
+The structure of the employment cube is defined by the instance <a href="#edintemp:DSD_EmploymentIndicators">edintemp:DSD_EmploymentIndicators</a>, which groups all the dimensions and measures of the model. In this case, the defined dimensions are: reference administrative region, sector, economic activity, reference period, sex, age, and contract type. As for measures, the model includes various counts and indicators related to employment, such as the number of active, employed, and unemployed individuals; registered contracts; job seekers; registered unemployment; Social Security affiliations; unemployment rate; employment rate; job positions; employment profiles; and the total number of people.
 </span>
 
-<pre>
-&lt;https://edint.es/def/cubo-empleo&gt;
-    a <a href="http://www.w3.org/2002/07/owl#Ontology">owl:Ontology</a> ;
-    <a href="http://www.w3.org/2002/07/owl#imports">owl:imports</a> &lt;http://purl.org/linked-data/cube&gt; ;
-    <a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a> "0.1.0" .
-
-<a href="#dataset">edintemp:dataset</a> a <a href="http://purl.org/linked-data/cube#DataSet">qb:DataSet</a> ; 
-    <a href="http://purl.org/linked-data/cube#structure">qb:structure</a> <a href="#edintemp:dsd">edintemp:dsd</a> .
-
-<a href="#edintemp:dsd">edintemp:dsd</a> a <a href="http://purl.org/linked-data/cube#DataStructureDefinition">qb:DataStructureDefinition</a> ;
-    <a href="http://purl.org/linked-data/cube#component">qb:component</a>
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#refAdminRegion">edintdimension:refAdminRegion</a> ; qb:order 1 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#sector">edintdimension:sector</a> ; qb:order 2 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#economicActivity">edintdimension:economicActivity</a> ; qb:order 3 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#refPeriod">edintdimension:refPeriod</a> ; qb:order 4 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#sex">edintdimension:sex</a> ; qb:order 5 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#age">edintdimension:age</a> ; qb:order 6 ] ,
-        [ <a href="http://purl.org/linked-data/cube#dimension">qb:dimension</a> <a href="#contractType">edintdimension:contractType</a> ; qb:order 7 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#activePopulationCount">edintmeasure:activePopulationCount</a> ; qb:order 8 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#employedPopulationCount">edintmeasure:employedPopulationCount</a> ; qb:order 9 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#unemployedPopulationCount">edintmeasure:unemployedPopulationCount</a> ; qb:order 10 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#registeredContractsCount">edintmeasure:registeredContractsCount</a> ; qb:order 11 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#jobSeekersCount">edintmeasure:jobSeekersCount</a> ; qb:order 12 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#registeredUnemploymentCount">edintmeasure:registeredUnemploymentCount</a> ; qb:order 13 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#socialSecurityAffiliatesCount">edintmeasure:socialSecurityAffiliatesCount</a> ; qb:order 14 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:unemploymentRate ; qb:order 15 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:employmentRate ; qb:order 16 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:jobs ; qb:order 17 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> <a href="#jobProfiles">edintmeasure:jobProfiles</a> ; qb:order 18 ] ,
-        [ <a href="http://purl.org/linked-data/cube#measure">qb:measure</a> ine:numberOfPeople ; qb:order 19 ] .
-</pre>
+<pre><textarea style="resize:none" readonly id="code" name="code" rows="25" cols="100">
+edintemp:DSD_EmploymentIndicators a
+qb:component
+[ qb:dimension edintdimension:refAdminRegion ; qb:order 1 ] ,
+[ qb:dimension edintdimension:sector ; qb:order 2 ] ,
+[ qb:dimension edintdimension:economicActivity ; qb:order 3 ] , 
+[ qb:dimension edintdimension:refPeriod ; qb:order 4 ] , 
+[ qb:dimension edintdimension:sex ; qb:order 5 ], 
+[ qb:dimension edintdimension:age ; qb:order 6 ] , 
+[ qb:dimension edintdimension:contractType ; qb:order 7 ], 
+[ qb:measure edintmeasure:activePopulationCount ; qb:order 8 ], 
+[ qb:measure edintmeasure:employedPopulationCount ; qb:order 9 ], 
+[ qb:measure edintmeasure:unemployedPopulationCount ; qb:order 10 ], 
+[ qb:measure edintmeasure:registeredContractsCount ; qb:order 11 ] , 
+[ qb:measure edintmeasure:jobSeekersCount ; qb:order 12 ] , 
+[ qb:measure edintmeasure:registeredUnemploymentCount ; qb:order 13 ] , 
+[ qb:measure edintmeasure:socialSecurityAffiliatesCount ; qb:order 14 ] , 
+[ qb:measure ine:unemploymentRate ; qb:order 15 ] , 
+[ qb:measure ine:employmentRate ; qb:order 16 ] , 
+[ qb:measure ine:jobs ; qb:order 17 ] , 
+[ qb:measure edintmeasure:jobProfiles ; qb:order 18 ], 
+[ qb:measure ine:numberOfPeople ; qb:order 19 ] .
+</textarea></pre>
+<script> 
+var editor2 = CodeMirror.fromTextArea(document.getElementById("code"), { 
+mode: "text/turtle", 
+matchBrackets: true 
+});
+</script>
 
 <div id="cuboempleoejemplo">
-  <h3 id="qb1" class="list">Example 1: Number of employed persons by area, period, sex, and age group<span class="backlink"> back to <a href="#toc">index</a></span></h3>
+<h3 id="qb1" class="list">Example 1: Number of employed persons by area, period, sex, and age group<span class="backlink"> back to <a href="#toc">table of contents</a></span></h3>
 
-  <span class="markdown">
-  This example represents the data for the <b>number of employed persons</b> in a given administrative region, for a specific reference period, broken down by <b>sex</b> and <b>age group</b>. Since this vocabulary already defines the dataset <code>edintemp:dataset</code> and the data structure <code>edintemp:dsd</code>, there is no need to generate new dataset or structure instances; the existing ones can be reused.
-  </span>
+<span class="markdown">
+This example represents data corresponding to the <b>number of employed persons</b> in a given administrative region, for a specific reference period, broken down by <b>sex</b> and <b>age group</b>. 
+</span>
 
-  <center>
-    <img src="../diagrams/diagram-example.png">
-    <figcaption>Figure 3.- Example of an observation in the employment cube for the number of employed persons by area, period, sex, and age group.</figcaption>
-  </center>
+<center>
+<p><img src="images/diagram-example.png"/>
+<figcaption>Figure 3.- Example of an observation in the employment cube for the number of employed persons by area, period, sex, and age group</figcaption>
+</center></p>
 
-  <span class="markdown">
-  The steps required to represent a specific observation are described below.
-  </span>
 
-  <span class="markdown">
-  <b>1) Reuse of the dataset and the data structure:</b> This vocabulary contains a single dataset, represented by <code>edintemp:dataset</code>, which is linked to the structure <code>edintemp:dsd</code> through the property <a href="http://purl.org/linked-data/cube#structure">qb:structure</a>.
-  </span>
+<span class="markdown">
+The steps required to represent a specific observation are described below. 
+</span>
 
-  <pre>
-<a href="#dataset">edintemp:dataset</a> a <a href="http://purl.org/linked-data/cube#DataSet">qb:DataSet</a> ; 
-    <a href="http://purl.org/linked-data/cube#structure">qb:structure</a> <a href="#edintemp:dsd">edintemp:dsd</a> .
-  </pre>
+<span class="markdown">
+<b>1) Definition of the dataset and its relationship to the data structure:</b> There is a dataset instance, represented by <code>ex:dataset/DS_EmploymentIndicators</code>, which is linked to the structure <code>edintemp:DSD_EmploymentIndicators</code> via the <a href="http://purl.org/linked-data/cube#structure">qb:structure</a> property. 
+</span>
 
-  <span class="markdown">
-  <b>2) Identification of the relevant dimensions and measures:</b> Although the structure <code>edintemp:dsd</code> contains all the dimensions and measures of the employment cube, this example only uses the dimensions <a href="#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#refPeriod">edintdimension:refPeriod</a>, <a href="#sex">edintdimension:sex</a> and <a href="#age">edintdimension:age</a>, together with the measure <a href="#employedPopulationCount">edintmeasure:employedPopulationCount</a>.
+<pre><textarea style="resize:none" readonly id="code1" name="code1" rows="25" cols="100">
+ex:dataset/DS_EmploymentIndicators a qb:DataSet ; 
+  qb:structure edintemp:DSD_EmploymentIndicators .
+</textarea></pre>
+<script>
+var editor2 = CodeMirror.fromTextArea(document.getElementById("code1"), {
+mode: "text/turtle",
+matchBrackets: true
+});
+</script>
 
-  It is important to note that the dimension <a href="#refPeriod">edintdimension:refPeriod</a> has <code>time:Interval</code> as its range, so the reference period must be represented through an explicit instance of a temporal interval.
-  </span>
+<span class="markdown">
+<b>2) Identification of relevant dimensions and measures:</b> Although the structure <code>edintemp:DSD_EmploymentIndicators</code> contains all the dimensions and measures of the employment cube, this example uses only the dimensions <a href="#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#refPeriod">edintdimension:refPeriod</a>, <a href="#sex">edintdimension:sex</a>, and <a href="#age">edintdimension:age</a>, along with the measure <a href="#employedPopulationCount">edintmeasure:employedPopulationCount</a>. 
 
-  <pre>
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/actividad-economica/cubo-empleo/interval/2025&gt;
-    a time:Interval ;
-    rdfs:label "Year 2025"@en ,
-               "Año 2025"@es .
-  </pre>
+It is important to note that the dimension <a href="#refPeriod">edintdimension:refPeriod</a> has <code>time:Interval</code> as its range; therefore, the reference period must be represented by an explicit instance of a time interval. 
+</span>
 
-  <span class="markdown">
-  <b>3) Definition of a dataset observation:</b> The final step consists of creating an instance of <a href="http://purl.org/linked-data/cube#Observation">qb:Observation</a> and linking it to the dataset through the property <a href="http://purl.org/linked-data/cube#dataSet">qb:dataSet</a>. The corresponding values for the selected dimensions and measure are then assigned.
-  </span>
+<pre><textarea style="resize:none" readonly id="code2" name="code2" rows="25" cols="100">
+ex:interval/2025; 
+  a time:Interval ; 
+  rdfs:label "Year 2025"@en ,
+  "Año 2025"@es . 
+</textarea></pre>
+<script>
+var editor2 = CodeMirror.fromTextArea(document.getElementById("code2"), {
+mode: "text/turtle",
+matchBrackets: true
+});
+</script>
 
-  <pre>
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/actividad-economica/cubo-empleo/observation/obs001&gt;
-    a <a href="http://purl.org/linked-data/cube#Observation">qb:Observation</a> ;
-    <a href="http://purl.org/linked-data/cube#dataSet">qb:dataSet</a> <a href="#dataset">edintemp:dataset</a> ;
-    <a href="#refAdminRegion">edintdimension:refAdminRegion</a> &lt;http://vocab.linkeddata.es/datosabiertos/recurso/territorio/municipio/zaragoza&gt; ;
-    <a href="#refPeriod">edintdimension:refPeriod</a> &lt;http://vocab.linkeddata.es/datosabiertos/recurso/actividad-economica/cubo-empleo/interval/2025&gt; ;
-    <a href="#sex">edintdimension:sex</a> &lt;http://purl.org/linked-data/sdmx/2009/code#sex-F&gt; ;
-    <a href="#age">edintdimension:age</a> "25-29"^^xsd:string ;
-    <a href="#employedPopulationCount">edintmeasure:employedPopulationCount</a> "12543"^^xsd:nonNegativeInteger .
-  </pre>
+<span class="markdown">
+<b>3) Defining an observation in the dataset:</b> The final step consists of creating an instance of <a href="http://purl.org/linked-data/cube#Observation">qb:Observation</a> and linking it to the dataset using the <a href="http://purl.org/linked-data/cube#dataSet">qb:dataSet</a> property. Subsequently, the corresponding values ​​for the selected dimensions and measure are assigned. 
+</span>
 
-  <span class="markdown">
-  This observation indicates that, in the municipality of Zaragoza, during the temporal interval corresponding to the year 2025, the number of <b>employed women</b> in the <b>25 to 29 years old</b> age group is <b>12,543</b>.
+<pre><textarea style="resize:none" readonly id="code3" name="code3" rows="25" cols="100">
+ex:/observation/obs001; 
+  a qb:Observation ; 
+  qb:dataSet ex:dataset/DS_EmploymentIndicators ; 
+  edintdimension:refAdminRegion esadm:zaragoza; ; 
+  edintdimension:refPeriod ex:interval/2025 ; 
+  edintdimension:sex &lt;http://purl.org/linked-data/sdmx/2009/code#sex-F&gt; ; 
+  edintdimension:age "25-29"^^xsd:string ; 
+  edintmeasure:employedPopulationCount "12543"^^xsd:nonNegativeInteger . 
+</textarea></pre>
+<script>
+var editor2 = CodeMirror.fromTextArea(document.getElementById("code3"), {
+mode: "text/turtle",
+matchBrackets: true
+});
+</script>
 
-  This example shows how a single cube observation combines several dimension values with a specific measure to represent an employment indicator. In the same way, the same structure can be reused to represent other cube measures, such as the number of active persons, unemployed persons, registered contracts, job seekers, registered unemployment, Social Security affiliates, unemployment rate, employment rate, jobs, job profiles, or number of people.
-  </span>
+<span class="markdown">
+This observation indicates that, in the municipality of Zaragoza, during the time interval corresponding to the year 2025, the number of <b>employed women</b> in the <b>25–29 age group</b> is <b>12,543</b>. 
+
+This example shows how a single observation within the cube combines various dimension values ​​with a specific measure to represent an employment indicator. Likewise, this same structure can be reused to represent other measures within the cube, such as the number of active individuals, unemployed individuals, registered contracts, job seekers, registered unemployment, Social Security affiliations, unemployment rate, employment rate, job positions, employment profiles, or the total number of people. 
+</span>
 </div>

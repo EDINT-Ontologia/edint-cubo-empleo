@@ -41,9 +41,9 @@ Las medidas principales incluidas en el cubo son:
 
 El prefijo de este cubo de datos es `edintemp` y se publica bajo el espacio de nombres https://edint.es/def/cubo-empleo#
 
-Las dimensiones se representan con el prefijo `edintdimension` y se encuentran en el espacio de nombres http://vocab.linkeddata.es/datosabiertos/def/dimension#
+Las dimensiones se representan con el prefijo `edintdimension` y se encuentran en el espacio de nombres https://edint.es/def/dimension#
 
-Las medidas se representan con el prefijo `edintmeasure` y se encuentran en el espacio de nombres http://vocab.linkeddata.es/datosabiertos/def/measure#
+Las medidas se representan con el prefijo `edintmeasure` y se encuentran en el espacio de nombres https://edint.es/def/measure#
 
 ## Modelo conceptual (Data cube conceptualization)
 

@@ -1,7 +1,7 @@
 @prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix edintemp: <https://edint.es/def/cubo-empleo#> .
-@prefix edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#> .
-@prefix edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#> .
+@prefix edintdimension: <https://edint.es/def/dimension#> .
+@prefix edintmeasure: <https://edint.es/def/measure#> .
 @prefix ine: <https://lod.ine.es/def/vocabulary/> .
 
 edintemp:dataset a qb:DataSet ;
