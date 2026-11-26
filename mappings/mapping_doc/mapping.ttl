@@ -32,7 +32,6 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
 @prefix rr: <http://www.w3.org/ns/r2rml#>.
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>.
-@prefix edintgast: <https://edint.es/def/cubo-gasto-comercial#>.
 @prefix edintdimension: <https://edint.es/def/dimension#>.
 @prefix edintmeasure: <https://edint.es/def/measure#>.
 @prefix edintemp: <https://edint.es/def/cubo-empleo#>.
@@ -43,7 +42,6 @@
 @prefix fnml: <http://semweb.mmlab.be/ns/fnml#>.
 @prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#>.
 @base <http://example.com/ns#>.
-@prefix dct:    <http://purl.org/dc/terms/> .
 @prefix map:    <https://w3id.org/edint/cubo-empleo/mapping/> .
 
 map:person_000 rdf:type foaf:Person ;

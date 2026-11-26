@@ -1,4 +1,4 @@
-<h2 id="desc" class="list">Employment Data Cube: Description <span class="backlink"> back to <a href="#toc">table of contents</a></span></h2>
+<h2 id="desc" class="list">Employment Data Cube: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
 <span class="markdown">
 The <a href="https://www.w3.org/TR/vocab-data-cube">W3C Data Cube</a> vocabulary is used to generate the employment data cube. This vocabulary is a W3C recommendation for publishing multidimensional data on the Web, facilitating its structured representation, interoperability, and reuse. Furthermore, this vocabulary is compatible with the SDMX (<i>Statistical Data and Metadata eXchange</i>) standard, which is widely used for the exchange of statistical data and metadata between organizations.
@@ -26,19 +26,19 @@ To define these dimensions and measures, several reference vocabularies are reus
 <ol>
 <li>SDMX (<i>Statistical Data and Metadata eXchange</i>) vocabularies:</li>
 <ul>
-<li><a href="http://purl.org/linked-data/sdmx/2009/dimension">sdmx-dimension</a>: reused as a foundation for general statistical dimensions, particularly through specialization relationships such as <a href="#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#refPeriod">edintdimension:refPeriod</a>, <a href="#sex">edintdimension:sex</a>, and <a href="#age">edintdimension:age</a>.</li>
+<li><a href="http://purl.org/linked-data/sdmx/2009/dimension">sdmx-dimension</a>: reused as a foundation for general statistical dimensions, particularly through specialization relationships such as <a href="#https://edint.es/def/dimension#refAdminRegion">edintdimension:refAdminRegion</a>, edintdimension:refPeriod, edintdimension:sex, and edintdimension:age.</li>
 <li><a href="http://purl.org/linked-data/sdmx/2009/measure">sdmx-measure</a>: reused as a foundation for various cube measures, defined as subproperties of <code>sdmx-measure:obsValue</code>.</li>
 </ul>
 <li>Territorial and temporal vocabularies:</li>
 <ul>
-<li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">esadm</a>: reused to indicate that the <a href="#refAdminRegion">edintdimension:refAdminRegion</a> dimension can take values ​​corresponding to municipalities, neighborhoods, or districts.</li>
-<li><a href="https://www.w3.org/TR/owl-time/">OWL-Time</a>: reused to model the temporal dimension, establishing that <a href="#refPeriod">edintdimension:refPeriod</a> has <code>time:Interval</code> as its range.</li>
+<li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">esadm</a>: reused to indicate that the <a href="#https://edint.es/def/dimension#refAdminRegion">edintdimension:refAdminRegion</a> dimension can take values ​​corresponding to municipalities, neighborhoods, or districts.</li>
+<li><a href="https://www.w3.org/TR/owl-time/">OWL-Time</a>: reused to model the temporal dimension, establishing that edintdimension:refPeriod has <code>time:Interval</code> as its range.</li>
 </ul>
 <li>SKOS code lists:</li>
 <ul>
-<li>The <a href="#sector">edintdimension:sector</a> dimension reuses the public sector scheme published at <a href="https://datos.gob.es/kos/sector-publico/sector">datos.gob.es</a> as its code list.</li>
-<li>The <a href="#economicActivity">edintdimension:economicActivity</a> dimension reuses a controlled classification of economic activity, such as <a href="http://lod.ine.es/kos/cnae/CNAE-2025">CNAE 2025</a>.</li>
-<li>The <a href="#contractType">edintdimension:contractType</a> dimension uses a custom code list defined in <code>edintkos:EmploymentContractType</code>.</li>
+<li>The edintdimension:sector dimension reuses the public sector scheme published at <a href="https://datos.gob.es/kos/sector-publico/sector">datos.gob.es</a> as its code list.</li>
+<li>The <a href="#https://edint.es/def/dimension#economicActivity">edintdimension:economicActivity</a> dimension reuses a controlled classification of economic activity, such as <a href="http://lod.ine.es/kos/cnae/CNAE-2025">CNAE 2025</a>.</li>
+<li>The <a href="#https://edint.es/def/dimension#contractType">edintdimension:contractType</a> dimension uses a custom code list defined in <code>edintkos:EmploymentContractType</code>.</li>
 </ul>
 <li>INE Vocabulary:</li>
 <ul>
@@ -56,7 +56,7 @@ The employment cube model is shown in Figure 2, which presents its constituent d
 </center>
 
 <span class="markdown">
-The structure of the employment cube is defined by the instance <a href="#edintemp:DSD_EmploymentIndicators">edintemp:DSD_EmploymentIndicators</a>, which groups all the dimensions and measures of the model. In this case, the defined dimensions are: reference administrative region, sector, economic activity, reference period, sex, age, and contract type. As for measures, the model includes various counts and indicators related to employment, such as the number of active, employed, and unemployed individuals; registered contracts; job seekers; registered unemployment; Social Security affiliations; unemployment rate; employment rate; job positions; employment profiles; and the total number of people.
+The structure of the employment cube is defined by the instance edintemp:DSD_EmploymentIndicators, which groups all the dimensions and measures of the model. In this case, the defined dimensions are: reference administrative region, sector, economic activity, reference period, sex, age, and contract type. As for measures, the model includes various counts and indicators related to employment, such as the number of active, employed, and unemployed individuals; registered contracts; job seekers; registered unemployment; Social Security affiliations; unemployment rate; employment rate; job positions; employment profiles; and the total number of people.
 </span>
 
 <pre><textarea style="resize:none" readonly id="code" name="code" rows="25" cols="100">
@@ -122,9 +122,9 @@ matchBrackets: true
 </script>
 
 <span class="markdown">
-<b>2) Identification of relevant dimensions and measures:</b> Although the structure <code>edintemp:DSD_EmploymentIndicators</code> contains all the dimensions and measures of the employment cube, this example uses only the dimensions <a href="#refAdminRegion">edintdimension:refAdminRegion</a>, <a href="#refPeriod">edintdimension:refPeriod</a>, <a href="#sex">edintdimension:sex</a>, and <a href="#age">edintdimension:age</a>, along with the measure <a href="#employedPopulationCount">edintmeasure:employedPopulationCount</a>. 
+<b>2) Identification of relevant dimensions and measures:</b> Although the structure <code>edintemp:DSD_EmploymentIndicators</code> contains all the dimensions and measures of the employment cube, this example uses only the dimensions <a href="#https://edint.es/def/dimension#refAdminRegion">edintdimension:refAdminRegion</a>, edintdimension:refPeriod, edintdimension:sex, and edintdimension:age, along with the measure edintmeasure:employedPopulationCount. 
 
-It is important to note that the dimension <a href="#refPeriod">edintdimension:refPeriod</a> has <code>time:Interval</code> as its range; therefore, the reference period must be represented by an explicit instance of a time interval. 
+It is important to note that the dimension edintdimension:refPeriod has <code>time:Interval</code> as its range; therefore, the reference period must be represented by an explicit instance of a time interval. 
 </span>
 
 <pre><textarea style="resize:none" readonly id="code2" name="code2" rows="25" cols="100">
