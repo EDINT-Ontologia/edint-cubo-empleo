@@ -4,8 +4,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix edintemp: <https://edint.es/def/cubo-empleo#> .
-@prefix edintdimension: <http://vocab.linkeddata.es/datosabiertos/def/dimension#> .
-@prefix edintmeasure: <http://vocab.linkeddata.es/datosabiertos/def/measure#> .
+@prefix edintdimension: <https://edint.es/def/dimension#> .
+@prefix edintmeasure: <https://edint.es/def/measure#> .
 @prefix edintcontracttype: <https://edint.es/kos/EmploymentContractType/> .
 @prefix ine: <https://lod.ine.es/def/vocabulary/> .
 @prefix edintkos: <https://edint.es/kos/> .
@@ -18,12 +18,6 @@
 #  Ontologia (reutilizada del repositorio)
 #######################################################################
 
-<https://edint.es/def/cubo-empleo>
-    a owl:Ontology ;
-    owl:imports <http://purl.org/linked-data/cube> ;
-    owl:versionInfo "0.1.0" .
-
-#######################################################################
 #  Data Set y Data Structure Definition
 #######################################################################
 
