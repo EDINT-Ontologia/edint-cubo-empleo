@@ -69,7 +69,7 @@ Additionally, several vocabularies and code lists are reused to describe the dif
         <dcterms:description xml:lang="es">El propósito de este vocabulario es proporcionar la definición de la estructura del cubo de datos de empleo. Para ello, se reutiliza el vocabulario W3C Data Cube y se han generado las instancias necesarias para definir su estructura, indicando las dimensiones y medidas que se emplean en este cubo.  Adicionalmente, se reutilizan varios vocabularios y listas de códigos que permiten describir los distintos desgloses de la información de empleo, como el territorio, el periodo de referencia, el sexo, la edad o la actividad económica.</dcterms:description>
         <dcterms:description xml:lang="en">The purpose of this vocabulary is to provide the definition of the structure of the employment data cube. To this end, the W3C Data Cube vocabulary is reused, and the necessary instances have been created to define such structure, indicating the dimensions and measures used in this cube.  Additionally, several vocabularies and code lists are reused to describe the different breakdowns of employment information, such as territory, reference period, sex, age, or economic activity.</dcterms:description>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
-        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
         <dcterms:publisher>
             <rdf:Description>
@@ -81,7 +81,7 @@ Additionally, several vocabularies and code lists are reused to describe the dif
         <dcterms:title xml:lang="es">Cubo de Datos EDINT de Indicadores de Empleo</dcterms:title>
         <dcterms:title xml:lang="en">EDINT Employment Indicators Data Cube</dcterms:title>
         <vann:preferredNamespacePrefix>edintemp</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/cubo-empleo#"/>
+        <vann:preferredNamespaceUri>https://edint.es/def/cubo-empleo#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="es">Cubo de Datos de Empleo</rdfs:label>
         <rdfs:label xml:lang="en">Employment Data Cube</rdfs:label>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-cubo-empleo/releases/tag/v0.2.0"/>
