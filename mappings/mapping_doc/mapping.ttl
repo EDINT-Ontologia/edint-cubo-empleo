@@ -32,7 +32,6 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
 @prefix rr: <http://www.w3.org/ns/r2rml#>.
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>.
-@prefix edintgast: <https://edint.es/def/cubo-gasto-comercial#>.
 @prefix edintdimension: <https://edint.es/def/dimension#>.
 @prefix edintmeasure: <https://edint.es/def/measure#>.
 @prefix edintemp: <https://edint.es/def/cubo-empleo#>.
