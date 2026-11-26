@@ -36,9 +36,11 @@ TIMEOUT_SHACL_S = CONFIG["umbrales"]["shacl_timeout_s"]
 
 def repo_slug() -> str:
     name = ROOT.name
-    for pref in ("edint-ontologia-", "edint-cubo-"):
-        if name.startswith(pref):
-            return name[len(pref):]
+    if name.startswith("edint-ontologia-"):
+        return name[len("edint-ontologia-"):]
+    if name.startswith("edint-"):
+        # los cubos usan https://edint.es/def/cubo-<nombre>
+        return name[len("edint-"):]
     return name
 
 
