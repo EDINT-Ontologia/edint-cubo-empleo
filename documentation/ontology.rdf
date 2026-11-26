@@ -242,7 +242,6 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:AnnotationProperty rdf:about="https://edint.es/def/dimension#age">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#age"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     </owl:AnnotationProperty>
     
 
@@ -261,7 +260,6 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:AnnotationProperty rdf:about="https://edint.es/def/dimension#refPeriod">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Interval"/>
     </owl:AnnotationProperty>
     
 
@@ -271,7 +269,6 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:AnnotationProperty rdf:about="https://edint.es/def/dimension#sex">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#sex"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     </owl:AnnotationProperty>
     
 
@@ -281,7 +278,6 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#activePopulationCount">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     </owl:AnnotationProperty>
     
 
@@ -291,7 +287,6 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#employedPopulationCount">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     </owl:AnnotationProperty>
     
 
@@ -301,7 +296,6 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#jobProfiles">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:AnnotationProperty>
     
 
@@ -311,7 +305,6 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#jobSeekersCount">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     </owl:AnnotationProperty>
     
 
@@ -321,7 +314,6 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#registeredContractsCount">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     </owl:AnnotationProperty>
     
 
@@ -331,7 +323,6 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#registeredUnemploymentCount">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     </owl:AnnotationProperty>
     
 
@@ -341,7 +332,6 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#socialSecurityAffiliatesCount">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     </owl:AnnotationProperty>
     
 
@@ -351,7 +341,6 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#unemployedPopulationCount">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     </owl:AnnotationProperty>
     
 
@@ -368,7 +357,6 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:AnnotationProperty rdf:about="https://lod.ine.es/def/vocabulary/jobs">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     </owl:AnnotationProperty>
     
 
@@ -385,7 +373,6 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:AnnotationProperty rdf:about="https://lod.ine.es/def/vocabulary/numberOfPeople">
         <rdfs:subPropertyOf rdf:resource="https://lod.ine.es/def/vocabulary/numberOfIndividuals"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:AnnotationProperty>
     
 
@@ -482,7 +469,9 @@ Additionally, several vocabularies and code lists are reused to describe the dif
     <!-- https://edint.es/def/dimension#age -->
 
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/dimension#age"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/dimension#age">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:ObjectProperty>
     
 
 
@@ -544,7 +533,9 @@ Additionally, several vocabularies and code lists are reused to describe the dif
     <!-- https://edint.es/def/dimension#refPeriod -->
 
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/dimension#refPeriod"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/dimension#refPeriod">
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    </owl:ObjectProperty>
     
 
 
@@ -560,7 +551,9 @@ Additionally, several vocabularies and code lists are reused to describe the dif
     <!-- https://edint.es/def/dimension#sex -->
 
 
-    <owl:ObjectProperty rdf:about="https://edint.es/def/dimension#sex"/>
+    <owl:ObjectProperty rdf:about="https://edint.es/def/dimension#sex">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:ObjectProperty>
     
 
 
@@ -569,6 +562,7 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:ObjectProperty rdf:about="https://lod.ine.es/def/vocabulary/jobs">
         <rdfs:domain rdf:resource="http://purl.org/linked-data/cube#Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     </owl:ObjectProperty>
     
 
@@ -588,14 +582,18 @@ Additionally, several vocabularies and code lists are reused to describe the dif
     <!-- https://edint.es/def/measure#activePopulationCount -->
 
 
-    <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#activePopulationCount"/>
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#activePopulationCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://edint.es/def/measure#employedPopulationCount -->
 
 
-    <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#employedPopulationCount"/>
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#employedPopulationCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -604,6 +602,7 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#jobProfiles">
         <rdfs:domain rdf:resource="http://purl.org/linked-data/cube#Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -611,35 +610,45 @@ Additionally, several vocabularies and code lists are reused to describe the dif
     <!-- https://edint.es/def/measure#jobSeekersCount -->
 
 
-    <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#jobSeekersCount"/>
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#jobSeekersCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://edint.es/def/measure#registeredContractsCount -->
 
 
-    <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#registeredContractsCount"/>
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#registeredContractsCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://edint.es/def/measure#registeredUnemploymentCount -->
 
 
-    <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#registeredUnemploymentCount"/>
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#registeredUnemploymentCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://edint.es/def/measure#socialSecurityAffiliatesCount -->
 
 
-    <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#socialSecurityAffiliatesCount"/>
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#socialSecurityAffiliatesCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://edint.es/def/measure#unemployedPopulationCount -->
 
 
-    <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#unemployedPopulationCount"/>
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/measure#unemployedPopulationCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -658,6 +667,7 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <owl:DatatypeProperty rdf:about="https://lod.ine.es/def/vocabulary/numberOfPeople">
         <rdfs:domain rdf:resource="http://purl.org/linked-data/cube#Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 

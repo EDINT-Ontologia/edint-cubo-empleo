@@ -242,108 +242,108 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <!-- https://edint.es/def/dimension#age -->
 
-    <owl:AnnotationProperty rdf:about="https://edint.es/def/dimension#age">
+    <rdf:Description rdf:about="https://edint.es/def/dimension#age">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#age"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/dimension#refAdminRegion -->
 
-    <owl:AnnotationProperty rdf:about="https://edint.es/def/dimension#refAdminRegion">
+    <rdf:Description rdf:about="https://edint.es/def/dimension#refAdminRegion">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#refArea"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/dimension#refPeriod -->
 
-    <owl:AnnotationProperty rdf:about="https://edint.es/def/dimension#refPeriod">
+    <rdf:Description rdf:about="https://edint.es/def/dimension#refPeriod">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"/>
         <rdfs:range rdf:resource="http://www.w3.org/2006/time#Interval"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/dimension#sex -->
 
-    <owl:AnnotationProperty rdf:about="https://edint.es/def/dimension#sex">
+    <rdf:Description rdf:about="https://edint.es/def/dimension#sex">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#sex"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#activePopulationCount -->
 
-    <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#activePopulationCount">
+    <rdf:Description rdf:about="https://edint.es/def/measure#activePopulationCount">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#employedPopulationCount -->
 
-    <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#employedPopulationCount">
+    <rdf:Description rdf:about="https://edint.es/def/measure#employedPopulationCount">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#jobProfiles -->
 
-    <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#jobProfiles">
+    <rdf:Description rdf:about="https://edint.es/def/measure#jobProfiles">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#jobSeekersCount -->
 
-    <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#jobSeekersCount">
+    <rdf:Description rdf:about="https://edint.es/def/measure#jobSeekersCount">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#registeredContractsCount -->
 
-    <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#registeredContractsCount">
+    <rdf:Description rdf:about="https://edint.es/def/measure#registeredContractsCount">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#registeredUnemploymentCount -->
 
-    <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#registeredUnemploymentCount">
+    <rdf:Description rdf:about="https://edint.es/def/measure#registeredUnemploymentCount">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#socialSecurityAffiliatesCount -->
 
-    <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#socialSecurityAffiliatesCount">
+    <rdf:Description rdf:about="https://edint.es/def/measure#socialSecurityAffiliatesCount">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#unemployedPopulationCount -->
 
-    <owl:AnnotationProperty rdf:about="https://edint.es/def/measure#unemployedPopulationCount">
+    <rdf:Description rdf:about="https://edint.es/def/measure#unemployedPopulationCount">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     
 
 
@@ -355,10 +355,10 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <!-- https://lod.ine.es/def/vocabulary/jobs -->
 
-    <owl:AnnotationProperty rdf:about="https://lod.ine.es/def/vocabulary/jobs">
+    <rdf:Description rdf:about="https://lod.ine.es/def/vocabulary/jobs">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     
 
 
@@ -370,10 +370,10 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <!-- https://lod.ine.es/def/vocabulary/numberOfPeople -->
 
-    <owl:AnnotationProperty rdf:about="https://lod.ine.es/def/vocabulary/numberOfPeople">
+    <rdf:Description rdf:about="https://lod.ine.es/def/vocabulary/numberOfPeople">
         <rdfs:subPropertyOf rdf:resource="https://lod.ine.es/def/vocabulary/numberOfIndividuals"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     
 
 
@@ -806,127 +806,127 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <!-- https://edint.es/def/dimension#age -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/dimension#age">
+    <rdf:Description rdf:about="https://edint.es/def/dimension#age">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DimensionProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/dimension#contractType -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/dimension#contractType">
+    <rdf:Description rdf:about="https://edint.es/def/dimension#contractType">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DimensionProperty"/>
         <qb:codeList rdf:resource="https://edint.es/kos/contractType"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/dimension#economicActivity -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/dimension#economicActivity">
+    <rdf:Description rdf:about="https://edint.es/def/dimension#economicActivity">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DimensionProperty"/>
         <qb:codeList rdf:resource="http://lod.ine.es/kos/cnae/CNAE-2025"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/dimension#refAdminRegion -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/dimension#refAdminRegion">
+    <rdf:Description rdf:about="https://edint.es/def/dimension#refAdminRegion">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DimensionProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/dimension#refPeriod -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/dimension#refPeriod">
+    <rdf:Description rdf:about="https://edint.es/def/dimension#refPeriod">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DimensionProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/dimension#sector -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/dimension#sector">
+    <rdf:Description rdf:about="https://edint.es/def/dimension#sector">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#CodedProperty"/>
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DimensionProperty"/>
         <qb:codeList rdf:resource="http://datos.gob.es/kos/sector-publico/sector"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/dimension#sex -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/dimension#sex">
+    <rdf:Description rdf:about="https://edint.es/def/dimension#sex">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DimensionProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#activePopulationCount -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/measure#activePopulationCount">
+    <rdf:Description rdf:about="https://edint.es/def/measure#activePopulationCount">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#employedPopulationCount -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/measure#employedPopulationCount">
+    <rdf:Description rdf:about="https://edint.es/def/measure#employedPopulationCount">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#jobProfiles -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/measure#jobProfiles">
+    <rdf:Description rdf:about="https://edint.es/def/measure#jobProfiles">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#jobSeekersCount -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/measure#jobSeekersCount">
+    <rdf:Description rdf:about="https://edint.es/def/measure#jobSeekersCount">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#registeredContractsCount -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/measure#registeredContractsCount">
+    <rdf:Description rdf:about="https://edint.es/def/measure#registeredContractsCount">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#registeredUnemploymentCount -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/measure#registeredUnemploymentCount">
+    <rdf:Description rdf:about="https://edint.es/def/measure#registeredUnemploymentCount">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#socialSecurityAffiliatesCount -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/measure#socialSecurityAffiliatesCount">
+    <rdf:Description rdf:about="https://edint.es/def/measure#socialSecurityAffiliatesCount">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://edint.es/def/measure#unemployedPopulationCount -->
 
-    <owl:NamedIndividual rdf:about="https://edint.es/def/measure#unemployedPopulationCount">
+    <rdf:Description rdf:about="https://edint.es/def/measure#unemployedPopulationCount">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
@@ -957,33 +957,33 @@ Additionally, several vocabularies and code lists are reused to describe the dif
 
     <!-- https://lod.ine.es/def/vocabulary/employmentRate -->
 
-    <owl:NamedIndividual rdf:about="https://lod.ine.es/def/vocabulary/employmentRate">
+    <rdf:Description rdf:about="https://lod.ine.es/def/vocabulary/employmentRate">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://lod.ine.es/def/vocabulary/jobs -->
 
-    <owl:NamedIndividual rdf:about="https://lod.ine.es/def/vocabulary/jobs">
+    <rdf:Description rdf:about="https://lod.ine.es/def/vocabulary/jobs">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://lod.ine.es/def/vocabulary/numberOfPeople -->
 
-    <owl:NamedIndividual rdf:about="https://lod.ine.es/def/vocabulary/numberOfPeople">
+    <rdf:Description rdf:about="https://lod.ine.es/def/vocabulary/numberOfPeople">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 
     <!-- https://lod.ine.es/def/vocabulary/unemploymentRate -->
 
-    <owl:NamedIndividual rdf:about="https://lod.ine.es/def/vocabulary/unemploymentRate">
+    <rdf:Description rdf:about="https://lod.ine.es/def/vocabulary/unemploymentRate">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
-    </owl:NamedIndividual>
+    </rdf:Description>
     
 
 

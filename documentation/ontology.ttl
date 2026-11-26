@@ -160,8 +160,7 @@ _:genid12 rdfs:label "OWL-Time"@en ,
 
 ###  https://edint.es/def/dimension#age
 <https://edint.es/def/dimension#age> rdf:type owl:AnnotationProperty ;
-                                     rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/dimension#age> ;
-                                     rdfs:range rdfs:Resource .
+                                     rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/dimension#age> .
 
 
 ###  https://edint.es/def/dimension#refAdminRegion
@@ -171,62 +170,52 @@ _:genid12 rdfs:label "OWL-Time"@en ,
 
 ###  https://edint.es/def/dimension#refPeriod
 <https://edint.es/def/dimension#refPeriod> rdf:type owl:AnnotationProperty ;
-                                           rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> ;
-                                           rdfs:range <http://www.w3.org/2006/time#Interval> .
+                                           rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> .
 
 
 ###  https://edint.es/def/dimension#sex
 <https://edint.es/def/dimension#sex> rdf:type owl:AnnotationProperty ;
-                                     rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/dimension#sex> ;
-                                     rdfs:range rdfs:Resource .
+                                     rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/dimension#sex> .
 
 
 ###  https://edint.es/def/measure#activePopulationCount
 <https://edint.es/def/measure#activePopulationCount> rdf:type owl:AnnotationProperty ;
-                                                     rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> ;
-                                                     rdfs:range xsd:nonNegativeInteger .
+                                                     rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
 
 
 ###  https://edint.es/def/measure#employedPopulationCount
 <https://edint.es/def/measure#employedPopulationCount> rdf:type owl:AnnotationProperty ;
-                                                       rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> ;
-                                                       rdfs:range xsd:nonNegativeInteger .
+                                                       rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
 
 
 ###  https://edint.es/def/measure#jobProfiles
 <https://edint.es/def/measure#jobProfiles> rdf:type owl:AnnotationProperty ;
-                                           rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> ;
-                                           rdfs:range xsd:string .
+                                           rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
 
 
 ###  https://edint.es/def/measure#jobSeekersCount
 <https://edint.es/def/measure#jobSeekersCount> rdf:type owl:AnnotationProperty ;
-                                               rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> ;
-                                               rdfs:range xsd:nonNegativeInteger .
+                                               rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
 
 
 ###  https://edint.es/def/measure#registeredContractsCount
 <https://edint.es/def/measure#registeredContractsCount> rdf:type owl:AnnotationProperty ;
-                                                        rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> ;
-                                                        rdfs:range xsd:nonNegativeInteger .
+                                                        rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
 
 
 ###  https://edint.es/def/measure#registeredUnemploymentCount
 <https://edint.es/def/measure#registeredUnemploymentCount> rdf:type owl:AnnotationProperty ;
-                                                           rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> ;
-                                                           rdfs:range xsd:nonNegativeInteger .
+                                                           rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
 
 
 ###  https://edint.es/def/measure#socialSecurityAffiliatesCount
 <https://edint.es/def/measure#socialSecurityAffiliatesCount> rdf:type owl:AnnotationProperty ;
-                                                             rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> ;
-                                                             rdfs:range xsd:nonNegativeInteger .
+                                                             rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
 
 
 ###  https://edint.es/def/measure#unemployedPopulationCount
 <https://edint.es/def/measure#unemployedPopulationCount> rdf:type owl:AnnotationProperty ;
-                                                         rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> ;
-                                                         rdfs:range xsd:nonNegativeInteger .
+                                                         rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
 
 
 ###  https://lod.ine.es/def/vocabulary/inMeasureSet
@@ -235,8 +224,7 @@ _:genid12 rdfs:label "OWL-Time"@en ,
 
 ###  https://lod.ine.es/def/vocabulary/jobs
 <https://lod.ine.es/def/vocabulary/jobs> rdf:type owl:AnnotationProperty ;
-                                         rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> ;
-                                         rdfs:range rdfs:Resource .
+                                         rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
 
 
 ###  https://lod.ine.es/def/vocabulary/numberOfIndividuals
@@ -245,8 +233,7 @@ _:genid12 rdfs:label "OWL-Time"@en ,
 
 ###  https://lod.ine.es/def/vocabulary/numberOfPeople
 <https://lod.ine.es/def/vocabulary/numberOfPeople> rdf:type owl:AnnotationProperty ;
-                                                   rdfs:subPropertyOf <https://lod.ine.es/def/vocabulary/numberOfIndividuals> ;
-                                                   rdfs:range xsd:integer .
+                                                   rdfs:subPropertyOf <https://lod.ine.es/def/vocabulary/numberOfIndividuals> .
 
 
 ###  https://schema.org/affiliation
@@ -298,7 +285,8 @@ _:genid12 rdfs:label "OWL-Time"@en ,
 
 
 ###  https://edint.es/def/dimension#age
-<https://edint.es/def/dimension#age> rdf:type owl:ObjectProperty .
+<https://edint.es/def/dimension#age> rdf:type owl:ObjectProperty ;
+                                     rdfs:range rdfs:Resource .
 
 
 ###  https://edint.es/def/dimension#contractType
@@ -336,7 +324,8 @@ _:genid12 rdfs:label "OWL-Time"@en ,
 
 
 ###  https://edint.es/def/dimension#refPeriod
-<https://edint.es/def/dimension#refPeriod> rdf:type owl:ObjectProperty .
+<https://edint.es/def/dimension#refPeriod> rdf:type owl:ObjectProperty ;
+                                           rdfs:range <http://www.w3.org/2006/time#Interval> .
 
 
 ###  https://edint.es/def/dimension#sector
@@ -345,12 +334,14 @@ _:genid12 rdfs:label "OWL-Time"@en ,
 
 
 ###  https://edint.es/def/dimension#sex
-<https://edint.es/def/dimension#sex> rdf:type owl:ObjectProperty .
+<https://edint.es/def/dimension#sex> rdf:type owl:ObjectProperty ;
+                                     rdfs:range rdfs:Resource .
 
 
 ###  https://lod.ine.es/def/vocabulary/jobs
 <https://lod.ine.es/def/vocabulary/jobs> rdf:type owl:ObjectProperty ;
-                                         rdfs:domain <http://purl.org/linked-data/cube#Observation> .
+                                         rdfs:domain <http://purl.org/linked-data/cube#Observation> ;
+                                         rdfs:range rdfs:Resource .
 
 
 #################################################################
@@ -358,36 +349,44 @@ _:genid12 rdfs:label "OWL-Time"@en ,
 #################################################################
 
 ###  https://edint.es/def/measure#activePopulationCount
-<https://edint.es/def/measure#activePopulationCount> rdf:type owl:DatatypeProperty .
+<https://edint.es/def/measure#activePopulationCount> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:range xsd:nonNegativeInteger .
 
 
 ###  https://edint.es/def/measure#employedPopulationCount
-<https://edint.es/def/measure#employedPopulationCount> rdf:type owl:DatatypeProperty .
+<https://edint.es/def/measure#employedPopulationCount> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:range xsd:nonNegativeInteger .
 
 
 ###  https://edint.es/def/measure#jobProfiles
 <https://edint.es/def/measure#jobProfiles> rdf:type owl:DatatypeProperty ;
-                                           rdfs:domain <http://purl.org/linked-data/cube#Observation> .
+                                           rdfs:domain <http://purl.org/linked-data/cube#Observation> ;
+                                           rdfs:range xsd:string .
 
 
 ###  https://edint.es/def/measure#jobSeekersCount
-<https://edint.es/def/measure#jobSeekersCount> rdf:type owl:DatatypeProperty .
+<https://edint.es/def/measure#jobSeekersCount> rdf:type owl:DatatypeProperty ;
+                                               rdfs:range xsd:nonNegativeInteger .
 
 
 ###  https://edint.es/def/measure#registeredContractsCount
-<https://edint.es/def/measure#registeredContractsCount> rdf:type owl:DatatypeProperty .
+<https://edint.es/def/measure#registeredContractsCount> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:range xsd:nonNegativeInteger .
 
 
 ###  https://edint.es/def/measure#registeredUnemploymentCount
-<https://edint.es/def/measure#registeredUnemploymentCount> rdf:type owl:DatatypeProperty .
+<https://edint.es/def/measure#registeredUnemploymentCount> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:range xsd:nonNegativeInteger .
 
 
 ###  https://edint.es/def/measure#socialSecurityAffiliatesCount
-<https://edint.es/def/measure#socialSecurityAffiliatesCount> rdf:type owl:DatatypeProperty .
+<https://edint.es/def/measure#socialSecurityAffiliatesCount> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:range xsd:nonNegativeInteger .
 
 
 ###  https://edint.es/def/measure#unemployedPopulationCount
-<https://edint.es/def/measure#unemployedPopulationCount> rdf:type owl:DatatypeProperty .
+<https://edint.es/def/measure#unemployedPopulationCount> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:range xsd:nonNegativeInteger .
 
 
 ###  https://lod.ine.es/def/vocabulary/employmentRate
@@ -398,7 +397,8 @@ _:genid12 rdfs:label "OWL-Time"@en ,
 
 ###  https://lod.ine.es/def/vocabulary/numberOfPeople
 <https://lod.ine.es/def/vocabulary/numberOfPeople> rdf:type owl:DatatypeProperty ;
-                                                   rdfs:domain <http://purl.org/linked-data/cube#Observation> .
+                                                   rdfs:domain <http://purl.org/linked-data/cube#Observation> ;
+                                                   rdfs:range xsd:integer .
 
 
 ###  https://lod.ine.es/def/vocabulary/unemploymentRate
